@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+RewriteCond  %{DOCUMENT_ROOT}/public/$1 -f
+RewriteRule ^(.*)$ public/$1 [L,QSA]
+
+RewriteCond %{REQUEST_URI} ^/activities
+RewriteRule ^.*$ http://innovationfund/activities/business-investments [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/admin
+RewriteRule ^.*$ http://innovationfund/admin/news [R=301,L]
+
+ErrorDocument 404 /err404.php
