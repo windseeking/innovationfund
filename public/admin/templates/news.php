@@ -50,7 +50,7 @@
       </div>
     </div>
     <div class="col-12">
-      <button class="btn btn-outline-primary btn-block" type="submit" name="submit">Add news</button>
+      <button class="btn btn-outline-success btn-block" type="submit" name="submit">Add news</button>
     </div>
   </div>
 </form>

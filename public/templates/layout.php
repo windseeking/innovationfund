@@ -50,7 +50,7 @@
   <div class="xs-hide sm-hide">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container p-0">
-        <a class="navbar-brand text-white" href="//innovationfund.in">
+        <a class="navbar-brand text-white" href="//innovationfund">
           <img src="/public/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Fund of Innovation Support
         </a>
@@ -64,7 +64,7 @@
           <?php endif; ?>
       </div>
       <div class="container justify-content-end p-0">
-          <?php if ($_SESSION['user']): ?>
+          <?php if (isset($_SESSION['user'])): ?>
             <a class="nav-item nav-link p-0" href="/admin/news">
               <span style="font-size: 1em; color: #fff;"><i class="far fa-user-circle"></i></span>
             </a>
@@ -113,8 +113,8 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="mb-3 text-right text-md-left">
-          <button class="btn btn-outline-success">support</button>
-          <button class="btn btn-outline-info">contact</button>
+          <a class="btn btn-outline-success" href="">support</a>
+          <a class="btn btn-outline-info" href="/index#contact">contact</a>
         </div>
         <div class="text-muted">
           <p>Украина, Одесса<br>

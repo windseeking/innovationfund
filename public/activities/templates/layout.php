@@ -50,7 +50,7 @@
   <div class="xs-hide sm-hide">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container p-0">
-        <a class="navbar-brand text-white" href="//innovationfund.in">
+        <a class="navbar-brand text-white" href="//innovationfund">
           <img src="/public/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Fund of Innovation Support
         </a>

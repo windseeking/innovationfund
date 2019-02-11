@@ -3,5 +3,5 @@ $database_config = [
     'host' => 'localhost',
     'user' => 'root',
     'password' => '',
-    'database' => 'fis'
+    'database' => 'innovationfund'
 ];

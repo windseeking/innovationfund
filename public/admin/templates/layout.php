@@ -44,7 +44,7 @@
   <div class="xs-hide sm-hide">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container p-0">
-        <a class="navbar-brand text-white" href="//innovationfund.in">
+        <a class="navbar-brand text-white" href="//innovationfund">
           <img src="/public/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Fund of Innovation Support
         </a>
@@ -57,7 +57,7 @@
         <a class="nav-item nav-link" href="/news">News</a>
       </div>
       <div class="container justify-content-end p-0">
-          <?php if ($_SESSION['user']): ?>
+          <?php if (isset($_SESSION['user'])): ?>
             <a class="nav-item nav-link p-0" href="/admin/news">
               <span style="font-size: 1em; color: #457677;"><i class="far fa-user-circle"></i></span>
             </a>
