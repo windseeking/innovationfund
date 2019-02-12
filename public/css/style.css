@@ -32,6 +32,10 @@ section {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+body {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
 main h1 {
   margin: 0;
 
@@ -43,10 +47,70 @@ main h1 {
   border-bottom: 4px solid #222224;
 }
 
-ul a,
-p a {
+a {
   color: #457677 !important;
 }
+
+.btn-custom {
+  display: inline-block;
+  padding: 15px;
+  box-sizing: border-box;
+
+  text-decoration: none !important;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 16px;
+  font-weight: bold;
+
+  background-color: inherit;
+  border-radius: 0 !important;
+
+  transition: .5s;
+}
+
+.btn-custom:hover {
+  cursor: pointer;
+}
+
+.btn-custom-outline-blue {
+  color: #457677;
+  border: 3px solid #457677 !important;
+}
+
+.btn-custom-outline-blue:hover {
+  background-color: #457677;
+}
+
+.btn-custom-outline-green {
+  color: #81bb40;
+  border: 3px solid #81bb40 !important;
+;
+}
+
+.btn-custom-outline-green:hover {
+  background-color: #81bb40;
+}
+
+.bg-white .btn-custom:hover,
+section .btn-custom:hover {
+  color: #fff !important;
+}
+
+.btn-link {
+  color: #457677 !important;
+  text-decoration: none !important;
+}
+
+.card,
+.card-header {
+  border-radius: 0 !important;
+}
+
+.card-img-top {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
 
 .nav a {
   color: #fff !important;
@@ -73,20 +137,22 @@ p a {
 }
 
 header .nav-link {
-  color: #fff !important;
-  font-weight: bold;
+  color: #222224 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Gilroy, Montserrat;
   font-size: 1.2em;
   text-decoration: none;
   background-color: transparent;
 }
 
 header .nav-link:hover {
-  color: #0c5460 !important;
+  color: #457677 !important;
   transition: .3s;
 }
 
 header .nav-link.active {
-  color: #0c5460 !important;
+  color: #457677 !important;
   background: none !important;
   border: none !important;
 }
@@ -160,16 +226,13 @@ padding-left: 0;}
   opacity: 0.5;
 }
 
-.science-field button { text-decoration: none; }
-.science-field button:hover { text-decoration: none; }
-.science-field button:active { text-decoration: none; }
 
 /*     Natural sciences     */
 .natural-sci .bullet-list li:before,
 .natural-sci button,
 .natural-sci h4,
 .natural-sci button:hover {
-  color: #81bb40;
+  color: #81bb40 !important;
 }
 
 /*     Social sciences     */
@@ -177,7 +240,7 @@ padding-left: 0;}
 .social-sci button,
 .social-sci h4,
 .social-sci button:hover {
-  color: #c3a827;
+  color: #c3a827 !important;
 }
 
 /*     Humanitarian sciences     */
@@ -185,7 +248,7 @@ padding-left: 0;}
 .humanitarian-sci button,
 .humanitarian-sci h4,
 .humanitarian-sci button:hover {
-  color: #bf4b71;
+  color: #bf4b71 !important;
 }
 
 /*     Mathematical sciences     */
@@ -193,7 +256,7 @@ padding-left: 0;}
 .mathematical-sci button,
 .mathematical-sci h4,
 .mathematical-sci button:hover {
-  color: #418ba0;
+  color: #418ba0 !important;
 }
 
 /*     Other sciences     */
@@ -201,9 +264,8 @@ padding-left: 0;}
 .other-sci button,
 .other-sci h4,
 .other-sci button:hover {
-  color: grey;
+  color: grey !important;
 }
-
 
 /*          Иконки         */
 .icon {

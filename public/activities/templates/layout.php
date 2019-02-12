@@ -48,9 +48,9 @@
 
   <!--Показывается на экранах 768px и больше-->
   <div class="xs-hide sm-hide">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container p-0">
-        <a class="navbar-brand text-white" href="//innovationfund.in">
+        <a class="navbar-brand" href="//innovationfund.in">
           <img src="../../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Fund of Innovation Support
         </a>
@@ -65,7 +65,7 @@
       <div class="container p-0 justify-content-end">
           <?php if (isset($_SESSION['user'])): ?>
             <a class="nav-item nav-link p-0" href="/admin/news">
-              <span style="font-size: 1em; color: #fff;"><i class="far fa-user-circle"></i></span>
+              <span style="font-size: 1em; color: #222224;"><i class="far fa-user-circle"></i></span>
             </a>
           <?php endif; ?>
       </div>
@@ -75,7 +75,7 @@
   <!--Показывается на экранах от 0 до 767px-->
   <div class="pos-f-t md-hide lg-hide xl-hide">
     <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark text-right p-4">
+      <div class="bg-white text-right p-4">
           <a class="nav-item nav-link" href="/partners">Partners</a>
           <a class="nav-item nav-link" href="/projects">Projects</a>
           <a class="nav-item nav-link active" href="/activities">Activities</a>
@@ -83,7 +83,7 @@
           <a class="nav-item nav-link" href="/news">News</a>
           <?php if (isset($_SESSION['user'])): ?>
               <a class="nav-item nav-link" href="/admin/news">
-                  <span style="font-size: 1em; color: #fff;"><i class="far fa-user-circle"></i></span>
+                  <span style="font-size: 1em; color: #222224;"><i class="far fa-user-circle"></i></span>
               </a>
           <?php endif; ?>
 <!--        <div class="mb-3">-->
@@ -94,7 +94,7 @@
 <!--        </div>-->
       </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark align-">
+    <nav class="navbar navbar-light bg-white">
       <a class="navbar-brand" href="//innovationfund.in">
         <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Fund of Innovation Support
@@ -138,8 +138,8 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="mb-3 text-right text-md-left">
-          <button class="btn btn-outline-success">support</button>
-          <button class="btn btn-outline-info">contact</button>
+          <button class="btn-custom btn-custom-outline-blue">support</button>
+          <button class="btn-custom btn-custom-outline-blue">contact</button>
         </div>
         <div class="text-muted">
           <p>Украина, Одесса<br>
@@ -165,7 +165,7 @@
         <div class="mb-3 xs-hide sm-hide">
           <form method="get" class="form-inline justify-content-center justify-content-md-end">
             <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info ml-2 xs-hide sm-hide" type="submit">Search</button>
+            <button class="btn-custom btn-custom-outline-blue btn-sm m-0 ml-2 xs-hide sm-hide" type="submit">Search</button>
           </form>
         </div>
         <ul class="nav justify-content-around justify-content-md-end">

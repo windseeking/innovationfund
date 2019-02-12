@@ -37,7 +37,7 @@
             <div id="collapse-stu-two" class="collapse" aria-labelledby="heading-stu-Two" data-parent="#accordion">
               <div class="card-body">
                 <p>Добавляйте свое резюме и следите за новостями и возможностями</p>
-                <a class="btn btn-outline-info" href="../../hr">Добавить резюме</a>
+                <a class="btn-custom btn-custom-outline-blue btn-sm" href="../../hr">Добавить резюме</a>
               </div>
             </div>
           </div>
@@ -53,10 +53,8 @@
             </div>
             <div id="collapse-stu-three" class="collapse" aria-labelledby="heading-stu-Three" data-parent="#accordion">
               <div class="card-body">
-                <ul class="bullet-list">
-                  <li>Заполняйте <a href="https://goo.gl/forms/YHHuQ4V6xI2vfUxj1">форму</a></li>
-                  <li>Мы ответим в течение трех дней</li>
-                </ul>
+                  <p>Расскажите нам, заполнив форму. Мы ознакомимся с Вашей идеей и ответим в течение трёх дней</p>
+                  <a href="https://goo.gl/forms/YHHuQ4V6xI2vfUxj1" class="btn-custom btn-custom-outline-blue btn-sm" target="_blank">Заполнить форму</a>
               </div>
             </div>
           </div>
@@ -118,7 +116,7 @@
             <div id="collapse-alu-two" class="collapse" aria-labelledby="heading-alu-Two" data-parent="#accordion">
               <div class="card-body">
                 <p>Заполните форму – так мы поймём, что Вас интересует и как мы можем сотрудничать</p>
-                <a class="btn btn-outline-info" href="https://goo.gl/forms/McK1r2T7rO5vtPIl2" target="_blank">Заполнить
+                <a class="btn-custom btn-custom-outline-blue btn-sm" href="https://goo.gl/forms/McK1r2T7rO5vtPIl2" target="_blank">Заполнить
                   форму</a>
               </div>
             </div>
@@ -138,7 +136,7 @@
                 <p>Свяжитесь с нами по почте для запроса поиска студента или специалиста для практики, стажировки,
                   временной
                   или долгосрочной работы.</p>
-                <a class="btn btn-outline-info" href="mailto:innovationfund@onu.edu.ua" target="_blank">Запросить
+                <a class="btn-custom btn-custom-outline-blue btn-sm" href="mailto:innovationfund@onu.edu.ua" target="_blank">Запросить
                   резюме</a>
               </div>
             </div>

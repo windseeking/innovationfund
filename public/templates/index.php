@@ -101,8 +101,8 @@
                         </ol>
                     </div>
                     <div class="col-12 col-md-2">
-                        <a class="btn btn-outline-info btn-block" href="/activities">Продукты</a>
-                        <a class="btn btn-outline-info btn-block" href="/partners">Партнеры</a>
+                        <a class="btn-custom btn-custom-outline-blue btn-block" href="/activities">Продукты</a>
+                        <a class="btn-custom btn-custom-outline-blue btn-block" href="/partners">Партнеры</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,11 @@
                             <h3>Alex Chernetskiy<br>
                                 <small>Lawyer</small>
                             </h3>
-                            <a href="" target="_blank" class="btn btn-outline-info btn-sm">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D1%87%D0%B5%D1%80%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9-81b140149/" target="_blank">
+                                <span style="font-size: 2em; color: #457677;">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                            </a>
                         </div>
 
                         <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
@@ -134,7 +138,11 @@
                             <h3>Pavel Koyen<br>
                                 <small>Founder & CEO</small>
                             </h3>
-                            <a href="" target="_blank" class="btn btn-outline-info btn-sm">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/pavelkoyen/" target="_blank">
+                                <span style="font-size: 2em; color: #457677;">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                            </a>
                         </div>
 
                         <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
@@ -143,10 +151,14 @@
                             <h3>Maksym Dolzhenko<br>
                                 <small>Business advisor</small>
                             </h3>
-                            <a href="" target="_blank" class="btn btn-outline-info btn-sm">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/maksymdolzhenko/" target="_blank">
+                                <span style="font-size: 2em; color: #457677;">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mt-3">
                         <div class="col-12">
                             <h3 class="text-center">+<br>
                                 17.000+ студентов и 3.000+ сотрудников</h3>
@@ -255,7 +267,7 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                            <button type="submit" class="btn btn-block btn-outline-info">Send</button>
+                            <button type="submit" class="btn-custom btn-custom-outline-blue btn-block">Send</button>
                         </form>
                         <?php if (isset($_SESSION['errors'])): ?>
                             <div class="alert alert-danger mt-3" role="alert">

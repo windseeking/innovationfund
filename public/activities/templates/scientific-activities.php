@@ -46,9 +46,9 @@
       </div>
       <div class="col-12 col-md-3">
         <h4>See also:</h4>
-        <a class="btn btn-block btn-outline-info" href="http://onu.edu.ua/pub/bank/userfiles/files/science/innov-rozrob2017.doc"
+        <a class="btn-custom btn-block btn-custom-outline-blue" href="http://onu.edu.ua/pub/bank/userfiles/files/science/innov-rozrob2017.doc"
            target="_blank">Scientific development</a>
-        <a class="btn btn-block btn-outline-info" href="http://lib.onu.edu.ua/periodicheskie-izdaniya-onu-arhiv/"
+        <a class="btn-custom btn-block btn-custom-outline-blue" href="http://lib.onu.edu.ua/periodicheskie-izdaniya-onu-arhiv/"
            target="_blank">Scientific publications</a>
       </div>
     </div>

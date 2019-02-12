@@ -1,5 +1,5 @@
 <section class="mb-3">
-  <div class="container-fluid p-md-5">
+  <div class="container-fluid py-3 p-md-5">
       <?php if (isset($_SESSION['success'])): ?>
         <div class="alert alert-success" role="alert">
             <?= $_SESSION['success'];
@@ -27,8 +27,8 @@
                       <h5 class="card-title"><?= $partner['name']; ?></h5>
                       <p class="card-text"><?= $partner['description']; ?></p>
                     </div>
-                    <div class="card-footer border-light">
-                      <a href="<?= $partner['link']; ?>" class="btn btn-outline-info btn-block">Learn more »</a>
+                    <div class="card-footer bg-white border-light">
+                      <a href="<?= $partner['link']; ?>" class="btn-custom btn-custom-outline-blue btn-block">Learn more »</a>
                     </div>
                   </div>
                 </div>

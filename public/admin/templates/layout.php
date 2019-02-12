@@ -42,9 +42,9 @@
 <header>
   <!--Показывается на экранах 768px и больше-->
   <div class="xs-hide sm-hide">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container p-0">
-        <a class="navbar-brand text-white" href="//innovationfund.in">
+        <a class="navbar-brand" href="//innovationfund.in">
           <img src="../../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Fund of Innovation Support
         </a>
@@ -69,7 +69,7 @@
   <!--Показывается на экранах от 0 до 767px-->
   <div class="pos-f-t md-hide lg-hide xl-hide">
     <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark text-right p-4">
+      <div class="bg-white text-right p-4">
           <?php foreach ($menu as $value): ?>
             <a class="nav-item nav-link <?php echo ($title == $value['title']) ? 'active' : ''; ?>"
                href="<?= $value['link']; ?>"><?= $value['title']; ?></a>
@@ -87,8 +87,8 @@
 <!--        </div>-->
       </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark align-">
-      <a class="navbar-brand" href="//innovationfund.in">
+    <nav class="navbar navbar-light bg-white">
+      <a class="navbar-brand text-dark" href="//innovationfund.in">
         <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Fund of Innovation Support
       </a>
@@ -126,7 +126,7 @@
             <?php endif; ?>
         </ul>
 
-        <div class="tab-content py-3 col-12 col-d-10 mx-auto" id="myTabContent">
+        <div class="tab-content py-3 col-12 col-md-10 mx-auto" id="myTabContent">
           <div class="tab-pane fade show active" id="news" role="tabpanel"
                aria-labelledby="news-tab">
               <?= $content; ?>
@@ -142,8 +142,8 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="mb-3 text-right text-md-left">
-          <button class="btn btn-outline-success">support</button>
-          <button class="btn btn-outline-info">contact</button>
+          <button class="btn-custom btn-custom-outline-blue">support</button>
+          <button class="btn-custom btn-custom-outline-blue">contact</button>
         </div>
         <div class="text-muted">
           <p>Украина, Одесса<br>
@@ -169,7 +169,7 @@
         <div class="mb-3 xs-hide sm-hide">
           <form method="get" class="form-inline justify-content-center justify-content-md-end">
             <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info ml-2 xs-hide sm-hide" type="submit">Search</button>
+            <button class="btn-custom btn-custom-outline-blue btn-sm m-0 ml-2 xs-hide sm-hide" type="submit">Search</button>
           </form>
         </div>
         <ul class="nav justify-content-around justify-content-md-end">
