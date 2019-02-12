@@ -2,11 +2,11 @@
     <div class="container-fluid p-5">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
-                <div class="row mb-5 justify-content-between">
+                <div class="row mb-3 mb-md-0 justify-content-between">
                     <div class="col-12 col-md-3 mb-5 mb-md-0 align-self-center text-center">
                         <img src="../img/logo.png" width="200px">
                     </div>
-                    <div class="col-12 col-md-8 mb-5 mb-md-0 align-self-center">
+                    <div class="col-12 col-md-8 align-self-center">
                         <p><b>ФОНД ПОДДЕРЖКИ ИННОВАЦИЙ</b> – организация, объединяющая бизнес, науку и образование
                             для развития всех трех отраслей.</p>
                         <p>Эксклюзивный партнер <b>Одесского Национального университета имени И.И. Мечникова</b>
@@ -63,7 +63,7 @@
                     <div class="col-12 mb-3">
                         <h2>Как мы это делаем?</h2>
                     </div>
-                    <div class="col-12 col-md-10">
+                    <div class="col-12 col-md-10 mb-3 mb-md-0">
                         <ol class="list-group list-group-flush">
                             <li class="list-group-item">
                                 <h4 class="text-blue">КОМПАНИЯ + НАШИ ПРЕДЛОЖЕНИЯ</h4>
