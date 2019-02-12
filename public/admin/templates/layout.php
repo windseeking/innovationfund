@@ -44,8 +44,8 @@
   <div class="xs-hide sm-hide">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container p-0">
-        <a class="navbar-brand text-white" href="//innovationfund">
-          <img src="/public/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <a class="navbar-brand text-white" href="//innovationfund.in">
+          <img src="../../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Fund of Innovation Support
         </a>
       </div>
@@ -74,12 +74,17 @@
             <a class="nav-item nav-link <?php echo ($title == $value['title']) ? 'active' : ''; ?>"
                href="<?= $value['link']; ?>"><?= $value['title']; ?></a>
           <?php endforeach; ?>
-        <div class="mb-3">
-          <form method="get" class="form-inline justify-content-end">
-            <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info ml-2 xs-hide sm-hide" type="submit">Search</button>
-          </form>
-        </div>
+          <?php if (isset($_SESSION['user'])): ?>
+              <a class="nav-item nav-link" href="/admin/news">
+                  <span style="font-size: 1em; color: #457677;"><i class="far fa-user-circle"></i></span>
+              </a>
+          <?php endif; ?>
+<!--        <div class="mb-3">-->
+<!--          <form method="get" class="form-inline justify-content-end">-->
+<!--            <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">-->
+<!--            <button class="btn btn-outline-info ml-2 xs-hide sm-hide" type="submit">Search</button>-->
+<!--          </form>-->
+<!--        </div>-->
       </div>
     </div>
     <nav class="navbar navbar-dark bg-dark align-">
@@ -98,7 +103,7 @@
 <main>
   <div class="container-fluid p-3">
     <section>
-      <div class="container-fluid p-5">
+      <div class="container-fluid py-3 p-md-5">
         <div class="row justify-content-between">
           <div class="col-6">
             <p><span style="font-size: 1em; color: #457677;"><i class="far fa-user-circle"></i></span>
@@ -121,7 +126,7 @@
             <?php endif; ?>
         </ul>
 
-        <div class="tab-content py-3 col-10 mx-auto" id="myTabContent">
+        <div class="tab-content py-3 col-12 col-d-10 mx-auto" id="myTabContent">
           <div class="tab-pane fade show active" id="news" role="tabpanel"
                aria-labelledby="news-tab">
               <?= $content; ?>
@@ -151,7 +156,7 @@
       </div>
 
       <div class="col-12 col-md-6">
-        <ul class="nav justify-content-between justify-content-md-end mb-3">
+        <ul class="nav justify-content-center justify-content-md-end mb-3">
             <?php if (!empty($menu)): ?>
                 <?php foreach ($menu as $value): ?>
                 <li class="nav-item">

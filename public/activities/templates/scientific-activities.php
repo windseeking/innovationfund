@@ -8,7 +8,7 @@
             <p class="big-num text-center text-red">11</p>
             <p class="text-center">scientific research centres</p>
           </div>
-          <div class="card col-12 col-md-3 mx-3 mb-3 mb-md-0">
+          <div class="card col-12 col-md-3 mx-md-3 mb-3 mb-md-0">
             <p class="big-num text-center text-red">16</p>
             <p class="text-center">research laboratories</p>
           </div>

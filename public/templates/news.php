@@ -1,5 +1,5 @@
 <section>
-  <div class="container-fluid p-5">
+  <div class="container-fluid p-md-5">
       <?php if (isset($_SESSION['success'])): ?>
         <div class="alert alert-success" role="alert">
             <?= $_SESSION['success'];

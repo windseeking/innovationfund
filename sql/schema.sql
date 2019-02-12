@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `news`
 (
   `id` int unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `title` char(255) NOT NULL UNIQUE KEY,
-  `text` char(255) NOT NULL,
+  `text` text(60000) NOT NULL,
   `cat` char(255) NOT NULL,
   `image_path` char(255) DEFAULT NULL,
   `partner_id` int unsigned DEFAULT NULL,

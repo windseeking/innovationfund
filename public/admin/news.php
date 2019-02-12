@@ -52,8 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             $news_name = implode('-', explode(' ', $news['title']));
             $file_name = 'news' . '-' . $news_name . $file_type;
-            move_uploaded_file($_FILES['image_path']['tmp_name'], 'uploads/' . $file_name);
-            $news['image_path'] = '/uploads/' . $file_name;
+            move_uploaded_file($_FILES['image_path']['tmp_name'], '../uploads/' . $file_name);
+            $news['image_path'] = '../uploads/' . $file_name;
         }
     } else {
         $news['image_path'] = null;
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $is_added_news = add_news($con, $news);
         if ($is_added_news) {
             $_SESSION['success'] = 'News item added successfully!';
-            header('Location: news.php');
+            header('Location: ../news.php');
             die();
         }
         $page_content = include_template('news.php', ['news' => $news, 'errors' => $errors]);

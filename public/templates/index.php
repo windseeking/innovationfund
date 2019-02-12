@@ -1,5 +1,5 @@
 <section class="mb-3" id="about">
-    <div class="container-fluid p-5">
+    <div class="container-fluid py-3 p-md-5">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
                 <div class="row mb-3 mb-md-0 justify-content-between">
@@ -19,7 +19,7 @@
                         <p>ЧТОБЫ СДЕЛАТЬ СОТРУДНИЧЕСТВО С УНИВЕРСИТЕТОМ ДОСТУПНЫМ.</p>
                         <h2>Для чего мы нужны университету?</h2>
                         <p>ЧТОБЫ ОБРАЗОВАНИЕ БЫЛО БОЛЕЕ ПРАКТИЧНЫМ, БЮДЖЕТ РОС, А ПРОЕКТЫ И ИННОВАЦИИ НЕ ТОЛЬКО
-                            СОЗДАВАЛИСЬ БЫСТРЕЕ, НО И СТАНОВИЛИСЬ РЕАЛЬНОСТЬЮ.</p>
+                            СОЗДАВАЛИСЬ БЫСТРЕЕ, НО И СТАНsОВИЛИСЬ РЕАЛЬНОСТЬЮ.</p>
                     </div>
                 </div>
             </div>
@@ -28,13 +28,13 @@
 </section>
 
 <section class="mb-3" id="mission">
-    <div class="container-fluid p-5">
+    <div class="container-fluid py-3 p-md-5">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
                 <div class="row justify-content-between">
                     <div class="col-12 mb-5 mb-mb-0 col-md-8">
                         <h2>Миссия</h2>
-                        <p class="display-4 text-blue">СОВЕРШЕНСТВОВАТЬ ЭКОНОМИКУ ПУТЕМ РАЗВИТИЯ СОТРУДНИЧЕСТВА МЕЖДУ БИЗНЕСОМ, НАУКОЙ И
+                        <p class="text-blue">СОВЕРШЕНСТВОВАТЬ ЭКОНОМИКУ ПУТЕМ РАЗВИТИЯ СОТРУДНИЧЕСТВА МЕЖДУ БИЗНЕСОМ, НАУКОЙ И
                             ОБРАЗОВАНИЕМ.</p>
                     </div>
                     <div class="col-12 mb-5 mb-mb-0 col-md-3 text-right">
@@ -56,7 +56,7 @@
 </section>
 
 <section class="mb-3" id="roadmap">
-    <div class="container-fluid p-5">
+    <div class="container-fluid py-3 p-md-5">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
                 <div class="row">
@@ -111,7 +111,7 @@
 </section>
 
 <section class="mb-3" id="team">
-    <div class="container-fluid p-5">
+    <div class="container-fluid py-3 p-md-5">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
                 <div class="col-12 mb-3 text-center">
@@ -120,7 +120,7 @@
                 <div class="col-12 mx-auto">
                     <div class="row">
                         <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
-                            <img class="rounded-circle img-fluid d-block mx-auto" src="/public/img/chernetsky.jpg"
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="../img/chernetsky.jpg"
                                  alt="" width="250px">
                             <h3>Alex Chernetskiy<br>
                                 <small>Lawyer</small>
@@ -129,7 +129,7 @@
                         </div>
 
                         <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
-                            <img class="rounded-circle img-fluid d-block mx-auto" src="/public/img/koyen.jpg"
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="../img/koyen.jpg"
                                  alt="" width="250px">
                             <h3>Pavel Koyen<br>
                                 <small>Founder & CEO</small>
@@ -138,7 +138,7 @@
                         </div>
 
                         <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
-                            <img class="rounded-circle img-fluid d-block mx-auto" src="/public/img/dolzhenko.jpg"
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="../img/dolzhenko.jpg"
                                  alt="" width="250px">
                             <h3>Maksym Dolzhenko<br>
                                 <small>Business advisor</small>
@@ -159,7 +159,7 @@
 </section>
 
 <section class="mb-3" id="documents">
-    <div class="container-fluid p-5">
+    <div class="container-fluid py-3 p-md-5">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
                 <div class="col-12 mb-3 text-center">
@@ -210,7 +210,7 @@
 </section>
 
 <section id="contact">
-    <div class="container-fluid p-5">
+    <div class="container-fluid py-3 p-md-5">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
                 <div class="row">
