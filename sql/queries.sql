@@ -38,14 +38,16 @@ VALUES ('EasyLaw',
 
 INSERT INTO news (title, text, cat, image_path)
 VALUES ('First closed case',
+
         '<p>Today I finally understood that I already have a closed case within a framework of my start-up.</p>
         <p>Some projects have started and still are not finished, we don’t know how far they will go, but what we already have? Let’s see.</p>
-        <p>In August 2018 we had some meetings in Finland and, as a result, we got some new contacts and also made a huge analytic work “How Finnish children gardens work”. It was an order from Suomi Partnership Association and a private Odessa children garden, that have already become our partner (the first one)</p>.
+        <p>In August 2018 we had some meetings in Finland and, as a result, we got some new contacts and also made a huge analytic work “How Finnish children gardens work”. It was an order from Suomi Partnership Association and a private Odessa children garden, that have already become our partner (the first one).</p>
         <p>So we have proven that we can contact with universities (professor from University of Helsinki), use students (from ONU Mechnikov and SPbU) and knowledges, which they already have from studying (political science and clinical psychology).</p>',
         '',
         ''),
 
        ('On last week we sign the memorandum between the Rector of National Odessa I.I. Mechnikov University, Igor Koval and me, student, of this university, but also a Head of Fund of Innovation Support.',
+
         '<p>So, now I am officialy represent my university and plan to build cooperations between them and companies, invests, to develop science, education and business, of course!</p>
         <p>On our beta site you can see the draft version of products and possibilities for</p>
         <ul>
@@ -63,4 +65,44 @@ VALUES ('First closed case',
         </ol>
         <p>If you are interested in something — feel free to ask me on <a href="https://www.linkedin.com/in/pavelkoyen/" target="_blank">Linkedin</a>, <a href="https://www.facebook.com/pavelkoyen" target="_blank">Facebook</a> or <a href="mailto:pavelkoyen@gmail.com" target="_blank">by mail</a>.</p>',
         '',
-        '');
+        ''),
+
+       ('GENERATION PARTNERSHIP conference',
+
+        '<p>GENERATION PARTNERSHIP.<br>
+        От поколения Z к университету, от университета к бизнесу.</p>
+        <p>22 февраля в 11.00 в Impact HUB Odessa (Греческая 1А) состоится конференция-дискуссия о сотрудничестве бизнеса, науки и образования.</p>
+        <p>Мы поговорим о:
+        <ul>
+          <li>сотрдуничестве с бизнесом и инвестициями;</li>
+          <li>Университете, как стратегическом партнере;</li>
+          <li>успешных выпускниках и активных студентах;</li>
+          <li>услышим вас, ответим на вопросы и вступим в дискуссию.</li>
+        </ul>
+        </p>
+        <p>Наши партнеры это:<br>
+        <ul>
+          <li>Более 100 инноваций;</li>
+          <li>10 000 + студентов;</li>
+          <li>16 лабораторий;</li>
+          <li>11 научных центров;</li>
+          <li>150 000 кв.м. образования и науки.</li>
+        </ul>
+        </p>
+        <p>Как сотрудничать эффективно?<br>
+        Заполняйте гугл-формы по ссылке: innovationfund.in/links</p>
+        <p><b>Программа:</b></p>
+        <p>10.30 регистрация</p>
+        <p>11.00 Бизнес, выпускники и студенты на одной площадке. Цель встречи (спикер - Павел Коен)</p>
+        <p>11.20 Что такое ОНУ Мечникова, история, репутация, ресурсы (спикер - ректор, И.Коваль)</p>
+        <p>12.00 Почему мы хотим сотрудничать с университетом?</p>
+        <p>12.30 Кофе-брейк</p>
+        <p>13.00 Ассоциация выпускников. Успешные проекты,перспективы сотрудничества. Проректор, Владимир Серотюк</p>
+        <p>13.20 Бизнес. Что мы хотим получить от университета и почему считаем важным сотрудничество с ним?</p>
+        <p>13.50 Студенты. Поле интересов и восприятие университета.</p>
+        <p>14.10 Нетворкинг.</p>
+        <p><b>Регистрация на мероприятие <a href="https://goo.gl/forms/m3EJ3UNNiu32RVbJ3" target="_blank">по ссылке</a></b>.</p>
+        До встречи!',
+        '',
+        '../uploads/news-GENERATION-PARTNERSHIP-conference.jpeg'
+        );

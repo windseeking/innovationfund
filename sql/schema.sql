@@ -34,12 +34,17 @@ CREATE TABLE IF NOT EXISTS `projects`
   `name` char(255) NOT NULL UNIQUE KEY,
   `description` varchar(1000) NOT NULL,
   `image_path` char(255) DEFAULT NULL,
-  `link` char(255) DEFAULT NULL
+  `link_1_url` char(255) DEFAULT NULL,
+  `link_1_text` char(255) DEFAULT NULL,
+  `link_2_url` char(255) DEFAULT NULL,
+  `link_2_text` char(255) DEFAULT NULL,
+  `website` char(255) DEFAULT NULL
 );
 
 CREATE TABLE IF NOT EXISTS `news`
 (
   `id` int unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `news_link` int unsigned DEFAULT NULL,
   `title` char(255) NOT NULL UNIQUE KEY,
   `text` text(60000) NOT NULL,
   `cat` char(255) NOT NULL,
