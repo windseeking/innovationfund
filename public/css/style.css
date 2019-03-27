@@ -30,6 +30,7 @@
 
 section {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: #fefefe;
 }
 
 body {
@@ -112,7 +113,7 @@ section .btn-custom:hover {
 }
 
 
-.nav a {
+footer .nav a {
   color: #fff !important;
 }
 
@@ -138,9 +139,10 @@ section .btn-custom:hover {
 
 header .nav-link {
   color: #222224 !important;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
-  font-family: Gilroy, Montserrat;
+  font-family: Gilroy, Montserrat, Verdana;
+  letter-spacing: 1px;
   font-size: 1.2em;
   text-decoration: none;
   background-color: transparent;
@@ -157,7 +159,11 @@ header .nav-link.active {
   border: none !important;
 }
 
-/*          Text          */
+section {
+  background-color: #457677;
+}
+
+  /*          Text          */
 
 .docs-card {
   /*margin-bottom: 20px;*/

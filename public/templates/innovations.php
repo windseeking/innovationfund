@@ -28,8 +28,22 @@
                                     <h5 class="card-title"><?= $innovation['name']; ?></h5>
                                     <p class="card-text"><?= $innovation['description']; ?></p>
                                 </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item border-light">
+                                    <b>Автор:</b> <?= $innovation['author']; ?>
+                                  </li>
+                                  <li class="list-group-item border-light">
+                                    <b>Рынок:</b> <?= $innovation['market_types']; ?>
+                                  </li>
+                                  <li class="list-group-item border-light">
+                                    <b>Стадия:</b> <?= $innovation['current_stage']; ?>
+                                  </li>
+                                  <li class="list-group-item border-light">
+                                    <b>Инвестиции:</b> <?= $innovation['money_needed']; ?>
+                                  </li>
+                                </ul>
                                 <div class="card-footer bg-white border-light">
-                                    <a href="<?= $innovation['link']; ?>" class="btn-custom btn-custom-outline-blue btn-block">Learn more »</a>
+                                    <a href="?item=<?= $innovation['id']; ?>" class="btn-custom btn-custom-outline-blue btn-block">подробнее »</a>
                                 </div>
                             </div>
                         </div>

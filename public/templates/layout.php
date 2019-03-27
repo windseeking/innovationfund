@@ -30,6 +30,8 @@
 
   <link rel="stylesheet" type="text/css" href="../public/css/style.css">
 
+<!--  <link href="../css/scrolling-nav.css" rel="stylesheet">-->
+
   <!--  Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -51,8 +53,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container p-0">
         <a class="navbar-brand" href="//innovationfund.in">
-          <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          Fund of Innovation Support
+          <img src="../img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+<!--          Fund of Innovation Support-->
         </a>
       </div>
       <div class="container">
@@ -180,7 +182,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-
-<script src="js/script.js"></script>
+<!-- Custom JavaScript for Scrolling Navbar -->
+<script src="../js/scrolling-nav.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>

@@ -2,7 +2,8 @@
 
 require_once('mysql_helper.php');
 
-function add_news($con, array $news): bool {
+function add_news($con, array $news): bool
+{
     $sql =
         'INSERT INTO news (title, text, cat, image_path, created_at) 
         VALUES (?, ?, ?, ?, NOW())';
@@ -21,7 +22,8 @@ function add_news($con, array $news): bool {
     return true;
 }
 
-function add_user($con, array $user): bool {
+function add_user($con, array $user): bool
+{
     $sql =
         'INSERT INTO users (email, password, name, lastname, username, created_at) 
         VALUES (?, ?, ?, ?, ?, NOW())';
@@ -41,7 +43,8 @@ function add_user($con, array $user): bool {
     return true;
 }
 
-function filter_tags(string $str = null): string {
+function filter_tags(string $str = null): string
+{
     return $str === null ? '' : strip_tags($str);
 }
 
@@ -56,11 +59,23 @@ function get_connection(array $database_config)
     return $con;
 }
 
-function get_innovations ($con): array {
+function get_innovations(mysqli $con): array
+{
     $sql =
         'SELECT * FROM innovations';
     $res = mysqli_query($con, $sql);
     return $innovations = mysqli_fetch_all($res, MYSQLI_ASSOC);
+}
+
+function get_innovation_by_id(mysqli $con, int $id): array
+{
+    $sql = 'SELECT * FROM innovations i
+            WHERE i.id = ' . $id;
+    $res = mysqli_query($con, $sql);
+    if ($res) {
+        return mysqli_fetch_assoc($res);
+    }
+    return [];
 }
 
 function get_news($con): array
@@ -71,18 +86,20 @@ function get_news($con): array
     return $news = mysqli_fetch_all($res, MYSQLI_ASSOC);
 }
 
-function get_partners ($con): array {
+function get_partners($con): array
+{
     $sql =
         'SELECT * FROM partners';
     $res = mysqli_query($con, $sql);
     return $partners = mysqli_fetch_all($res, MYSQLI_ASSOC);
 }
 
-function get_projects ($con): array {
+function get_projects($con): array
+{
     $sql =
         'SELECT * FROM projects';
     $res = mysqli_query($con, $sql);
-    return $projects  = mysqli_fetch_all($res, MYSQLI_ASSOC);
+    return $projects = mysqli_fetch_all($res, MYSQLI_ASSOC);
 }
 
 function include_template($name, $data)
@@ -101,9 +118,10 @@ function include_template($name, $data)
     return $result;
 }
 
-function is_email_exist($con, string $email): bool {
+function is_email_exist($con, string $email): bool
+{
     $sql =
-        'SELECT id FROM users '.
+        'SELECT id FROM users ' .
         'WHERE email = ?';
     $values = [$email];
     $user = db_fetch_data($con, $sql, $values);
@@ -113,9 +131,10 @@ function is_email_exist($con, string $email): bool {
     return false;
 }
 
-function is_news_exist($con, string $title): bool {
+function is_news_exist($con, string $title): bool
+{
     $sql =
-        'SELECT id FROM news '.
+        'SELECT id FROM news ' .
         'WHERE title = ?';
     $values = [$title];
     $news = db_fetch_data($con, $sql, $values);
@@ -125,9 +144,10 @@ function is_news_exist($con, string $title): bool {
     return false;
 }
 
-function is_partner_exist($con, string $name): bool {
+function is_partner_exist($con, string $name): bool
+{
     $sql =
-        'SELECT id FROM partners '.
+        'SELECT id FROM partners ' .
         'WHERE name = ?';
     $values = [$name];
     $partner = db_fetch_data($con, $sql, $values);
@@ -137,9 +157,10 @@ function is_partner_exist($con, string $name): bool {
     return false;
 }
 
-function is_username_exist($con, $username): bool {
+function is_username_exist($con, $username): bool
+{
     $sql =
-        'SELECT id FROM users '.
+        'SELECT id FROM users ' .
         'WHERE username = ?';
     $values = [$username];
     $user = db_fetch_data($con, $sql, $values);
