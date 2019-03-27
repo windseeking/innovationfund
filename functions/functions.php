@@ -56,6 +56,13 @@ function get_connection(array $database_config)
     return $con;
 }
 
+function get_innovations ($con): array {
+    $sql =
+        'SELECT * FROM innovations';
+    $res = mysqli_query($con, $sql);
+    return $innovations = mysqli_fetch_all($res, MYSQLI_ASSOC);
+}
+
 function get_news($con): array
 {
     $sql =

@@ -13,6 +13,10 @@ $menu = [
         'link' => '../activities'
     ],
     [
+        'title' => 'Innovations',
+        'link' => '../innovations'
+    ],
+    [
         'title' => 'HR',
         'link' => '../hr'
     ],

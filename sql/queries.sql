@@ -38,7 +38,6 @@ VALUES ('EasyLaw',
 
 INSERT INTO news (title, text, cat, image_path)
 VALUES ('First closed case',
-
         '<p>Today I finally understood that I already have a closed case within a framework of my start-up.</p>
         <p>Some projects have started and still are not finished, we don’t know how far they will go, but what we already have? Let’s see.</p>
         <p>In August 2018 we had some meetings in Finland and, as a result, we got some new contacts and also made a huge analytic work “How Finnish children gardens work”. It was an order from Suomi Partnership Association and a private Odessa children garden, that have already become our partner (the first one).</p>
@@ -47,7 +46,6 @@ VALUES ('First closed case',
         ''),
 
        ('On last week we sign the memorandum between the Rector of National Odessa I.I. Mechnikov University, Igor Koval and me, student, of this university, but also a Head of Fund of Innovation Support.',
-
         '<p>So, now I am officialy represent my university and plan to build cooperations between them and companies, invests, to develop science, education and business, of course!</p>
         <p>On our beta site you can see the draft version of products and possibilities for</p>
         <ul>
@@ -68,7 +66,6 @@ VALUES ('First closed case',
         ''),
 
        ('GENERATION PARTNERSHIP conference',
-
         '<p>GENERATION PARTNERSHIP.<br>
         От поколения Z к университету, от университета к бизнесу.</p>
         <p>22 февраля в 11.00 в Impact HUB Odessa (Греческая 1А) состоится конференция-дискуссия о сотрудничестве бизнеса, науки и образования.</p>
@@ -104,5 +101,48 @@ VALUES ('First closed case',
         <p><b>Регистрация на мероприятие <a href="https://goo.gl/forms/m3EJ3UNNiu32RVbJ3" target="_blank">по ссылке</a></b>.</p>
         До встречи!',
         '',
-        '../uploads/news-GENERATION-PARTNERSHIP-conference.jpeg'
-        );
+        '../uploads/news-GENERATION-PARTNERSHIP-conference.jpeg');
+
+INSERT INTO innovations (name, description, author, image_path, market_types, current_stage, money_needed, road_map,
+                         market, analogues, development, link_url)
+VALUES ('Лазерный датчик частиц аэрозолей',
+        'Прибор, который позволяет в режиме реального
+        времени показывать степень загрязнения воздуха и
+        давать иноформацию как в мг/м<sup>3</sup>, так и по фракциям.',
+        'НИИ Физики',
+        '',
+        'B2B, B2G, B2C',
+        'есть прототип, опробирован, есть научная и
+        ресурсная база, проект готов к масштабированию',
+        '1 000 000 EUR',
+        '<ol>
+            <li class="checked">Разработки НИИ Физики: придумана инновация</li>
+            <li class="checked">Прототип: создан первый прибор</li>
+            <li class="checked">Интерес бизнеса: черноморский порт был заинтересован в инновации</li>
+            <li class="checked">Продукт: сейчас идет развитие инновации</li>
+            <li>Инвестиции</li>
+            <li>Доработки и масштабирование</li>
+            <li>Патентование в ЕС</li>
+            <li>Технология: розничная продажа прибора</li>
+            <li>Старт-ап: построение сети</li>
+         </ol>',
+        'Прибор может быть применим на
+        производствах, в офисах, квартирах, а
+        так же в городах для получения
+        актуальной информации о степени
+        загрязненности воздуха и наличия в
+        нем тех или иных веществ.',
+        'Прибор, разработанный в НИИ Физики
+        точнее и дешевле зарубежных
+        образцов, а так же институт может
+        осуществлять поверку данных
+        приборов, а так же монтаж, доработку
+        и анализ данных совместно с
+        компанией-партнером',
+        '<ol>
+           <li>Продажа приборов с софтом обычному потребителю</li>
+           <li>Проведение замеров для предприятий</li>
+           <li>Продажа и сервис датчиков для предприятий</li>
+           <li>Развитие сети датчиков и продажа подписки для получения доступа к данным</li>
+        </ol>',
+        '');

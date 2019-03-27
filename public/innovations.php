@@ -10,12 +10,12 @@ require_once ('../system/data.php');
 session_start();
 
 $con = get_connection($database_config);
-$projects = get_projects($con);
+$innovations = get_innovations($con);
 
 $layout_content = include_template('layout.php', [
-    'title' => 'Projects',
-    'description' => 'Projects of the Fund and its partners',
-    'content' => include_template('projects.php', ['projects' => $projects]),
+    'title' => 'Innovations',
+    'description' => 'List of innovations',
+    'content' => include_template('innovations.php', ['innovations' => $innovations]),
     'menu' => $menu
 ]);
 

@@ -14,7 +14,7 @@ $partners = get_partners($con);
 
 $layout_content = include_template('layout.php', [
     'title' => 'Partners',
-    'description' => 'News of the Fund and its partners',
+    'description' => 'Partners of the Fund',
     'content' => include_template('partners.php', ['partners' => $partners]),
     'menu' => $menu
 ]);

@@ -79,6 +79,7 @@
           <a class="nav-item nav-link" href="/partners">Partners</a>
           <a class="nav-item nav-link" href="/projects">Projects</a>
           <a class="nav-item nav-link active" href="/activities">Activities</a>
+          <a class="nav-item nav-link" href="/innovations">Innovations</a>
           <a class="nav-item nav-link" href="/hr">HR</a>
           <a class="nav-item nav-link" href="/news">News</a>
           <?php if (isset($_SESSION['user'])): ?>
