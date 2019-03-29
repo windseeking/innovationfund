@@ -267,7 +267,7 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                            <button type="submit" class="btn-custom btn-custom-outline-blue btn-block">Send</button>
+                            <button type="submit" class="disabled btn-custom btn-custom-outline-blue btn-block">Send</button>
                         </form>
                         <?php if (isset($_SESSION['errors'])): ?>
                             <div class="alert alert-danger mt-3" role="alert">

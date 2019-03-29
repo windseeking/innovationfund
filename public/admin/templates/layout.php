@@ -45,14 +45,14 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container p-0">
         <a class="navbar-brand" href="//innovationfund.in">
-          <img src="../../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          Fund of Innovation Support
+          <img src="../../img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
         </a>
       </div>
       <div class="container">
-        <a class="nav-item nav-link" href="/partners">Partners</a>
+        <a class="nav-item nav-link" href="/innovations">Innovations</a>
         <a class="nav-item nav-link" href="/projects">Projects</a>
         <a class="nav-item nav-link" href="/activities">Activities</a>
+        <a class="nav-item nav-link" href="/partners">Partners</a>
         <a class="nav-item nav-link" href="/hr">HR</a>
         <a class="nav-item nav-link" href="/news">News</a>
       </div>

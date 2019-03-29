@@ -1,8 +1,8 @@
 <?php
 $menu = [
     [
-        'title' => 'Partners',
-        'link' => '../partners'
+        'title' => 'Innovations',
+        'link' => '../innovations'
     ],
     [
         'title' => 'Projects',
@@ -13,8 +13,8 @@ $menu = [
         'link' => '../activities'
     ],
     [
-        'title' => 'Innovations',
-        'link' => '../innovations'
+        'title' => 'Partners',
+        'link' => '../partners'
     ],
     [
         'title' => 'HR',
