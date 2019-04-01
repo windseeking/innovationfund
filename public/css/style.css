@@ -50,10 +50,19 @@ main h1 {
 
 a {
   color: #457677 !important;
+  cursor: pointer;
 }
 
 section.bg-blue {
   background-color: #457677;
+}
+
+.bg-blue a {
+  color: #d39e00 !important;
+}
+
+.bg-blue a:hover {
+  color: #d39e00 !important;
 }
 
 .bg-blue .nav-link {
@@ -107,8 +116,29 @@ section.bg-blue {
   background-color: #81bb40;
 }
 
-.bg-white .btn-custom:hover,
-section .btn-custom:hover {
+.btn-custom-outline-yellow {
+  color: #d39e00;
+  border: 3px solid #d39e00 !important;
+}
+
+.btn-custom-outline-yellow:hover {
+  color: #457677;
+  background-color: #d39e00;
+}
+
+.bg-dark .btn-custom:hover {
+  color: #212529 !important;;
+}
+
+.bg-blue a.btn-custom:hover {
+  color: #457677 !important;;
+}
+
+.bg-light .btn-custom:hover {
+  color: #f8f9fa !important;;
+}
+
+.bg-white .btn-custom:hover {
   color: #fff !important;
 }
 

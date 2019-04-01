@@ -1,102 +1,166 @@
-<section class="mb-3" id="about">
-    <div class="container-fluid py-3 p-md-5">
+<section class="bg-white py-5 px-3" id="about" style="height: 100vh; position: relative">
+    <div class="container-slider">
+        <!--<div class="col-12 col-md-11 mx-auto">
+            <div class="row mb-3 mb-md-0 justify-content-between">
+                <div class="col-12 col-md-3 mb-5 mb-md-0 align-self-center text-center">
+                    <img src="../img/logo.png" width="200px">
+                </div>
+                <div class="col-12 col-md-8 align-self-center">
+                    <p><b>ФОНД ПОДДЕРЖКИ ИННОВАЦИЙ</b> – организация, объединяющая бизнес, науку и образование
+                        для развития всех трех отраслей.</p>
+                    <p>Эксклюзивный партнер <b>Одесского Национального университета имени И.И. Мечникова</b>
+                        по кооперации с бизнесом и инвестициями.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Для чего мы нужны?</h2>
+                    <p>ЧТОБЫ СДЕЛАТЬ СОТРУДНИЧЕСТВО С УНИВЕРСИТЕТОМ ДОСТУПНЫМ.</p>
+                    <h2>Для чего мы нужны университету?</h2>
+                    <p>ЧТОБЫ ОБРАЗОВАНИЕ БЫЛО БОЛЕЕ ПРАКТИЧНЫМ, БЮДЖЕТ РОС, А ПРОЕКТЫ И ИННОВАЦИИ НЕ ТОЛЬКО
+                        СОЗДАВАЛИСЬ БЫСТРЕЕ, НО И СТАНsОВИЛИСЬ РЕАЛЬНОСТЬЮ.</p>
+                </div>
+            </div>
+        </div>-->
+        <div data-am-fadeshow="next-prev-navigation">
+
+            <!-- Radio -->
+            <input type="radio" name="css-fadeshow" id="slide-1">
+            <input type="radio" name="css-fadeshow" id="slide-2">
+            <input type="radio" name="css-fadeshow" id="slide-3">
+
+            <!-- Slides -->
+            <div class="fs-slides">
+                <div class="fs-slide" style="background-image: url(../img/hall-2.JPG)">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: sans-serif; text-align: center; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                        <h1>Фонд Поддержки Инноваций</h1>
+                        <p class="lead">Организация, объединяющая бизнес, науку и образование
+                            для развития всех трех отраслей</p>
+                    </div>
+                </div>
+
+                <div class="fs-slide" style="background-image: url(../img/hall.JPG);">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: sans-serif; text-align: center; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                        <h1>Эксклюзивный партнер</h1>
+                        <p class="lead">Одесского Национального университета имени И.И. Мечникова по кооперации с
+                            бизнесом и инвестициями.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fs-slide" style="background-image: url(../img/botanical-garden.JPG);">
+                <div>
+                    <h1>Для чего мы нужны?</h1>
+                    <p class="lead">Чтобы сделать сотрудничество с университетом доступным</p>
+                </div>
+            </div>
+            <div class="fs-slide" style="background-image: url(../img/hall-2.JPG);">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: sans-serif; text-align: center; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                    <h1>Для чего мы нужны университету?</h1>
+                    <p class="lead">Чтобы образование было более практичным, бюджет рос, а проекты и инновации не только
+                        создавались быстрее, но и становились реальностью</p>
+                </div>
+            </div>
+
+            <!-- Quick Navigation -->
+            <div class="fs-quick-nav">
+                <label class="fs-quick-btn" for="slide-1"></label>
+                <label class="fs-quick-btn" for="slide-2"></label>
+                <label class="fs-quick-btn" for="slide-3"></label>
+            </div>
+
+            <!-- Prev Navigation -->
+            <div class="fs-prev-nav">
+                <label class="fs-prev-btn" for="slide-1"></label>
+                <label class="fs-prev-btn" for="slide-2"></label>
+                <label class="fs-prev-btn" for="slide-3"></label>
+            </div>
+
+            <!-- Next Navigation -->
+            <div class="fs-next-nav">
+                <label class="fs-next-btn" for="slide-1"></label>
+                <label class="fs-next-btn" for="slide-2"></label>
+                <label class="fs-next-btn" for="slide-3"></label>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="bg-blue py-5 px-3" id="mission" style="height: 100vh">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-11 mx-auto">
-                <div class="row mb-3 mb-md-0 justify-content-between">
-                    <div class="col-12 col-md-3 mb-5 mb-md-0 align-self-center text-center">
-                        <img src="../img/logo.png" width="200px">
-                    </div>
-                    <div class="col-12 col-md-8 align-self-center">
-                        <p><b>ФОНД ПОДДЕРЖКИ ИННОВАЦИЙ</b> – организация, объединяющая бизнес, науку и образование
-                            для развития всех трех отраслей.</p>
-                        <p>Эксклюзивный партнер <b>Одесского Национального университета имени И.И. Мечникова</b>
-                            по кооперации с бизнесом и инвестициями.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Для чего мы нужны?</h2>
-                        <p>ЧТОБЫ СДЕЛАТЬ СОТРУДНИЧЕСТВО С УНИВЕРСИТЕТОМ ДОСТУПНЫМ.</p>
-                        <h2>Для чего мы нужны университету?</h2>
-                        <p>ЧТОБЫ ОБРАЗОВАНИЕ БЫЛО БОЛЕЕ ПРАКТИЧНЫМ, БЮДЖЕТ РОС, А ПРОЕКТЫ И ИННОВАЦИИ НЕ ТОЛЬКО
-                            СОЗДАВАЛИСЬ БЫСТРЕЕ, НО И СТАНsОВИЛИСЬ РЕАЛЬНОСТЬЮ.</p>
-                    </div>
-                </div>
+            <div class="col-12 col-md-6 mx-auto mb-5">
+                <h2 class="text-center text-light">Миссия</h2>
+                <hr class="short-center">
+                <p class="lead font-weight-bold">Совершенствовать экономику путем развития сотрудничества между
+                    бизнесом, наукой и
+                    образованием.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-4 mx-auto">
+                <h2 class="text-center text-light">Ценности</h2>
+                <hr class="short-center">
+                <ul class="text-light font-weight-bold roadmap">
+                    <li>ПАРТНЕРЫ</li>
+                    <li>ОТКРЫТОСТЬ</li>
+                    <li>ОФИЦИАЛЬНОСТЬ</li>
+                    <li>ТОЛЬКО ВЫСОКИЕ ЦЕЛИ</li>
+                    <li>НАУКА</li>
+                    <li>ОБРАЗОВАНИЕ</li>
+                    <li>ИННОВАЦИИ</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section class="mb-3" id="mission">
-    <div class="container-fluid py-3 p-md-5">
-        <div class="row">
-            <div class="col-12 col-md-11 mx-auto">
-                <div class="row justify-content-between">
-                    <div class="col-12 mb-5 mb-mb-0 col-md-8">
-                        <h2>Миссия</h2>
-                        <p class="text-blue">СОВЕРШЕНСТВОВАТЬ ЭКОНОМИКУ ПУТЕМ РАЗВИТИЯ СОТРУДНИЧЕСТВА МЕЖДУ БИЗНЕСОМ, НАУКОЙ И
-                            ОБРАЗОВАНИЕМ.</p>
-                    </div>
-                    <div class="col-12 mb-5 mb-mb-0 col-md-3 text-right">
-                        <h2>Ценности</h2>
-                        <ul class="list-group list-group-flush text-red">
-                            <li class="list-group-item">ПАРТНЕРЫ</li>
-                            <li class="list-group-item">ОТКРЫТОСТЬ</li>
-                            <li class="list-group-item">ОФИЦИАЛЬНОСТЬ</li>
-                            <li class="list-group-item">ТОЛЬКО ВЫСОКИЕ ЦЕЛИ</li>
-                            <li class="list-group-item">НАУКА</li>
-                            <li class="list-group-item">ОБРАЗОВАНИЕ</li>
-                            <li class="list-group-item">ИННОВАЦИИ</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="mb-3" id="roadmap">
-    <div class="container-fluid py-3 p-md-5">
+<section class="bg-light py-5 px-3" id="roadmap" style="height: 100vh">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
-                <div class="row">
+                <div class="row justify-content-around">
                     <div class="col-12 mb-3">
                         <h2>Как мы это делаем?</h2>
+                        <hr class="long-left">
                     </div>
-                    <div class="col-12 col-md-10 mb-3 mb-md-0">
-                        <ol class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <h4 class="text-blue">КОМПАНИЯ + НАШИ ПРЕДЛОЖЕНИЯ</h4>
+                    <div class="col-12 col-md-8 mb-3 mb-md-0">
+                        <ol>
+                            <li>
+                                <b>КОМПАНИЯ + НАШИ ПРЕДЛОЖЕНИЯ</b><br>
                                 Вас заинтересовала та или иная отрасль в университете
                             </li>
-                            <li class="list-group-item">
-                                <h4 class="text-blue">ЗАПРОС ОТ КОМПАНИИ</h4>
+                            <li>
+                                <b>ЗАПРОС ОТ КОМПАНИИ</b><br>
                                 Вы рассказываете подробнее, как видите сотрудничество, или же мы предлагаем
-                                    варианты
+                                варианты
                             </li>
-                            <li class="list-group-item">
-                                <h4 class="text-blue">ОДОБРЕНИЕ УНИВЕРСИТЕТА</h4>
+                            <li>
+                                <b>ОДОБРЕНИЕ УНИВЕРСИТЕТА</b><br>
                                 Мы проверяем техническую возможность университета выполнить задачу
                             </li>
-                            <li class="list-group-item">
-                                <h4 class="text-blue">ДОРОЖНАЯ КАРТА</h4>
+                            <li>
+                                <b>ДОРОЖНАЯ КАРТА</b><br>
                                 Вместе с Вами (а в некоторых случаях и с университетом) мы прописываем дорожную
-                                    карту
+                                карту
                             </li>
-                            <li class="list-group-item">
-                                <h4 class="text-blue">ПОДПИСАНИЕ СОГЛАШЕНИЙ</h4>
+                            <li>
+                                <b>ПОДПИСАНИЕ СОГЛАШЕНИЙ</b><br>
                                 Мы подписываем договор с Вами и университетом, к которому прикрепляются ТЗ и
-                                    дополнительные документы, если таковые имеются
+                                дополнительные документы, если таковые имеются
                             </li>
-                            <li class="list-group-item">
-                                <h4 class="text-blue">РЕАЛИЗАЦИЯ ПРОЕКТА</h4>
+                            <li>
+                                <b>РЕАЛИЗАЦИЯ ПРОЕКТА</b><br>
                                 Мы начинаем сотрудничество
                             </li>
-                            <li class="list-group-item">
-                                <h4 class="text-blue">РЕЗУЛЬТАТ</h4>
+                            <li>
+                                <b>РЕЗУЛЬТАТ</b><br>
                                 Вы получаете результат, а университет применяет и развивает инновации, делает
-                                    образование и науку практичнее, чтобы в следующий раз предоставить Вам еще более
-                                    качественный продукт
+                                образование и науку практичнее, чтобы в следующий раз предоставить Вам еще более
+                                качественный продукт
                             </li>
                         </ol>
                     </div>
@@ -110,22 +174,24 @@
     </div>
 </section>
 
-<section class="mb-3" id="team">
-    <div class="container-fluid py-3 p-md-5">
+<section class="bg-blue py-5 px-3" id="team" style="height: 100vh">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
                 <div class="col-12 mb-3 text-center">
-                    <h2>Team</h2>
+                    <h2 class="text-light">Команда</h2>
+                    <hr class="short-center">
                 </div>
                 <div class="col-12 mx-auto">
                     <div class="row">
                         <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
-                            <img class="rounded-circle img-fluid d-block mx-auto" src="../img/chernetsky.jpg"
+                            <img class="rounded-circle img-fluid d-block mx-auto mb-2" src="../img/chernetsky.jpg"
                                  alt="" width="250px">
-                            <h3>Alex Chernetskiy<br>
+                            <h3 class="text-light">Alex Chernetskiy<br>
                                 <small>Lawyer</small>
                             </h3>
-                            <a href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D1%87%D0%B5%D1%80%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9-81b140149/" target="_blank">
+                            <a href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D1%87%D0%B5%D1%80%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9-81b140149/"
+                               target="_blank">
                                 <span style="font-size: 2em; color: #457677;">
                                     <i class="fab fa-linkedin"></i>
                                 </span>
@@ -133,9 +199,9 @@
                         </div>
 
                         <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
-                            <img class="rounded-circle img-fluid d-block mx-auto" src="../img/koyen.jpg"
+                            <img class="rounded-circle img-fluid d-block mx-auto mb-2" src="../img/koyen.jpg"
                                  alt="" width="250px">
-                            <h3>Pavel Koyen<br>
+                            <h3 class="text-light">Pavel Koyen<br>
                                 <small>Founder & CEO</small>
                             </h3>
                             <a href="https://www.linkedin.com/in/pavelkoyen/" target="_blank">
@@ -146,9 +212,9 @@
                         </div>
 
                         <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
-                            <img class="rounded-circle img-fluid d-block mx-auto" src="../img/dolzhenko.jpg"
+                            <img class="rounded-circle img-fluid d-block mx-auto mb-2" src="../img/dolzhenko.jpg"
                                  alt="" width="250px">
-                            <h3>Maksym Dolzhenko<br>
+                            <h3 class="text-light">Maksym Dolzhenko<br>
                                 <small>Business advisor</small>
                             </h3>
                             <a href="https://www.linkedin.com/in/maksymdolzhenko/" target="_blank">
@@ -160,7 +226,7 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-12">
-                            <h3 class="text-center">+<br>
+                            <h3 class="text-center font-weight-bold">+<br>
                                 17.000+ студентов и 3.000+ сотрудников</h3>
                         </div>
                     </div>
@@ -170,12 +236,13 @@
     </div>
 </section>
 
-<section class="mb-3" id="documents">
-    <div class="container-fluid py-3 p-md-5">
+<section class="bg-light py-5 px-3" id="documents" style="height: 100vh">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
                 <div class="col-12 mb-3 text-center">
                     <h2>Документы</h2>
+                    <hr class="short-center">
                 </div>
                 <div class="col-12 mx-auto">
                     <div class="row justify-content-around">
@@ -221,18 +288,19 @@
     </div>
 </section>
 
-<section id="contact">
-    <div class="container-fluid py-3 p-md-5">
+<section class="bg-blue py-5 px-3" id="contact" style="height: 100vh">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
                 <div class="row">
                     <div class="col-12 mb-3">
-                        <h2>Связаться с нами</h2>
+                        <h2 class="text-light">Связаться с нами</h2>
+                        <hr class="long-left">
                     </div>
                     <div class="col-12 col-md-8 mb-5 mb-md-0 justify-content-between">
                         <form method="post">
                             <div class="form-group">
-                                <label for="name">Name <sup>*</sup></label>
+                                <label for="name" class="text-light">Name <sup>*</sup></label>
                                 <?php $class = isset($errors['name']) ? 'is-invalid' : '';
                                 $value = isset($contact['name']) ? $contact['name'] : ''; ?>
                                 <input name="contact[name]" type="text" class="form-control <?= $class; ?>" id="name"
@@ -244,7 +312,7 @@
                                 <?php endif; ?>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email address <sup>*</sup></label>
+                                <label for="email" class="text-light">Email address <sup>*</sup></label>
                                 <?php $class = isset($errors['email']) ? 'is-invalid' : '';
                                 $value = isset($contact['email']) ? $contact['email'] : ''; ?>
                                 <input name="contact[email]" type="email" class="form-control <?= $class; ?>" id="email"
@@ -256,7 +324,7 @@
                                 <?php endif; ?>
                             </div>
                             <div class="form-group">
-                                <label for="message">Message <sup>*</sup></label>
+                                <label for="message" class="text-light">Message <sup>*</sup></label>
                                 <?php $class = isset($errors['message']) ? 'is-invalid' : '';
                                 $value = isset($contact['message']) ? $contact['message'] : ''; ?>
                                 <textarea name="contact[message]" class="form-control <?= $class; ?>" id="message"
@@ -267,7 +335,8 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
-                            <button type="submit" class="disabled btn-custom btn-custom-outline-blue btn-block">Send</button>
+                            <button type="submit" class="disabled btn-custom btn-custom-outline-yellow btn-block">Send
+                            </button>
                         </form>
                         <?php if (isset($_SESSION['errors'])): ?>
                             <div class="alert alert-danger mt-3" role="alert">
@@ -277,14 +346,14 @@
                         <?php endif; ?>
 
                         <?php if (isset($_SESSION['success'])): ?>
-                            <div class="alert alert-success mb-3" role="alert">
+                            <div class="alert alert-success" role="alert">
                                 <?= $_SESSION['success'];
                                 unset($_SESSION['success']); ?>
                             </div>
                         <?php endif; ?>
                     </div>
 
-                    <div class="col-12 col-md-3 text-center text-md-left ml-auto">
+                    <div class="col-12 col-md-3 text-center text-light text-md-left ml-auto">
                         <address>
                             <strong>Fund of Innovation Support</strong>
                             <br>Odesa, Ukraine

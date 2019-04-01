@@ -30,6 +30,7 @@
 
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/product.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
 
 <!--  <link href="../css/scrolling-nav.css" rel="stylesheet">-->
 
