@@ -30,7 +30,7 @@
             </p>
           </div>
           <div class="card-footer border-light bg-white">
-            <a class="btn btn-block btn-outline-info" href="https://europass.cedefop.europa.eu/editors/en/cv/compose"
+            <a class="btn-custom btn-custom-outline-blue btn-block" href="https://europass.cedefop.europa.eu/editors/en/cv/compose"
                target="_blank">Создать резюме</a>
           </div>
         </div>
@@ -43,7 +43,7 @@
               стажировки, временной или долгосрочной работы.</p>
           </div>
           <div class="card-footer border-light bg-white">
-            <a class="btn btn-block btn-outline-info" href="mailto:innovationfund@onu.edu.ua"
+            <a class="btn-custom btn-custom-outline-blue btn-block" href="mailto:innovationfund@onu.edu.ua"
                target="_blank">Запросить резюме</a>
           </div>
         </div>

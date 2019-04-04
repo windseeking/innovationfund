@@ -70,8 +70,8 @@
 }
 [data-am-fadeshow] .fs-quick-btn {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   margin: 0 2px;
   border-radius: 50%;
   cursor: pointer;
@@ -84,7 +84,7 @@
   opacity: 0.8;
 }
 [data-am-fadeshow] .fs-quick-btn:first-child {
-  background-color: #d39e00;
+  background-color: #ce0000;
 }
 [data-am-fadeshow] .fs-prev-btn, [data-am-fadeshow] .fs-next-btn {
   position: absolute;
@@ -189,7 +189,7 @@
   animation: none !important;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(5) ~ .fs-quick-nav .fs-quick-btn:nth-child(5) {
-  background-color: #d39e00;
+  background-color: #ce0000;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(5) ~ .fs-quick-nav .fs-quick-btn:nth-child(5):hover {
   opacity: 1;
@@ -213,7 +213,7 @@
   animation: none !important;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(4) ~ .fs-quick-nav .fs-quick-btn:nth-child(4) {
-  background-color: #d39e00;
+  background-color: #ce0000;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(4) ~ .fs-quick-nav .fs-quick-btn:nth-child(4):hover {
   opacity: 1;
@@ -237,7 +237,7 @@
   animation: none !important;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(3) ~ .fs-quick-nav .fs-quick-btn:nth-child(3) {
-  background-color: #d39e00;
+  background-color: #ce0000;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(3) ~ .fs-quick-nav .fs-quick-btn:nth-child(3):hover {
   opacity: 1;
@@ -261,7 +261,7 @@
   animation: none !important;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(2) ~ .fs-quick-nav .fs-quick-btn:nth-child(2) {
-  background-color: #d39e00;
+  background-color: #ce0000;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(2) ~ .fs-quick-nav .fs-quick-btn:nth-child(2):hover {
   opacity: 1;
@@ -285,7 +285,7 @@
   animation: none !important;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(1) ~ .fs-quick-nav .fs-quick-btn:nth-child(1) {
-  background-color: #d39e00;
+  background-color: #ce0000;
 }
 [data-am-fadeshow] input[type="radio"]:checked:nth-of-type(1) ~ .fs-quick-nav .fs-quick-btn:nth-child(1):hover {
   opacity: 1;
@@ -438,7 +438,7 @@
   }
   4%,
 			20% {
-    background-color: #d39e00;
+    background-color: #ce0000;
   }
   24%,
 			100% {
@@ -451,7 +451,7 @@
   }
   4%,
 				20% {
-    background-color: #d39e00;
+    background-color: #ce0000;
   }
   24%,
 				100% {
@@ -529,7 +529,7 @@
   }
   5%,
 			25% {
-    background-color: #d39e00;
+    background-color: #ce0000;
   }
   30%,
 			100% {
@@ -542,7 +542,7 @@
   }
   5%,
 				25% {
-    background-color: #d39e00;
+    background-color: #ce0000;
   }
   30%,
 				100% {
@@ -615,7 +615,7 @@
   }
   6.66667%,
 			33.33333% {
-    background-color: #d39e00;
+    background-color: #ce0000;
   }
   40%,
 			100% {
@@ -628,7 +628,7 @@
   }
   6.66667%,
 				33.33333% {
-    background-color: #d39e00;
+    background-color: #ce0000;
   }
   40%,
 				100% {
@@ -696,7 +696,7 @@
   }
   10%,
 			50% {
-    background-color: #d39e00;
+    background-color: #ce0000;
   }
   60%,
 			100% {
@@ -709,7 +709,7 @@
   }
   10%,
 				50% {
-    background-color: #d39e00;
+    background-color: #ce0000;
   }
   60%,
 				100% {

@@ -30,9 +30,9 @@
 
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/product.css">
-    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+  <link rel="stylesheet" type="text/css" href="../css/slider.css">
 
-<!--  <link href="../css/scrolling-nav.css" rel="stylesheet">-->
+  <!--  <link href="../css/scrolling-nav.css" rel="stylesheet">-->
 
   <!--  Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -56,7 +56,7 @@
       <div class="container p-0">
         <a class="navbar-brand" href="//innovationfund.in">
           <img src="../img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-<!--          Fund of Innovation Support-->
+          <!--          Fund of Innovation Support-->
         </a>
       </div>
       <div class="container">
@@ -86,16 +86,16 @@
                href="<?= $value['link']; ?>"><?= $value['title']; ?></a>
           <?php endforeach; ?>
           <?php if (isset($_SESSION['user'])): ?>
-              <a class="nav-item nav-link" href="/admin/news">
-                  <span style="font-size: 1em; color: #222224;"><i class="far fa-user-circle"></i></span>
-              </a>
+            <a class="nav-item nav-link" href="/admin/news">
+              <span style="font-size: 1em; color: #222224;"><i class="far fa-user-circle"></i></span>
+            </a>
           <?php endif; ?>
-<!--        <div class="mb-3">-->
-<!--          <form method="get" class="form-inline justify-content-end">-->
-<!--            <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">-->
-<!--            <button class="btn btn-outline-info ml-2 xs-hide sm-hide" type="submit">Search</button>-->
-<!--          </form>-->
-<!--        </div>-->
+        <!--        <div class="mb-3">-->
+        <!--          <form method="get" class="form-inline justify-content-end">-->
+        <!--            <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">-->
+        <!--            <button class="btn btn-outline-info ml-2 xs-hide sm-hide" type="submit">Search</button>-->
+        <!--          </form>-->
+        <!--        </div>-->
       </div>
     </div>
     <nav class="navbar navbar-light bg-white">
@@ -112,7 +112,7 @@
 </header>
 
 <main>
-      <?= $content; ?>
+    <?= $content; ?>
 </main>
 
 <footer class="bg-dark">
@@ -120,9 +120,34 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="mb-3 text-right text-md-left">
-          <a class="btn-custom btn-custom-outline-blue" href="">support</a>
-          <a class="btn-custom btn-custom-outline-blue" href="/index#contact">contact</a>
+          <a class="btn-custom btn-custom-outline-blue" href="#support" data-toggle="modal" data-target="#support">support</a>
+          <a class="btn-custom btn-custom-outline-blue" href="index#contact">contact</a>
         </div>
+
+        <div class="modal fade" id="support" tabindex="-1" role="dialog"
+             aria-labelledby="ModalLabelSupport" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="ModalLabelSupport">Support</h3>
+              </div>
+              <div class="modal-body">
+                <p class="card-text">
+                  Вы можете поддержать наш проект <a href="https://send.monobank.com.ua/39XXQvurt"
+                                                     target="_blank">здесь</a>.
+                  Средства пойдут на социальные проекты и
+                  операционные затраты.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="text-muted">
           <p>Украина, Одесса<br>
             © 2018 ГРОМАДСЬКА ОРГАНІЗАЦІЯ «ФОНД ПІДТРИМКИ ІННОВАЦІЙ»<br>
@@ -147,7 +172,8 @@
         <div class="mb-3 xs-hide sm-hide">
           <form method="get" class="form-inline justify-content-center justify-content-md-end align-self-center">
             <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn-custom btn-custom-outline-blue btn-sm m-0 ml-2 xs-hide sm-hide" type="submit">Search</button>
+            <button class="btn-custom btn-custom-outline-blue btn-sm m-0 ml-2 xs-hide sm-hide" type="submit">Search
+            </button>
           </form>
         </div>
         <ul class="nav justify-content-around justify-content-md-end">
@@ -185,8 +211,6 @@
 <!-- Custom JavaScript for Scrolling Navbar -->
 <script src="../js/scrolling-nav.js"></script>
 <script src="../js/script.js"></script>
-
-
 
 
 <!-- Bootstrap JavaScript -->

@@ -1,7 +1,3 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Инна
- * Date: 06.02.2019
- * Time: 17:23
- */
+
+require_once ('../../init.php');

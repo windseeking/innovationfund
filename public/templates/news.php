@@ -19,7 +19,7 @@
         <div>
             <?php if (isset($news)): ?>
             <div class="row">
-                <div class="col-12 col-md-10 mx-auto">
+                <div class="card-columns p-3">
                     <?php foreach ($news as $item): ?>
                         <div class="card border-secondary mb-3">
                             <?php if (!empty($item['image_path'])): ?>
@@ -27,25 +27,61 @@
                             <?php endif; ?>
                             <div class="card-body">
                                 <p class="card-text text-muted">
-                      <span style="font-size: 1em; color: #457677;">
-                        <i class="far fa-calendar-alt"></i>
-                      </span>
+                                  <span style="font-size: 1em; color: #457677;">
+                                    <i class="far fa-calendar-alt"></i>
+                                  </span>
                                     <small><?= date('d.m.Y', strtotime($item['created_at'])) ?></small>
                                 </p>
                                 <h5 class="card-title"><?= $item['title'] ?></h5>
-                                <p class="card-text"><?= $item['text'] ?></p>
+                                <p class="card-text"><?= $item['description'] ?></p>
+                                <a href="news#item-<?= $item['id'] ;?>" class="btn-custom btn-custom-outline-blue btn-sm" data-toggle="modal" data-target="#item-<?= $item['id'] ;?>">
+                                    Читать далее »
+                                </a>
                                 <a href="http://asp/news?cat=<?= $item['cat']; ?>"
                                    class="badge badge-pill badge-primary"><?= isset($item['cat']) ? $item['cat'] : ''; ?></a>
                             </div>
                             <?php if (isset($_SESSION['user'])): ?>
                                 <div class="card-footer text-right">
-                      <span style="font-size: 1em; color: orangered;"><i
+                                    <span style="font-size: 1em; color: orangered;"><i
                                   class="far fa-trash-alt delete-item"></i></span>
                                     <span style="font-size: 1em; color: forestgreen; margin-left: 10px;"><i
                                                 class="far fa-edit edit-item"></i></span>
                                 </div>
                             <?php endif; ?>
                         </div>
+
+                        <div class="modal fade" id="item-<?= $item['id'] ;?>" tabindex="-1" role="dialog"
+                             aria-labelledby="ModalLabel<?= $item['id']; ?>" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="ModalLabel<?= $item['id']; ?>"><?= $item['title']; ?></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="card-text text-muted">
+                                          <span style="font-size: 1em; color: #457677;">
+                                            <i class="far fa-calendar-alt"></i>
+                                          </span>
+                                            <small><?= date('d.m.Y', strtotime($item['created_at'])); ?></small>
+                                        </p>
+                                        <?php if(!empty($item['image_path'])): ?>
+                                        <img class="card-img" src="<?= $item['image_path'] ;?>">
+                                        <hr>
+                                        <?php endif; ?>
+                                        <?= $item['text']; ?>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     <?php endforeach; ?>
                     <?php else: ?>
                         <div class="col-12 col-md-6 mx-auto p-5">

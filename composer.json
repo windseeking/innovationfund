@@ -1,0 +1,7 @@
+{
+    "name": "inna/innovationfund",
+    "type": "project",
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4"
+    }
+}

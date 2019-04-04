@@ -77,6 +77,10 @@ section.bg-blue {
   color: #d39e00 !important;
 }
 
+.nav-hover-red .nav-item a:hover {
+  color: #ce0000 !important;
+}
+
 .btn-custom {
   display: inline-block;
   padding: 15px;
@@ -147,6 +151,10 @@ section.bg-blue {
   text-decoration: none !important;
 }
 
+.modal-body .btn-custom:hover {
+  color: #fff !important;
+}
+
 .card,
 .card-header {
   border-radius: 0 !important;
@@ -155,6 +163,19 @@ section.bg-blue {
 .card-img-top {
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
+}
+
+.custom-form input:hover, textarea:hover {
+  border: 1px solid #d39e00 !important;
+}
+
+.custom-form input:focus, textarea:focus {
+  border: 1px solid #d39e00 !important;
+  box-shadow: 0 0 10px rgb(211,158,0) !important;
+}
+
+.shadowed {
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 
@@ -193,7 +214,14 @@ header .nav-link.active {
 
 hr {
   height: 5px !important;
+}
+
+hr.yellow {
   background: #d39e00;
+}
+
+hr.red {
+  background: #ce0000;
 }
 
 hr.long-left {
@@ -409,6 +437,33 @@ hr.short-center {
   border: 5px solid #d39e00;
 }
 
+#slider-bg-1 {
+  background-image: url(../img/forehead-3.JPG);
+}
+
+#slider-bg-2 {
+  background-image: url(../img/hall.JPG);
+}
+
+#slider-bg-3 {
+  background-image: url(../img/hall-2.JPG);
+}
+
+#slider-bg-4 {
+  background-image: url(../img/hall-3.JPG);
+}
+
+.slider-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  filter: none;
+}
+
 /*Road map*/
 
 .roadmap {
@@ -418,11 +473,11 @@ hr.short-center {
 }
 
 /*.roadmap li {*/
-  /*margin-bottom: 12px;*/
+/*margin-bottom: 12px;*/
 /*}*/
 
 .roadmap li:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .roadmap li:before {
@@ -434,7 +489,7 @@ hr.short-center {
   /*border-radius: 50%;*/
 }
 
-.roadmap li.passed:before   {
+.roadmap li.passed:before {
   color: #d39e00;
 }
 

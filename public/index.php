@@ -1,15 +1,7 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+require_once ('../init.php');
 
-require_once('../functions/functions.php');
-require_once('../system/config.php');
-require_once('../system/data.php');
-
-session_start();
-
-$con = get_connection($database_config);
 $errors = [];
 $contact = [];
 $user = [];
@@ -30,32 +22,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (empty($errors)) {
-        $to = "windseeking@mail.ru";
-        $from = "no-reply@innovationfund.in";
+        $transport = (new Swift_SmtpTransport('mail.innovationfund.in', 25))
+            ->setUsername('webmaster@innovationfund.in')
+            ->setPassword('pakoWorld6');
+        $mailer = new Swift_Mailer($transport);
 
-        $name = $contact['name'];
-        $email = $contact['email'];
-        $message = $contact['message'];
-        $subject = "Сообщение с innovationfund.in";
+        $message = (new Swift_Message('Сообщение с innovationfund.in'))
+            ->setFrom(['webmaster@innovationfund.in' => 'Fund of Innovation Support'])
+            ->setTo(['innovationfund@onu.edu.ua' => 'Павел Коен']);
 
-        $body = "Здравствуйте! 
-                Было отправлено сообщение с сайта! 
-                Имя отправителя: $name
-                E-mail: $email
-                Текст сообщения: $message
-                Чтобы ответить на письмо, создайте новое сообщение, скопируйте электронный адрес и вставьте в поле Кому.";
+        $message_content = include_template('email.php', [
+            'message' => $contact['message'],
+            'send_name' => $contact['name'],
+            'email' => $contact['email']
+        ]);
 
-        $headers = "From: $from \r\n";
+        $message->setBody($message_content, 'text/html');
 
-        mail($to, $subject, $body, $headers . 'Content-type: text/plain; charset=utf-8');
-        header("Location: /index#contact");
-        $_SESSION['success'] = "Your message has been sent successfully. We will answer as soon as possible.";
+        try {
+            $result = $mailer->send($message);
+        } catch (Swift_TransportException $ex) {
+            print($ex->getMessage() . '<br>');
+        }
+
+        if (!$result) {
+            $_SESSION['errors'] = 'The message was not sent. Please, try again or contact us via <a href="mailto:innovationfund@onu.edu.ua">email</a> or <a href="tel:+380995250511">phone</a>.';
+        } else {
+            $_SESSION['success'] = 'The message was sent successfully!';
+        }
+    } else {
+        $_SESSION['errors'] = 'Please, correct errors in the form.';
     }
-    $page_content = include_template('index.php', ['errors' => $errors, 'contact' => $contact]);
-    $_SESSION['errors'] = "Something went wrong, the message has not been sent. Please, contact us via email.";
 }
 
 $page_content = include_template('index.php', ['errors' => $errors, 'contact' => $contact]);
+
 
 $layout_content = include_template('layout.php', [
     'title' => 'Main',
