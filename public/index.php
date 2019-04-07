@@ -54,9 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['errors'] = 'Please, correct errors in the form.';
     }
 }
-
 $page_content = include_template('index.php', ['errors' => $errors, 'contact' => $contact]);
-
 
 $layout_content = include_template('layout.php', [
     'title' => 'Main',
