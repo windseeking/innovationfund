@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `innovations`
     `road_map`      text(60000)   NOT NULL,
     `market`        text(60000)   NOT NULL,
     `analogues`     text(60000)   NOT NULL,
-    `development`   text(60000)   NOT NULL,
+    `appliance`   text(60000)   NOT NULL,
     `link_url`      char(255) DEFAULT NULL
 );
 

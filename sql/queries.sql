@@ -104,12 +104,12 @@ VALUES ('First closed case',
         '../uploads/news-GENERATION-PARTNERSHIP-conference.jpeg');
 
 INSERT INTO innovations (name, description, author, image_path, market_types, current_stage, money_needed, road_map,
-                         market, analogues, development, link_url)
+                         market, analogues, appliance, link_url)
 VALUES ('Лазерный датчик частиц аэрозолей',
         'Прибор, который позволяет в режиме реального
         времени показывать степень загрязнения воздуха и
         давать иноформацию как в мг/м<sup>3</sup>, так и по фракциям.',
-        'НИИ Физики',
+        'НИИ физики ОНУ им. И.И. Мечникова',
         '/img/detector.png',
         'B2B, B2G, B2C',
         'есть опробированный прототип и научная и ресурсная базы; проект готов к масштабированию',
@@ -124,23 +124,88 @@ VALUES ('Лазерный датчик частиц аэрозолей',
             <li class="forthcome text-muted">Патентование в ЕС</li>
             <li class="forthcome text-muted">Продажа и аренда</li>
         </ol>',
-        ' <p class="lead text-white">Прибор может быть применим на
+        '<p class="lead text-white">Прибор может быть применим на
         производствах, в офисах, квартирах, а
         так же в городах для получения
         актуальной информации о степени
         загрязненности воздуха и наличия в
         нем тех или иных веществ.</p>',
-        '<p class="lead">Прибор, разработанный в НИИ Физики
+        '<p class="lead">Прибор, разработанный в НИИ физики,
         точнее и дешевле зарубежных
-        образцов, а так же институт может
+        образцов. Кроме того, институт может
         осуществлять поверку данных
         приборов, а так же монтаж, доработку
         и анализ данных совместно с
         компанией-партнером.</p>',
-        '<ol class="roadmap text-white">
-           <li>Продажа приборов с софтом обычному потребителю</li>
-           <li>Проведение замеров для предприятий</li>
-           <li>Продажа и сервис датчиков для предприятий</li>
-           <li>Развитие сети датчиков и продажа подписки для получения доступа к данным</li>
-        </ol> ',
+        '<div class="row mb-3">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="row align-items-start justify-content-between mb-3">
+          <div class="col-2 text-right">
+            <span style="color: #222224"><i class="far fa-user fa-3x"></i></span>
+          </div>
+          <div class="col-9 col-md-10">
+            <p class="lead text-white">Продажа приборов с ПО обычному потребителю</p>
+          </div>
+        </div>
+
+        <div class="row align-items-start justify-content-between mb-3">
+          <div class="col-2 text-right">
+            <span style="color: #222224"><i class="fas fa-file-contract fa-3x"></i></span>
+          </div>
+          <div class="col-9 col-md-10">
+            <p class="lead text-white">Проведение замеров для предприятий</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="row align-items-start justify-content-between mb-3">
+          <div class="col-2 text-right">
+            <span style="color: #222224"><i class="far fa-building fa-3x"></i></span>
+          </div>
+          <div class="col-9 col-md-10">
+            <p class="lead text-white">Создание и сервис локальной сети датчиков для предприятий</p>
+          </div>
+        </div>
+
+        <div class="row align-items-start justify-content-between mb-3">
+          <div class="col-2 text-right">
+            <span style="color: #222224"><i class="fas fa-network-wired fa-3x"></i></span>
+          </div>
+          <div class="col-9 col-md-10">
+            <p class="lead text-white">Развитие сети датчиков и продажа подписки для получения доступа к данным</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10 col-md-7 mx-auto">
+        <h3 class="text-center">Цели:</h3>
+        <div class="row align-items-baseline">
+          <div class="col-2 text-right">
+            <span style="color: darkgreen"><i class="fas fa-leaf"></i></i></span>
+          </div>
+          <div class="col-9 col-md-10">
+            <p class="lead">Соответствие экологическим стандартам</p>
+          </div>
+        </div>
+        <div class="row align-items-baseline">
+          <div class="col-2 text-right">
+            <span style="color: darkgreen"><i class="far fa-heart"></i></i></span>
+          </div>
+          <div class="col-9 col-md-10">
+            <p class="lead">Сохранение здоровья</p>
+          </div>
+        </div>
+        <div class="row align-items-baseline">
+          <div class="col-2 text-right">
+            <span style="color: darkgreen"><i class="fas fa-chart-line"></i></span>
+          </div>
+          <div class="col-9 col-md-10">
+            <p class="lead">Повышение эффективности труда</p>
+          </div>
+        </div>
+      </div>
+    </div>',
         '');
