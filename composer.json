@@ -1,6 +1,11 @@
 {
-    "name": "inna/innovationfund",
-    "type": "project",
+    "name": "acer/innovationfund",
+    "authors": [
+        {
+            "name": "windseeking",
+            "email": "windseeking2@gmail.com"
+        }
+    ],
     "require": {
         "swiftmailer/swiftmailer": "^5.4"
     }

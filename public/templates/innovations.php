@@ -23,7 +23,9 @@
                     <?php foreach ($innovations as $innovation): ?>
                         <div class="col-12 col-sm-6 col-md-4 mb-4 card-group">
                             <div class="card border-light">
-                                <img src="<?= $innovation['image_path']; ?>" class="card-img-top" alt="...">
+                                <a href="?item=<?= $innovation['id']; ?>">
+                                    <img src="<?= $innovation['image_path']; ?>" class="card-img-top" alt="...">
+                                </a>
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $innovation['name']; ?></h5>
                                     <p class="card-text"><?= $innovation['description']; ?></p>

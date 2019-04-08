@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38d2b8e671b24b0351a216dbf85973a8",
+    "content-hash": "3095530f2b7d02cf6339b90c398d6145",
     "packages": [
         {
             "name": "swiftmailer/swiftmailer",

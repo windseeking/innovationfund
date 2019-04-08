@@ -32,9 +32,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ->setTo(['innovationfund@onu.edu.ua' => 'Павел Коен']);
 
         $message_content = include_template('email.php', [
-            'message' => $contact['message'],
-            'send_name' => $contact['name'],
-            'email' => $contact['email']
+            'contact_message' => $contact['message'],
+            'contact_name' => $contact['name'],
+            'contact_email' => $contact['email']
         ]);
 
         $message->setBody($message_content, 'text/html');
