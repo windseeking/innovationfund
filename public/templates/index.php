@@ -328,8 +328,26 @@
                     </div>
                   <?php endif; ?>
               </div>
-              <button type="submit" class="disabled btn-custom btn-custom-outline-blue btn-block">Send
-              </button>
+                <?if(defined('reCAPTCHA_sitekey')){?>
+                    <script>
+                        var verifyGrecaptcha=undefined;
+                        var verifyCallback = function(response) {
+                            verifyGrecaptcha=response;
+                        };
+                    </script>
+                    <div class="text-center g-recaptcha" data-sitekey="<?=reCAPTCHA_sitekey?>" data-callback="verifyCallback" data-expired-callback="verifyCallback"></div>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                <?}else{?>
+                    <script>
+                        var verifyGrecaptcha=1;
+                    </script>
+                <?}?>
+                <input type="submit" value="Связаться" name="contact[captcha]" class="mt-3 btn-custom btn-custom-outline-blue btn-block">
+                <?php if (isset($errors['captcha'])): ; ?>
+                    <div class="invalid-feedback">
+                        <?= $errors['captcha']; ?>
+                    </div>
+                <?php endif; ?>
             </form>
               <?php if (isset($_SESSION['errors'])): ?>
                 <div class="alert alert-danger mt-3" role="alert">

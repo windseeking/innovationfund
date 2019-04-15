@@ -11,3 +11,4 @@ require_once('vendor/autoload.php');
 session_start();
 
 $con = get_connection($database_config);
+
