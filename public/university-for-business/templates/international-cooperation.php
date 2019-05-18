@@ -2,8 +2,8 @@
   <div class="col-12 col-md-11 mx-auto">
     <div class="row">
       <div class="col-12 col-md-8 mb-3 mb-md-0">
+        <h2>Activities of the International Cooperation Department</h2>
         <div class="accordion" id="accordion">
-          <h2>Activities of the International Cooperation Department</h2>
           <div class="card">
             <div class="card-header bg-white" id="headingOne">
               <p class="mb-0 ml-3">Analytical activity</p>
@@ -53,7 +53,8 @@
           <div class="card">
             <div class="card-header bg-white" id="headingFour">
               <p class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-four"
+                <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse"
+                        data-target="#collapse-four"
                         aria-expanded="false" aria-controls="collapse-four">
                   Organization of humanitarian cooperation
                 </button>
@@ -69,7 +70,8 @@
           </div>
           <div class="card">
             <div class="card-header bg-white" id="headingFive">
-              <p class="mb-0 ml-3">Provision of scientific and educational services on commercial terms to individuals and legal
+              <p class="mb-0 ml-3">Provision of scientific and educational services on commercial terms to individuals
+                and legal
                 entities</p>
             </div>
             <div id="collapse-five" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
@@ -81,7 +83,8 @@
           <div class="card">
             <div class="card-header bg-white" id="headingSix">
               <p class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-six"
+                <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse"
+                        data-target="#collapse-six"
                         aria-expanded="false" aria-controls="collapse-six">
                   Advert and information activity
                 </button>

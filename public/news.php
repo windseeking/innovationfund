@@ -21,6 +21,7 @@ $layout_content = include_template('layout.php', [
     'title' => 'News',
     'description' => 'News of the Fund and its partners',
     'content' => include_template('news.php', ['news' => $news ]),
+    'header' => 'News',
     'menu' => $menu
 ]);
 

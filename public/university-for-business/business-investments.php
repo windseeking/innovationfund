@@ -8,6 +8,7 @@ $layout_content = include_template('layout.php', [
     'tabs' => $activities_tabs,
     'description' => '',
     'title' => 'For business & investments',
+    'header' => 'University for business',
     'content' => $page_content,
     'menu' => $menu
 ]);

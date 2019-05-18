@@ -1,4 +1,4 @@
-<section class="bg-white py-5 px-3" id="about" style="min-height: 100vh; position: relative">
+<section class="bg-white" id="about" style="min-height: 100vh; position: relative">
   <div class="container-slider">
     <div data-am-fadeshow="next-prev-navigation">
 
@@ -13,41 +13,39 @@
         <div class="fs-slide" id="slider-bg-1">
           <div class="slider-bg">
             <img src="../img/logo.png" width="100" height="100" alt="">
-            <h2 class="xs-hide sm-hide display-4 font-weight-bold">Фонд Поддержки Инноваций</h2>
-            <h2 class="md-hide lg-hide xl-hide display-6 font-weight-bold">Фонд Поддержки Инноваций</h2>
+            <h1 class="xs-hide sm-hide display-3 font-weight-bold">Fund of Innovations Support</h1>
+            <h2 class="md-hide lg-hide xl-hide font-weight-bold">Fund of Innovations Support</h2>
             <hr class="yellow short-center">
-            <p class="lead font-weight-bold">Организация, объединяющая бизнес, науку и образование
-              для развития всех трех отраслей</p>
+            <p class="lead font-weight-bold">Organisation, that unites business, science and education, aimed at
+              developing these three areas</p>
           </div>
         </div>
 
         <div class="fs-slide" id="slider-bg-2">
           <div class="slider-bg">
             <img src="../img/onu.png" width="100" height="100" alt="">
-            <h2 class="xs-hide sm-hide display-4 font-weight-bold">Эксклюзивный партнер</h2>
-            <h2 class="md-hide lg-hide xl-hide display-6 font-weight-bold">Эксклюзивный партнер</h2>
+            <h1 class="xs-hide sm-hide font-weight-bold">Exclusive partner</h1>
+            <h2 class="md-hide lg-hide xl-hide font-weight-bold">Exclusive partner</h2>
             <hr class="yellow short-center">
-            <p class="lead font-weight-bold">Одесского Национального университета имени И.И. Мечникова по кооперации с
-              бизнесом и инвестициями</p>
+            <p class="lead font-weight-bold">Of Odessa National Mechnikov University regarding cooperation with business and investments.</p>
           </div>
         </div>
 
         <div class="fs-slide" id="slider-bg-3">
           <div class="slider-bg">
-            <h2 class="xs-hide sm-hide display-4 font-weight-bold">Для чего мы нужны?</h2>
-            <h2 class="md-hide lg-hide xl-hide display-6 font-weight-bold">Для чего мы нужны?</h2>
+            <h1 class="xs-hide sm-hide font-weight-bold">What is our assignment?</h1>
+            <h2 class="md-hide lg-hide xl-hide font-weight-bold">What is our assignment?</h2>
             <hr class="yellow short-center">
-            <p class="lead font-weight-bold">Чтобы сделать сотрудничество с университетом доступным</p>
+            <p class="lead font-weight-bold">We are assigned to make cooperation with the University more approachable.</p>
           </div>
         </div>
 
         <div class="fs-slide" id="slider-bg-4">
           <div class="slider-bg">
-            <h2 class="xs-hide sm-hide display-4 font-weight-bold">Для чего мы нужны университету?</h2>
-            <h2 class="md-hide lg-hide xl-hide display-6 font-weight-bold">Для чего мы нужны университету?</h2>
+            <h1 class="xs-hide sm-hide font-weight-bold">What is the profit of the University?</h1>
+            <h2 class="md-hide lg-hide xl-hide font-weight-bold">What is the profit of the University?</h2>
             <hr class="yellow short-center">
-            <p class="lead font-weight-bold">Чтобы образование было более практичным, бюджет рос, а проекты и инновации не только
-              создавались быстрее, но и становились реальностью</p>
+            <p class="lead font-weight-bold">Education becomes more practical, budget increases, projects and innovations accomplish.</p>
           </div>
         </div>
       </div>
@@ -79,44 +77,52 @@
   </div>
 </section>
 
-<section class="bg-blue shadowed py-5 px-3" id="mission" style="min-height: 100vh">
+<section class="bg-white shadowed py-5 px-3" id="mission" style="min-height: 100vh">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-6 mx-auto mb-5">
-        <h2 class="text-center text-light">Миссия</h2>
+        <h1 class="text-center text-dark">Mission</h1>
         <hr class="yellow short-center">
-        <p class="lead font-weight-bold">Совершенствовать экономику путем развития сотрудничества между
-          бизнесом, наукой и
-          образованием.</p>
+        <p class="lead font-weight-bold">Development of the economics by establishing relationship between business,
+          science and education.</p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-12 col-md-4 mx-auto">
-        <h2 class="text-center text-light">Ценности</h2>
-        <hr class="yellow short-center">
-        <ul class="text-light font-weight-bold roadmap">
-          <li>ПАРТНЕРЫ</li>
-          <li>ОТКРЫТОСТЬ</li>
-          <li>ОФИЦИАЛЬНОСТЬ</li>
-          <li>ТОЛЬКО ВЫСОКИЕ ЦЕЛИ</li>
-          <li>НАУКА</li>
-          <li>ОБРАЗОВАНИЕ</li>
-          <li>ИННОВАЦИИ</li>
-        </ul>
+      <div class="col-12 col-md-10 mx-auto">
+        <h1 class="text-center text-dark">Principles</h1>
+        <hr class="red short-center">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/report.svg" height="100" alt="" class="mb-3">
+            <p class="lead font-weight-bold text-center">transparency</p>
+          </div>
+          <div class="col-6 col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/open.svg" height="100" alt="" class="mb-3">
+            <p class="lead font-weight-bold text-center">openness</p>
+          </div>
+          <div class="col-6 col-md-2 text-center mb-3 mb-md-0">
+            <img src="../img/authorize.svg" height="100" alt="" class="mb-3">
+            <p class="lead font-weight-bold text-center">officiality</p>
+          </div>
+          <div class="col-6 col-md-2 text-center">
+            <img src="../img/goal.svg" height="100" alt="" class="mb-3">
+            <p class="lead font-weight-bold text-center">ambitious goals</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="bg-light shadowed py-5 px-3" id="roadmap" style="min-height: 100vh">
+<!--<section class="bg-light shadowed py-5 px-3" id="roadmap" style="min-height: 100vh">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-11 mx-auto">
         <div class="row justify-content-around">
           <div class="col-12 mb-3">
-            <h2>Как мы это делаем?</h2>
+            <h1 class="text-dark">How we work</h1>
             <hr class="red long-left">
           </div>
           <div class="col-12 col-md-8 mb-3 mb-md-0">
@@ -164,14 +170,14 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
-<section class="bg-blue shadowed py-5 px-3" id="team" style="min-height: 100vh">
+<section class="bg-light shadowed py-5 px-3" id="team" style="min-height: 100vh">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-11 mx-auto">
         <div class="col-12 mb-3 text-center">
-          <h2 class="text-light">Команда</h2>
+          <h1 class="text-dark">Team</h1>
           <hr class="yellow short-center">
         </div>
         <div class="col-12 mx-auto">
@@ -179,22 +185,22 @@
             <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
               <img class="rounded-circle img-fluid d-block mx-auto mb-2" src="../img/chernetsky.jpg"
                    alt="" width="250px">
-              <h3 class="text-light">Alex Chernetskiy<br>
+              <h3 class="text-dark">Alex Chernetskiy<br>
                 <small>Lawyer</small>
               </h3>
               <a
                 href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D1%87%D0%B5%D1%80%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9-81b140149/"
                 target="_blank">
-                                <span style="font-size: 2em; color: #457677;">
-                                    <i class="fab fa-linkedin"></i>
-                                </span>
+                  <span style="font-size: 2em; color: #457677;">
+                      <i class="fab fa-linkedin"></i>
+                  </span>
               </a>
             </div>
 
             <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
               <img class="rounded-circle img-fluid d-block mx-auto mb-2" src="../img/koyen.jpg"
                    alt="" width="250px">
-              <h3 class="text-light">Pavel Koyen<br>
+              <h3 class="text-dark">Pavel Koyen<br>
                 <small>Founder & CEO</small>
               </h3>
               <a href="https://www.linkedin.com/in/pavelkoyen/" target="_blank">
@@ -207,7 +213,7 @@
             <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
               <img class="rounded-circle img-fluid d-block mx-auto mb-2" src="../img/dolzhenko.jpg"
                    alt="" width="250px">
-              <h3 class="text-light">Maksym Dolzhenko<br>
+              <h3 class="text-dark">Maksym Dolzhenko<br>
                 <small>Business advisor</small>
               </h3>
               <a href="https://www.linkedin.com/in/maksymdolzhenko/" target="_blank">
@@ -220,7 +226,7 @@
           <div class="row mt-3">
             <div class="col-12">
               <h3 class="text-center font-weight-bold">+<br>
-                17.000+ студентов и 3.000+ сотрудников</h3>
+                17.000+ students and 3.000+ staff members</h3>
             </div>
           </div>
         </div>
@@ -234,7 +240,7 @@
     <div class="row">
       <div class="col-12 col-md-11 mx-auto">
         <div class="col-12 mb-3 text-center">
-          <h2>Документы</h2>
+          <h1>Documents</h1>
           <hr class="yellow short-center">
         </div>
         <div class="col-12 mx-auto">
@@ -242,35 +248,33 @@
             <div class="col-12 col-md-3 mb-3 mb-md-0 text-center card card-group">
               <div class="card-body">
                 <p class="card-text">
-                  <a class="nav-link" href="/docs/ONU_profile.pdf">Профиль университета</a>
+                  <a class="nav-link" href="/docs/ONU_profile.pdf">Profile of the University</a>
                 </p>
                 <p class="card-text">
-                  <a class="nav-link disabled text-muted" href="">Список инноваций</a>
+                  <a class="nav-link disabled text-muted" href="">Innovations list</a>
                 </p>
                 <p class="card-text">
-                  <a class="nav-link disabled text-muted" href="">Стартапы студентов</a>
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-3 mb-3 mb-md-0 text-center card card-group">
-              <div class="card-body">
-                <p class="card-text">
-                  <a class="nav-link" href="/docs/Partnership_presentation.pdf">Наша
-                    презентация</a>
-                </p>
-                <p class="card-text">
-                  <a class="nav-link disabled text-muted" href="">Как это работает?</a>
+                  <a class="nav-link disabled text-muted" href="">Students' start-ups</a>
                 </p>
               </div>
             </div>
             <div class="col-12 col-md-3 mb-3 mb-md-0 text-center card card-group">
               <div class="card-body">
                 <p class="card-text">
-                  <a class="nav-link" href="/docs/Statut_ONU.pdf">Статут ОНУ iм. I.I.
-                    Мечникова</a>
+                  <a class="nav-link" href="/docs/Partnership_presentation.pdf">Our presentation</a>
                 </p>
                 <p class="card-text">
-                  <a class="nav-link" href="/docs/Statut_FIS.docx">Статут ГО «ФПI»</a>
+                  <a class="nav-link disabled text-muted" href="">How it works?</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mb-3 mb-md-0 text-center card card-group">
+              <div class="card-body">
+                <p class="card-text">
+                  <a class="nav-link" href="/docs/Statut_ONU.pdf">Statute of Odessa National University</a>
+                </p>
+                <p class="card-text">
+                  <a class="nav-link" href="/docs/Statut_FIS.docx">Statute of Fund of Innovation Support</a>
                 </p>
               </div>
             </div>
@@ -287,7 +291,7 @@
       <div class="col-12 col-md-11 mx-auto">
         <div class="row">
           <div class="col-12 mb-3">
-            <h2>Связаться с нами</h2>
+            <h1>Contact us</h1>
             <hr class="red long-left">
           </div>
           <div class="col-12 col-md-8 mb-5 mb-md-0 justify-content-between">

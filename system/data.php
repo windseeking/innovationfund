@@ -9,8 +9,8 @@ $menu = [
         'link' => '../projects'
     ],
     [
-        'title' => 'Activities',
-        'link' => '../activities'
+        'title' => 'University',
+        'link' => '../university-for-business'
     ],
     [
         'title' => 'Partners',
@@ -27,19 +27,23 @@ $menu = [
 ];
 
 $admin_tabs = [
-    [   'name' => 'Add news',
+    [
+        'name' => 'Add news',
         'title' => 'News',
         'link' => 'news'
     ],
-    [   'name' => 'Add project',
+    [
+        'name' => 'Add project',
         'title' => 'Projects',
         'link' => 'project'
     ],
-    [   'name' => 'Add partner',
+    [
+        'name' => 'Add partner',
         'title' => 'Partners',
         'link' => 'partner'
     ],
-    [   'name' => 'My account',
+    [
+        'name' => 'My account',
         'title' => 'My account',
         'link' => 'account'
     ]
@@ -47,23 +51,15 @@ $admin_tabs = [
 
 $activities_tabs = [
     [
-      'title' => 'For business & investments',
-      'link' => 'business-investments'
+        'title' => 'Products by scientific fields',
+        'link' => 'products'
     ],
     [
-        'title' => 'For students & alumni',
-        'link' => 'students-alumni'
-    ],
-    [
-        'title' => 'Scientific fields',
-        'link' => 'scientific-fields'
+        'title' => 'Research activity',
+        'link' => 'research-activity'
     ],
     [
         'title' => 'International cooperation',
         'link' => 'international-cooperation'
-    ],
-    [
-        'title' => 'Scientific activities',
-        'link' => 'scientific-activities'
     ]
 ];

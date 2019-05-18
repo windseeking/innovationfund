@@ -32,8 +32,6 @@
   <link rel="stylesheet" type="text/css" href="../css/product.css">
   <link rel="stylesheet" type="text/css" href="../css/slider.css">
 
-  <!--  <link href="../css/scrolling-nav.css" rel="stylesheet">-->
-
   <!--  Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -44,19 +42,13 @@
 
 <body>
 <header>
-  <!--  <div class="container-fluid text-center xs-hide sm-hide">-->
-  <!--    <a href="http://innovationfund.in"><img src="../public/img/logo.png" width="200px"></a>-->
-  <!--    <h1>FIS</h1>-->
-  <!--    <p>Fund of innovation support. Here unite Business, Science & Education.</p>-->
-  <!--  </div>-->
 
   <!--Показывается на экранах 768px и больше-->
-  <div class="xs-hide sm-hide">
+  <div class="xs-hide sm-hide main-menu">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container p-0">
         <a class="navbar-brand" href="//innovationfund.in">
           <img src="../img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-          <!--          Fund of Innovation Support-->
         </a>
       </div>
       <div class="container">
@@ -90,19 +82,12 @@
               <span style="font-size: 1em; color: #222224;"><i class="far fa-user-circle"></i></span>
             </a>
           <?php endif; ?>
-        <!--        <div class="mb-3">-->
-        <!--          <form method="get" class="form-inline justify-content-end">-->
-        <!--            <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">-->
-        <!--            <button class="btn btn-outline-info ml-2 xs-hide sm-hide" type="submit">Search</button>-->
-        <!--          </form>-->
-        <!--        </div>-->
       </div>
     </div>
     <nav class="navbar navbar-light bg-white">
       <a class="navbar-brand" href="//innovationfund.in">
         <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Fund of Innovation Support
-      </a>
+      </a>Fund of Innovations Support
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
               aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -112,6 +97,10 @@
 </header>
 
 <main>
+    <?php if (isset($header)): ?>
+      <hr class="yellow short-center">
+      <h1 class="text-center mb-3"><?= $header; ?></h1>
+    <?php endif; ?>
     <?= $content; ?>
 </main>
 
@@ -121,7 +110,7 @@
       <div class="col-12 col-md-6">
         <div class="mb-3 text-right text-md-left">
           <a class="btn-custom btn-custom-outline-blue" href="#support" data-toggle="modal" data-target="#support">support</a>
-          <a class="btn-custom btn-custom-outline-blue" href="index#contact">contact</a>
+          <a class="btn-custom btn-custom-outline-blue" href="/index.php#contact">contact</a>
         </div>
 
         <div class="modal fade" id="support" tabindex="-1" role="dialog"
@@ -129,15 +118,17 @@
           <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h3 class="modal-title" id="ModalLabelSupport">Support</h3>
+                <h3>Support</h3>
               </div>
               <div class="modal-body">
-                <p class="card-text">
-                  Вы можете поддержать наш проект <a href="https://send.monobank.com.ua/39XXQvurt"
-                                                     target="_blank">здесь</a>.
-                  Средства пойдут на социальные проекты и
-                  операционные затраты.
-                </p>
+                <div class="container">
+                  <p class="card-text">
+                    You can support our Fund <a href="https://send.monobank.com.ua/39XXQvurt" target="_blank">here</a>.
+                    These finances will be invested in social projects and operating expenses.</p>
+                  <p>All information of our spending will be presented according to our principle of transparency.</p>
+                  <a href="https://send.monobank.com.ua/39XXQvurt" target="_blank"
+                     class="btn-custom btn-custom-outline-yellow btn-block">support</a>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -150,7 +141,7 @@
 
         <div class="text-muted">
           <p>Украина, Одесса<br>
-            © 2018 ГРОМАДСЬКА ОРГАНІЗАЦІЯ «ФОНД ПІДТРИМКИ ІННОВАЦІЙ»<br>
+            © 2019 ГРОМАДСЬКА ОРГАНІЗАЦІЯ «ФОНД ПІДТРИМКИ ІННОВАЦІЙ»<br>
             Код: 42397930<br>
             Діяльність: 94.12 Діяльність професійних громадських організацій<br>
             Стан: зареєстровано<br>
@@ -159,7 +150,7 @@
       </div>
 
       <div class="col-12 col-md-6">
-        <ul class="nav justify-content-center justify-content-md-end mb-3">
+        <ul class="nav footer-menu justify-content-center justify-content-md-end mb-3">
             <?php if (!empty($menu)): ?>
                 <?php foreach ($menu as $value): ?>
                 <li class="nav-item">
@@ -169,13 +160,7 @@
                 <?php endforeach; ?>
             <?php endif; ?>
         </ul>
-        <div class="mb-3 xs-hide sm-hide">
-          <form method="get" class="form-inline justify-content-center justify-content-md-end align-self-center">
-            <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn-custom btn-custom-outline-blue btn-sm m-0 ml-2 xs-hide sm-hide" type="submit">Search
-            </button>
-          </form>
-        </div>
+
         <ul class="nav justify-content-around justify-content-md-end">
           <li class="nav-item">
             <a class="icon icon-linkedin" href="https://www.linkedin.com/company/fund-of-innovation"
@@ -208,27 +193,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-<!-- Custom JavaScript for Scrolling Navbar -->
-<script src="../js/scrolling-nav.js"></script>
-<script src="../js/script.js"></script>
-
-
-<!-- Bootstrap JavaScript -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-<!-- Bootstrap core JavaScript -->
-<script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 </body>
 </html>

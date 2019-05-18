@@ -1,10 +1,10 @@
-<section class="py-5 bg-blue" id="review">
+<section class="py-5 bg-blue mt-4" id="review">
   <div class="container">
     <div class="row justify-content-between align-items-center mb-4">
       <div class="col-12 col-md-7 order-2 order-md-1">
         <h2 class="display-4 text-white font-weight-bold mt-3 mt-md-0"><?= $innovation['name']; ?></h2>
         <hr class="yellow long-left">
-        <p class="lead text-dark font-weight-bold"><?= $innovation['description']; ?></p>
+        <p class="lead text-dark font-weight-bold"><?= $innovation['short_description']; ?></p>
         <p class="text-white"><b>Рынки:</b> <?= $innovation['market_types']; ?>.</p>
         <p class="text-white"><b>Стадия:</b> <?= $innovation['current_stage']; ?>.</p>
         <p class="text-white"><b>Инвестиции:</b> <?= $innovation['money_needed']; ?>.</p>
@@ -17,7 +17,8 @@
     </div>
 
     <div class="row justify-content-center">
-      <ul class="nav nav-hover-yellow justify-content-center order-3">
+      <ul class="nav nav-hover-red justify-content-center order-3">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#description">Обзор</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#roadmap">План развития</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#market">Рынок</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#analogues">Аналоги и преимущества</a>
@@ -28,6 +29,18 @@
         </li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Связаться</a></li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section style="min-height: 100vh" class="shadowed bg-white py-5" id="description">
+  <div class="container py-3 p-md-5">
+    <h2 class="display-5 text-center">Обзор</h2>
+    <hr class="yellow short-center mb-5">
+    <div class="row">
+      <div class="col-12 col-md-8 mx-auto">
+          <?= $innovation['description']; ?>
+      </div>
     </div>
   </div>
 </section>

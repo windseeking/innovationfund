@@ -2,7 +2,10 @@
 
 require_once ('../init.php');
 
+$header = 'Innovations';
+
 if (isset($_GET['item'])) {
+    $header = '';
     $innovation_id = (int)$_GET['item'];
     $innovation = get_innovation_by_id($con, $innovation_id);
     $page_content = include_template('item.php', ['innovation' => $innovation]);
@@ -76,6 +79,7 @@ $layout_content = include_template('layout.php', [
     'title' => $page_title,
     'description' => 'List of innovations',
     'content' => $page_content,
+    'header' => $header,
     'menu' => $menu
 ]);
 

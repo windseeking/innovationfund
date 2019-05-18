@@ -72,7 +72,7 @@
           <div class="card">
             <div class="card-header bg-white" id="headingFive">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse"
                         data-target="#collapse-bus-five"
                         aria-expanded="false" aria-controls="collapse-bus-five">
                   Innovations. Analysis. Tests. Calculations
@@ -94,7 +94,7 @@
           <div class="card">
             <div class="card-header bg-white" id="headingOne">
               <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-inv-one"
+                <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapse-inv-one"
                         aria-expanded="false" aria-controls="collapse-inv-one">
                   Venture capital investments
                 </button>
@@ -109,7 +109,7 @@
           <div class="card">
             <div class="card-header bg-white" id="headingTwo">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse"
                         data-target="#collapse-inv-two"
                         aria-expanded="false" aria-controls="collapse-inv-two">
                   Investments into technologies and innovations

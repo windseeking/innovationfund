@@ -2,12 +2,13 @@
 
 require_once ('../../init.php');
 
-$page_content = include_template('scientific-activities.php', []);
+$page_content = include_template('students-alumni.php', []);
 
 $layout_content = include_template('layout.php', [
     'tabs' => $activities_tabs,
     'description' => '',
-    'title' => 'Scientific activities',
+    'header' => 'University for business',
+    'title' => 'For students & alumni',
     'content' => $page_content,
     'menu' => $menu
 ]);

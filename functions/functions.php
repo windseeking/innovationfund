@@ -78,6 +78,20 @@ function get_innovation_by_id(mysqli $con, int $id): array
     return [];
 }
 
+function get_language()
+{
+    preg_match_all('/([a-z]{1,8}(?:-[a-z]{1,8})?)(?:;q=([0-9.]+))?/', strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']));
+    $langs = array_combine($matches[1], $matches[2]);
+    foreach ($langs as $n => $v)
+    $langs[$n] = $v ? $v : 1;
+    arsort($langs);
+    $default_lang = key($langs);
+    if (strpos($language, "ru" !== false)) return "ru";
+    elseif (strpos($language, "en" !== false)) return "en";
+    elseif (strpos($language, "uk" !== false)) return "uk";
+    return $default_lang;
+}
+
 function get_news($con): array
 {
     $sql =
@@ -86,10 +100,10 @@ function get_news($con): array
     return $news = mysqli_fetch_all($res, MYSQLI_ASSOC);
 }
 
-function get_partners($con): array
+function get_partners($con, $language): array
 {
     $sql =
-        'SELECT * FROM partners';
+        'SELECT * FROM partners_$language';
     $res = mysqli_query($con, $sql);
     return $partners = mysqli_fetch_all($res, MYSQLI_ASSOC);
 }

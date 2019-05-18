@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Thin.otf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Bold.otf') format('otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-ExtraBold.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
 @media (max-width: 575.98px) {
   .xs-hide {
     display: none;
@@ -34,18 +70,37 @@
 /*}*/
 
 body {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-family: Gilroy, Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-style: normal;
+  font-weight: normal;
 }
+
+.footer-menu a {
+  font-family: Gilroy, Montserrat, sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  letter-spacing: 1.2px !important;
+}
+
+container-slider h1 {
+  font-family: Gilroy, Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
 
 main h1 {
   margin: 0;
-
-  font-variant: small-caps;
-  font-weight: bold;
+  font-variant: all-small-caps;
+  font-family: Gilroy, Montserrat sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 50px;
   letter-spacing: 2px;
+}
 
-  border-bottom: 4px solid #222224;
+h5 {
+  font-weight: 700 !important;
 }
 
 a {
@@ -83,14 +138,16 @@ section.bg-blue {
 
 .btn-custom {
   display: inline-block;
-  padding: 15px;
+  padding: 10px 15px 10px 15px;
   box-sizing: border-box;
+  line-height: 24px;
 
   text-decoration: none !important;
   text-align: center;
-  text-transform: lowercase;
-  font-size: 16px;
-  font-weight: bold;
+  font-variant: all-small-caps;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: inherit;
 
   background-color: inherit;
   border-radius: 0 !important;
@@ -99,6 +156,7 @@ section.bg-blue {
 }
 
 .btn-custom:hover {
+  color: #fff !important;
   cursor: pointer;
 }
 
@@ -121,7 +179,7 @@ section.bg-blue {
 }
 
 .btn-custom-outline-yellow {
-  color: #d39e00;
+  color: #d39e00 !important;
   border: 3px solid #d39e00 !important;
 }
 
@@ -155,14 +213,48 @@ section.bg-blue {
   color: #fff !important;
 }
 
-.card,
-.card-header {
+.card {
+  border-radius: 10px !important;
+}
+
+.accordion .card {
   border-radius: 0 !important;
 }
 
+/*.card .card-header:first-child {*/
+  /*border-top-left-radius: 10px !important;*/
+  /*border-top-right-radius: 10px !important;*/
+/*}*/
+
+/*.card .card-header:last-child{*/
+  /*border-bottom-left-radius: 10px !important;*/
+  /*border-bottom-right-radius: 10px !important;*/
+/*}*/
+
+
+.accordion .card:first-child {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.accordion .card:last-child {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+/*.accordion .card .card-header:first-child {*/
+  /*border-top-left-radius: 10px !important;*/
+  /*border-top-right-radius: 10px !important;*/
+/*}*/
+
+/*.accordion .card .card-header:last-child {*/
+  /*border-bottom-left-radius: 10px !important;*/
+  /*border-bottom-right-radius: 10px !important;*/
+/*}*/
+
 .card-img-top {
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
 }
 
 .custom-form input:hover, textarea:hover {
@@ -171,11 +263,11 @@ section.bg-blue {
 
 .custom-form input:focus, textarea:focus {
   border: 1px solid #d39e00 !important;
-  box-shadow: 0 0 10px rgb(211,158,0) !important;
+  box-shadow: 0 0 10px rgb(211, 158, 0) !important;
 }
 
 .shadowed {
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -190,13 +282,14 @@ footer .nav a:hover {
   color: #d39e00 !important;
 }
 
-header .nav-link {
+header a {
+  font-family: Gilroy, Montserrat, sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
   color: #222224 !important;
-  font-weight: 600;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
-  letter-spacing: 1px;
-  font-size: 1em;
+  letter-spacing: 2.2px;
+  font-size: 0.8em;
   text-decoration: none;
   background-color: transparent;
 }
@@ -287,6 +380,11 @@ hr.short-center {
   color: #ce0000;
 }
 
+.text-yellow {
+  color: #d39e00;
+}
+
+
 .big-num {
   font-size: 82px;
   font-weight: bold;
@@ -329,6 +427,17 @@ hr.short-center {
   color: #ce0000 !important;
   font-weight: bold;
   opacity: 1;
+}
+
+.nav-pills .nav-item a {
+  color: rgba(206,0,0,0.5) !important;
+}
+
+.nav-pills .nav-item a.active {
+  background-color: inherit;
+  border: 1px solid #ce0000;
+  border-radius: 10px;
+  color: #ce0000 !important;
 }
 
 /*          Scientific fields         */
@@ -512,7 +621,7 @@ hr.short-center {
 
   color: #505050;
   font-size: 1em;
-  font-family: Consolas;
+  font-family: Consolas, Monospaced, sans-serif;
 }
 
 #windseeking a {
@@ -522,3 +631,4 @@ hr.short-center {
 #windseeking a:hover {
   color: #505050;
 }
+

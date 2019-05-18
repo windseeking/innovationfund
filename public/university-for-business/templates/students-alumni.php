@@ -2,8 +2,8 @@
   <div class="col-12 col-md-11 mx-auto">
     <div class="row">
       <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <h2>For students</h2>
         <div class="accordion" id="accordion">
-          <h2>For students</h2>
           <div class="card">
             <div class="card-header bg-white" id="heading-stu-One">
               <h5 class="mb-0">
@@ -27,7 +27,7 @@
           <div class="card">
             <div class="card-header bg-white" id="heading-stu-Two">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse"
                         data-target="#collapse-stu-two"
                         aria-expanded="false" aria-controls="collapse-stu-two">
                   Как первым узнавать о возможностях?
@@ -81,8 +81,8 @@
       </div>
 
       <div class="col-12 col-md-6">
+        <h2>For alumni</h2>
         <div class="accordion" id="accordion">
-          <h2>For alumni</h2>
           <div class="card">
             <div class="card-header bg-white" id="heading-alu-One">
               <h5 class="mb-0">

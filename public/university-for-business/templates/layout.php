@@ -40,14 +40,8 @@
 
 <body>
 <header>
-<!--  <div class="container-fluid text-center xs-hide sm-hide">-->
-<!--    <a href="http://innovationfund.in"><img src="../public/img/logo.png" width="200px"></a>-->
-<!--    <h1>FIS</h1>-->
-<!--    <p>Fund of innovation support. Here unite Business, Science & Education.</p>-->
-<!--  </div>-->
-
   <!--Показывается на экранах 768px и больше-->
-  <div class="xs-hide sm-hide">
+  <div class="xs-hide sm-hide main-menu">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container p-0">
         <a class="navbar-brand" href="//innovationfund.in">
@@ -57,7 +51,7 @@
       <div class="container">
         <a class="nav-item nav-link" href="/innovations">Innovations</a>
         <a class="nav-item nav-link" href="/projects">Projects</a>
-        <a class="nav-item nav-link active" href="/activities">Activities</a>
+        <a class="nav-item nav-link active" href="/university-for-business/products">University</a>
         <a class="nav-item nav-link" href="/partners">Partners</a>
         <a class="nav-item nav-link" href="/hr">HR</a>
         <a class="nav-item nav-link" href="/news">News</a>
@@ -76,30 +70,23 @@
   <div class="pos-f-t md-hide lg-hide xl-hide">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-white text-right p-4">
-          <a class="nav-item nav-link" href="/innovations">Innovations</a>
-          <a class="nav-item nav-link" href="/projects">Projects</a>
-          <a class="nav-item nav-link active" href="/activities">Activities</a>
-          <a class="nav-item nav-link" href="/partners">Partners</a>
-          <a class="nav-item nav-link" href="/hr">HR</a>
-          <a class="nav-item nav-link" href="/news">News</a>
+        <a class="nav-item nav-link" href="/innovations">Innovations</a>
+        <a class="nav-item nav-link" href="/projects">Projects</a>
+        <a class="nav-item nav-link active" href="/university-for-business">University</a>
+        <a class="nav-item nav-link" href="/partners">Partners</a>
+        <a class="nav-item nav-link" href="/hr">HR</a>
+        <a class="nav-item nav-link" href="/news">News</a>
           <?php if (isset($_SESSION['user'])): ?>
-              <a class="nav-item nav-link" href="/admin/news">
-                  <span style="font-size: 1em; color: #222224;"><i class="far fa-user-circle"></i></span>
-              </a>
+            <a class="nav-item nav-link" href="/admin/news">
+              <span style="font-size: 1em; color: #222224;"><i class="far fa-user-circle"></i></span>
+            </a>
           <?php endif; ?>
-<!--        <div class="mb-3">-->
-<!--          <form method="get" class="form-inline justify-content-end">-->
-<!--            <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">-->
-<!--            <button class="btn btn-outline-info ml-2 xs-hide sm-hide" type="submit">Search</button>-->
-<!--          </form>-->
-<!--        </div>-->
       </div>
     </div>
     <nav class="navbar navbar-light bg-white">
       <a class="navbar-brand" href="//innovationfund.in">
         <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Fund of Innovation Support
-      </a>
+      </a>Fund of Innovations Support
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
               aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -109,29 +96,47 @@
 </header>
 
 <main>
-  <div class="container-fluid p-3">
-    <section>
-      <div class="container-fluid py-3 p-md-5">
-        <ul class="nav nav-tabs justify-content-start xs-hide sm-hide">
-            <?php if (!empty($tabs)): ?>
-                <?php foreach ($tabs as $tab): ?>
-                <li class="nav-item">
-                  <a class="nav-link <?php echo ($title == $tab['title']) ? 'active' : ''; ?>"
-                     href="<?= $tab['link']; ?>"><?= $tab['title']; ?></a>
-                </li>
-                <?php endforeach; ?>
-            <?php endif; ?>
-        </ul>
+    <?php if (isset($header)): ?>
+      <hr class="yellow short-center">
+      <h1 class="text-center mb-3"><?= $header; ?></h1>
+    <?php endif; ?>
 
-        <div class="tab-content py-3 px-0 col-12" id="myTabContent">
-          <div class="tab-pane fade show active" id="news" role="tabpanel"
-               aria-labelledby="news-tab">
-              <?= $content; ?>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="xs-hide sm-hide">
+    <ul class="nav nav-tabs justify-content-center mt-3 mb-3">
+        <?php if (!empty($tabs)): ?>
+            <?php foreach ($tabs as $tab): ?>
+            <li class="nav-item">
+              <a class="nav-link <?php echo ($title == $tab['title']) ? 'active' : ''; ?>"
+                 href="<?= $tab['link']; ?>"><?= $tab['title']; ?></a>
+            </li>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </ul>
   </div>
+
+  <div class="col-11 mx-auto md-hide lg-hide xl-hide">
+    <ul class="nav nav-pills nav-fill md-hide">
+        <?php if (!empty($tabs)): ?>
+            <?php foreach ($tabs as $tab): ?>
+            <li class="nav-item">
+              <a class="nav-link <?php echo ($title == $tab['title']) ? 'active' : ''; ?>"
+                 href="<?= $tab['link']; ?>"><?= $tab['title']; ?></a>
+            </li>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </ul>
+  </div>
+
+
+  <div class="tab-content py-3 px-0 col-12" id="myTabContent">
+    <div class="tab-pane fade show active" id="news" role="tabpanel"
+         aria-labelledby="news-tab">
+      <div class="container-fluid px-3 px-md-5 mb-3">
+          <?= $content; ?>
+      </div>
+    </div>
+  </div>
+
 </main>
 
 <footer class="bg-dark">
@@ -139,12 +144,39 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="mb-3 text-right text-md-left">
-          <button class="btn-custom btn-custom-outline-blue">support</button>
-          <button class="btn-custom btn-custom-outline-blue">contact</button>
+          <a class="btn-custom btn-custom-outline-blue" href="#support" data-toggle="modal" data-target="#support">support</a>
+          <a class="btn-custom btn-custom-outline-blue" href="/index.php#contact">contact</a>
         </div>
+
+        <div class="modal fade" id="support" tabindex="-1" role="dialog"
+             aria-labelledby="ModalLabelSupport" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>Support</h3>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <p class="card-text">
+                    You can support our Fund <a href="https://send.monobank.com.ua/39XXQvurt" target="_blank">here</a>.
+                    These finances will be invested in social projects and operating expenses.</p>
+                  <p>All information of our spending will be presented according to our principle of transparency.</p>
+                  <a href="https://send.monobank.com.ua/39XXQvurt" target="_blank"
+                     class="btn-custom btn-custom-outline-yellow btn-block">support</a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="text-muted">
           <p>Украина, Одесса<br>
-            © 2018 ГРОМАДСЬКА ОРГАНІЗАЦІЯ «ФОНД ПІДТРИМКИ ІННОВАЦІЙ»<br>
+            © 2019 ГРОМАДСЬКА ОРГАНІЗАЦІЯ «ФОНД ПІДТРИМКИ ІННОВАЦІЙ»<br>
             Код: 42397930<br>
             Діяльність: 94.12 Діяльність професійних громадських організацій<br>
             Стан: зареєстровано<br>
@@ -163,12 +195,7 @@
                 <?php endforeach; ?>
             <?php endif; ?>
         </ul>
-        <div class="mb-3 xs-hide sm-hide">
-          <form method="get" class="form-inline justify-content-center justify-content-md-end">
-            <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn-custom btn-custom-outline-blue btn-sm m-0 ml-2 xs-hide sm-hide" type="submit">Search</button>
-          </form>
-        </div>
+
         <ul class="nav justify-content-around justify-content-md-end">
           <li class="nav-item">
             <a class="icon icon-linkedin" href="https://www.linkedin.com/company/fund-of-innovation"
@@ -201,7 +228,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-
-<script src="js/script.js"></script>
 </body>
 </html>

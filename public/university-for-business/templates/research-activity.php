@@ -1,8 +1,9 @@
 <div class="row">
-  <div class="col-10 mx-auto">
+  <div class="col-12 col-md-11 mx-auto">
     <div class="row mb-5">
       <div class="col-10 mx-auto">
-        <p class="text-center">The <strong><span class="text-blue">Scientific Research Section</span></strong> includes:</p>
+        <p class="text-center">The <strong><span class="text-blue">Scientific Research Section</span></strong> includes:
+        </p>
         <div class="row">
           <div class="card col-12 col-md-3 ml-auto mb-3 mb-md-0">
             <p class="big-num text-center text-red">11</p>
@@ -36,19 +37,26 @@
       <div class="col-12 col-md-8 mb-3 mb-md-0">
         <h4>Scientific researches are provided by:</h4>
         <ul class="bullet-list">
-          <li><strong><span class="text-blue">Scientific Library</span></strong>, founded in 1817, which has a fund of more than 3.6 million volumes</li>
+          <li><strong><span class="text-blue">Scientific Library</span></strong>, founded in 1817, which has a fund of
+            more than 3.6 million volumes
+          </li>
           <li><strong><span class="text-blue">Botanical Garden</span></strong>, founded in 1867</li>
           <li><strong><span class="text-blue">Hydrobiological station</span></strong>, founded in 1902</li>
-          <li><strong><span class="text-blue">Petrographic and Mineralogical Museum</span></strong>, founded in 1865</li>
-          <li><strong><span class="text-blue">Zoological Museum</span></strong>, founded at the beginning of the XIX century</li>
+          <li><strong><span class="text-blue">Petrographic and Mineralogical Museum</span></strong>, founded in 1865
+          </li>
+          <li><strong><span class="text-blue">Zoological Museum</span></strong>, founded at the beginning of the XIX
+            century
+          </li>
           <li><strong><span class="text-blue">Paleontological Museum</span></strong>, established in 1873</li>
         </ul>
       </div>
-      <div class="col-12 col-md-3">
+      <div class="col-12 col-md-3 bg-white">
         <h4>See also:</h4>
-        <a class="btn-custom btn-block btn-custom-outline-blue" href="http://onu.edu.ua/pub/bank/userfiles/files/science/innov-rozrob2017.doc"
+        <a class="btn-custom btn-custom-outline-blue btn-block"
+           href="http://onu.edu.ua/pub/bank/userfiles/files/science/innov-rozrob2017.doc"
            target="_blank">Scientific development</a>
-        <a class="btn-custom btn-block btn-custom-outline-blue" href="http://lib.onu.edu.ua/periodicheskie-izdaniya-onu-arhiv/"
+        <a class="btn-custom btn-custom-outline-blue btn-block"
+           href="http://lib.onu.edu.ua/periodicheskie-izdaniya-onu-arhiv/"
            target="_blank">Scientific publications</a>
       </div>
     </div>
