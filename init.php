@@ -15,3 +15,4 @@ $language = get_language();
 $lang = new Language($language);
 
 $con = get_connection($database_config);
+

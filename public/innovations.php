@@ -16,16 +16,10 @@ if (isset($_GET['item'])) {
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $contact = $_POST['contact'];
-        $required = ['name', 'email', 'message'];
+        $required = ['name', 'email', 'message', 'captcha'];
         foreach ($required as $item) {
             if (empty($contact[$item])) {
                 $errors[$item] = 'Please, fill this field.';
-            }
-        }
-
-        if (!empty($contact['email'])) {
-            if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
-                $errors['email'] = 'Enter a valid email';
             }
         }
 
