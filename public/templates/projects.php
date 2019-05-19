@@ -1,4 +1,4 @@
-<div class="container-fluid px-3 px-md-5 mb-3">
+<div class="container-fluid px-3 px-md-5 mb-5">
     <?php if (isset($_SESSION['success'])): ?>
       <div class="alert alert-success" role="alert">
           <?= $_SESSION['success'];
@@ -24,16 +24,10 @@
                   <h5 class="card-title"><?= $project['name']; ?></h5>
                   <p class="card-text text-left"><?= $project['description']; ?></p>
                 </div>
-                  <?php if (!empty($project['link_url'])): ?>
-                    <ul class="list-group list-group-flush text-center">
-                      <li class="list-group-item border-light">
-                        <a class="text-danger" href="<?= $project['link_url']; ?>"><?= $project['link_text']; ?></a>
-                      </li>
-                    </ul>
-                  <?php endif; ?>
-                  <?php if (!empty($project['website'])): ?>
-                    <div class="card-footer bg-white">
-                      <a href="<?= $project['website']; ?>" class="btn btn-outline-info btn-block">Learn more »</a>
+                  <?php if (!empty($project['link_1_url'])): ?>
+                    <div class="card-footer bg-white border-light">
+                      <a class="btn-custom btn-custom-outline-blue btn-block" target="_blank"
+                         href="<?= $project['link_1_url']; ?>"><?= $project['link_1_text']; ?> »</a>
                     </div>
                   <?php endif; ?>
               </div>
@@ -42,7 +36,7 @@
       </div>
     <?php else: ?>
       <div class="col-12 col-md-6 mx-auto p-5">
-        <h2 class="display-4 text-center">Nothing found according to you request</h2>
+        <h2 class="display-4 text-center"><?= $nothing_found ;?></h2>
       </div>
     <?php endif; ?>
 </div>

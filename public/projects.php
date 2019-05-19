@@ -1,15 +1,21 @@
 <?php
 
-require_once ('../init.php');
+require_once('../init.php');
 
-$projects = get_projects($con);
+$projects = get_projects($con, $language);
 
 $layout_content = include_template('layout.php', [
-    'title' => 'Projects',
+    'title' => $lang->get("PROJECTS_TITLE"),
     'description' => 'Projects of the Fund and its partners',
-    'content' => include_template('projects.php', ['projects' => $projects]),
-    'header' => 'Projects',
-    'menu' => $menu
+    'content' => include_template('projects.php', [
+        'projects' => $projects,
+        'nothing_found' => $lang->get("NOTHING_FOUND")
+    ]),
+    'header' => $lang->get("PROJECTS_HEADER"),
+    'menu' => $menu,
+    'btn_contact' => $lang->get("FOOTER_BTN_CONTACT"),
+    'btn_support' => $lang->get("FOOTER_BTN_SUPPORT"),
+    'copyright' => $lang->get("FOOTER_COPYRIGHT")
 ]);
 
 print($layout_content);

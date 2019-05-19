@@ -5,7 +5,7 @@ class Language
     private $data;
     public  function __construct($language)
     {
-        $this->data = parse_ini_file("system/lang/$language.ini");
+        $this->data = parse_ini_file("../system/lang/$language.ini");
     }
 
     public function get($name) {

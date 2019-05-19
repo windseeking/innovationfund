@@ -1,4 +1,4 @@
-<div class="container-fluid px-3 px-md-5 mb-3">
+<div class="container-fluid px-3 px-md-5 mb-5">
     <?php if (isset($_SESSION['success'])): ?>
       <div class="alert alert-success" role="alert">
           <?= $_SESSION['success'];
@@ -24,7 +24,7 @@
                   <p class="card-text"><?= $partner['description']; ?></p>
                 </div>
                 <div class="card-footer bg-white border-light">
-                  <a href="<?= $partner['link']; ?>" class="btn-custom btn-custom-outline-blue btn-block">Learn more
+                  <a href="<?= $partner['link']; ?>" class="btn-custom btn-custom-outline-blue btn-block"><?= $button ;?>
                     »</a>
                 </div>
               </div>
@@ -33,7 +33,7 @@
       </div>
     <?php else: ?>
       <div class="col-12 col-md-6 mx-auto p-5">
-        <h2 class="display-4 text-center">Nothing found according to you request</h2>
+        <h2 class="display-4 text-center"><?= $nothing_found ;?></h2>
       </div>
     <?php endif; ?>
 </div>

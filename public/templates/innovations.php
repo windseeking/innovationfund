@@ -18,15 +18,15 @@
       <div class="row justify-content-center">
         <div class="col-12 col-md-3 text-center ml-auto mb-3 mb-md-0">
           <img src="../img/lightbulb.svg" height="100" alt="" class="mb-3">
-          <p class="text-center">Creation and development of innovations and technologies</p>
+          <p class="text-center"><?= $creation_development ;?></p>
         </div>
         <div class="col-12 col-md-3 text-center mx-md-3 mb-3 mb-md-0">
           <img src="../img/networking.svg" height="100" alt="" class="mb-3">
-          <p class="text-center">Building cooperations</p>
+          <p class="text-center"><?= $building_cooperation ;?></p>
         </div>
         <div class="col-12 col-md-3 text-center mr-auto">
           <img src="../img/benefits.svg" height="100" alt="" class="mb-3">
-          <p class="text-center">Attraction of investments</p>
+          <p class="text-center"><?= $attraction_investments ;?></p>
         </div>
       </div>
       <div class="row">
@@ -34,11 +34,11 @@
           <div class="row justify-content-across">
             <div class="col-12 col-md-5 ml-auto">
               <a href="https://forms.gle/UeUnYyPGwuLT6Dxr9" target="_blank"
-                 class="btn-custom btn-custom-outline-blue btn-block mb-3 mb-mb-0">suggest an innovation</a>
+                 class="btn-custom btn-custom-outline-blue btn-block mb-3 mb-mb-0"><?= $btn_suggest ;?></a>
             </div>
             <div class="col-12 col-md-5 mr-auto">
               <a href="https://forms.gle/UeUnYyPGwuLT6Dxr9" target="_blank"
-                 class="btn-custom btn-custom-outline-blue btn-block">apply for cooperation</a>
+                 class="btn-custom btn-custom-outline-blue btn-block"><?= $btn_apply ;?></a>
             </div>
           </div>
         </div>
@@ -59,20 +59,20 @@
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item border-light">
-                    <b>Автор:</b> <?= $innovation['author']; ?>
+                    <b><?= $author ;?>:</b> <?= $innovation['author']; ?>
                   </li>
                   <li class="list-group-item border-light">
-                    <b>Рынок:</b> <?= $innovation['market_types']; ?>
+                    <b><?= $market ;?>:</b> <?= $innovation['market_types']; ?>
                   </li>
                   <li class="list-group-item border-light">
-                    <b>Стадия:</b> <?= $innovation['current_stage']; ?>
+                    <b><?= $stage ;?>:</b> <?= $innovation['current_stage']; ?>
                   </li>
                   <li class="list-group-item border-light">
-                    <b>Инвестиции:</b> <?= $innovation['money_needed']; ?>
+                    <b><?= $money ;?>:</b> <?= $innovation['money_needed']; ?>
                   </li>
                 </ul>
                 <div class="card-footer bg-white border-light">
-                  <a href="?item=<?= $innovation['id']; ?>" class="btn-custom btn-custom-outline-blue btn-block">подробнее
+                  <a href="?item=<?= $innovation['id']; ?>" class="btn-custom btn-custom-outline-blue btn-block"><?= $btn_more ;?>
                     »</a>
                 </div>
               </div>

@@ -13,39 +13,38 @@
         <div class="fs-slide" id="slider-bg-1">
           <div class="slider-bg">
             <img src="../img/logo.png" width="100" height="100" alt="">
-            <h1 class="xs-hide sm-hide display-3 font-weight-bold">Fund of Innovations Support</h1>
-            <h2 class="md-hide lg-hide xl-hide font-weight-bold">Fund of Innovations Support</h2>
+            <h1 class="xs-hide sm-hide display-3 font-weight-bold"><?= $slider_header_1; ?></h1>
+            <h2 class="md-hide lg-hide xl-hide font-weight-bold"><?= $slider_header_1; ?></h2>
             <hr class="yellow short-center">
-            <p class="lead font-weight-bold">Organisation, that unites business, science and education, aimed at
-              developing these three areas</p>
+            <p class="lead font-weight-bold"><?= $slider_paragraph_1; ?></p>
           </div>
         </div>
 
         <div class="fs-slide" id="slider-bg-2">
           <div class="slider-bg">
             <img src="../img/onu.png" width="100" height="100" alt="">
-            <h1 class="xs-hide sm-hide font-weight-bold">Exclusive partner</h1>
-            <h2 class="md-hide lg-hide xl-hide font-weight-bold">Exclusive partner</h2>
+            <h1 class="xs-hide sm-hide font-weight-bold"><?= $slider_header_2; ?></h1>
+            <h2 class="md-hide lg-hide xl-hide font-weight-bold"><?= $slider_header_2; ?></h2>
             <hr class="yellow short-center">
-            <p class="lead font-weight-bold">Of Odessa National Mechnikov University regarding cooperation with business and investments.</p>
+            <p class="lead font-weight-bold"><?= $slider_paragraph_2; ?></p>
           </div>
         </div>
 
         <div class="fs-slide" id="slider-bg-3">
           <div class="slider-bg">
-            <h1 class="xs-hide sm-hide font-weight-bold">What is our assignment?</h1>
-            <h2 class="md-hide lg-hide xl-hide font-weight-bold">What is our assignment?</h2>
+            <h1 class="xs-hide sm-hide font-weight-bold"><?= $slider_header_3; ?></h1>
+            <h2 class="md-hide lg-hide xl-hide font-weight-bold"><?= $slider_header_3; ?></h2>
             <hr class="yellow short-center">
-            <p class="lead font-weight-bold">We are assigned to make cooperation with the University more approachable.</p>
+            <p class="lead font-weight-bold"><?= $slider_paragraph_3; ?></p>
           </div>
         </div>
 
         <div class="fs-slide" id="slider-bg-4">
           <div class="slider-bg">
-            <h1 class="xs-hide sm-hide font-weight-bold">What is the profit of the University?</h1>
-            <h2 class="md-hide lg-hide xl-hide font-weight-bold">What is the profit of the University?</h2>
+            <h1 class="xs-hide sm-hide font-weight-bold"><?= $slider_header_4; ?></h1>
+            <h2 class="md-hide lg-hide xl-hide font-weight-bold"><?= $slider_header_4; ?></h2>
             <hr class="yellow short-center">
-            <p class="lead font-weight-bold">Education becomes more practical, budget increases, projects and innovations accomplish.</p>
+            <p class="lead font-weight-bold"><?= $slider_paragraph_4; ?></p>
           </div>
         </div>
       </div>
@@ -81,33 +80,32 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-6 mx-auto mb-5">
-        <h1 class="text-center text-dark">Mission</h1>
+        <h1 class="text-center text-dark"><?= $mission_header; ?></h1>
         <hr class="yellow short-center">
-        <p class="lead font-weight-bold">Development of the economics by establishing relationship between business,
-          science and education.</p>
+        <p class="lead font-weight-bold"><?= $mission_paragraph; ?></p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-12 col-md-10 mx-auto">
-        <h1 class="text-center text-dark">Principles</h1>
+        <h1 class="text-center text-dark"><?= $principles_header; ?></h1>
         <hr class="red short-center">
         <div class="row justify-content-center">
           <div class="col-6 col-md-2 text-center mb-3 mb-md-0">
             <img src="../img/report.svg" height="100" alt="" class="mb-3">
-            <p class="lead font-weight-bold text-center">transparency</p>
+            <p class="lead font-weight-bold text-center"><?= $transparency; ?></p>
           </div>
           <div class="col-6 col-md-2 text-center mb-3 mb-md-0">
             <img src="../img/open.svg" height="100" alt="" class="mb-3">
-            <p class="lead font-weight-bold text-center">openness</p>
+            <p class="lead font-weight-bold text-center"><?= $openness; ?></p>
           </div>
           <div class="col-6 col-md-2 text-center mb-3 mb-md-0">
             <img src="../img/authorize.svg" height="100" alt="" class="mb-3">
-            <p class="lead font-weight-bold text-center">officiality</p>
+            <p class="lead font-weight-bold text-center"><?= $officiality; ?></p>
           </div>
           <div class="col-6 col-md-2 text-center">
             <img src="../img/goal.svg" height="100" alt="" class="mb-3">
-            <p class="lead font-weight-bold text-center">ambitious goals</p>
+            <p class="lead font-weight-bold text-center"><?= $goals; ?></p>
           </div>
         </div>
       </div>
@@ -177,7 +175,7 @@
     <div class="row">
       <div class="col-12 col-md-11 mx-auto">
         <div class="col-12 mb-3 text-center">
-          <h1 class="text-dark">Team</h1>
+          <h1 class="text-dark"><?= $team_header; ?></h1>
           <hr class="yellow short-center">
         </div>
         <div class="col-12 mx-auto">
@@ -185,8 +183,8 @@
             <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
               <img class="rounded-circle img-fluid d-block mx-auto mb-2" src="../img/chernetsky.jpg"
                    alt="" width="250px">
-              <h3 class="text-dark">Alex Chernetskiy<br>
-                <small>Lawyer</small>
+              <h3 class="text-dark"><?= $alex; ?><br>
+                <small><?= $lawyer; ?></small>
               </h3>
               <a
                 href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D1%87%D0%B5%D1%80%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9-81b140149/"
@@ -200,8 +198,8 @@
             <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
               <img class="rounded-circle img-fluid d-block mx-auto mb-2" src="../img/koyen.jpg"
                    alt="" width="250px">
-              <h3 class="text-dark">Pavel Koyen<br>
-                <small>Founder & CEO</small>
+              <h3 class="text-dark"><?= $pavel; ?><br>
+                <small><?= $founder; ?></small>
               </h3>
               <a href="https://www.linkedin.com/in/pavelkoyen/" target="_blank">
                                 <span style="font-size: 2em; color: #457677;">
@@ -213,8 +211,8 @@
             <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
               <img class="rounded-circle img-fluid d-block mx-auto mb-2" src="../img/dolzhenko.jpg"
                    alt="" width="250px">
-              <h3 class="text-dark">Maksym Dolzhenko<br>
-                <small>Business advisor</small>
+              <h3 class="text-dark"><?= $maksym; ?><br>
+                <small><?= $advisor; ?></small>
               </h3>
               <a href="https://www.linkedin.com/in/maksymdolzhenko/" target="_blank">
                                 <span style="font-size: 2em; color: #457677;">
@@ -226,7 +224,7 @@
           <div class="row mt-3">
             <div class="col-12">
               <h3 class="text-center font-weight-bold">+<br>
-                17.000+ students and 3.000+ staff members</h3>
+                  <?= $students_staff; ?></h3>
             </div>
           </div>
         </div>
@@ -238,45 +236,47 @@
 <section class="bg-light shadowed py-5 px-3" id="documents" style="min-height: 100vh">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-11 mx-auto">
-        <div class="col-12 mb-3 text-center">
-          <h1>Documents</h1>
-          <hr class="yellow short-center">
+      <div class="col-12 mb-3 text-center">
+        <h1><?= $docs_header; ?></h1>
+        <hr class="yellow short-center">
+      </div>
+      <div class="col-8 mx-auto mt-5">
+        <div class="row mb-md-5 justify-content-center">
+          <div class="card shadowed text-center col-12 col-md-3 mr-md-3 mb-3 mb-md-0">
+            <div class="card-body px-0">
+              <img src="../img/pdf.svg" height="30" alt="">
+              <p class="card-text">
+                <a class="nav-link" href="/docs/ONU_profile.pdf"><?= $university_profile; ?></a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card shadowed text-center col-12 col-md-3 ml-md-3 mb-3 mb-md-0">
+            <div class="card-body px-0">
+              <img src="../img/pdf.svg" height="30" alt="">
+              <p class="card-text">
+                <a class="nav-link" href="/docs/Partnership_presentation.pdf"><?= $our_presentation; ?></a>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="col-12 mx-auto">
-          <div class="row justify-content-around">
-            <div class="col-12 col-md-3 mb-3 mb-md-0 text-center card card-group">
-              <div class="card-body">
-                <p class="card-text">
-                  <a class="nav-link" href="/docs/ONU_profile.pdf">Profile of the University</a>
-                </p>
-                <p class="card-text">
-                  <a class="nav-link disabled text-muted" href="">Innovations list</a>
-                </p>
-                <p class="card-text">
-                  <a class="nav-link disabled text-muted" href="">Students' start-ups</a>
-                </p>
-              </div>
+
+        <div class="row justify-content-center">
+          <div class="card shadowed text-center col-12 col-md-3 mr-md-3 mb-3 mb-md-0">
+            <div class="card-body px-0">
+              <img src="../img/pdf.svg" height="30" alt="">
+              <p class="card-text">
+                <a class="nav-link" href="/docs/Statut_ONU.pdf"><?= $onu_statute; ?></a>
+              </p>
             </div>
-            <div class="col-12 col-md-3 mb-3 mb-md-0 text-center card card-group">
-              <div class="card-body">
-                <p class="card-text">
-                  <a class="nav-link" href="/docs/Partnership_presentation.pdf">Our presentation</a>
-                </p>
-                <p class="card-text">
-                  <a class="nav-link disabled text-muted" href="">How it works?</a>
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-3 mb-3 mb-md-0 text-center card card-group">
-              <div class="card-body">
-                <p class="card-text">
-                  <a class="nav-link" href="/docs/Statut_ONU.pdf">Statute of Odessa National University</a>
-                </p>
-                <p class="card-text">
-                  <a class="nav-link" href="/docs/Statut_FIS.docx">Statute of Fund of Innovation Support</a>
-                </p>
-              </div>
+          </div>
+
+          <div class="card shadowed text-center col-12 col-md-3 ml-md-3">
+            <div class="card-body">
+              <img src="../img/doc.svg" height="30" alt="">
+              <p class="card-text">
+                <a class="nav-link" href="/docs/Statut_FIS.docx"><?= $fis_statute; ?></a>
+              </p>
             </div>
           </div>
         </div>
@@ -291,13 +291,13 @@
       <div class="col-12 col-md-11 mx-auto">
         <div class="row">
           <div class="col-12 mb-3">
-            <h1>Contact us</h1>
+            <h1><?= $contact_us; ?></h1>
             <hr class="red long-left">
           </div>
           <div class="col-12 col-md-8 mb-5 mb-md-0 justify-content-between">
             <form class="custom-form" method="post" action="index.php#contact">
               <div class="form-group">
-                <label for="name">Name <sup>*</sup></label>
+                <label for="name"><?= $label_name; ?> <sup>*</sup></label>
                   <?php $class = isset($errors['name']) ? 'is-invalid' : '';
                   $value = isset($contact['name']) ? $contact['name'] : ''; ?>
                 <input name="contact[name]" type="text" class="form-control <?= $class; ?>" id="name"
@@ -309,7 +309,7 @@
                   <?php endif; ?>
               </div>
               <div class="form-group">
-                <label for="email">Email address <sup>*</sup></label>
+                <label for="email"><?= $label_email; ?> <sup>*</sup></label>
                   <?php $class = isset($errors['email']) ? 'is-invalid' : '';
                   $value = isset($contact['email']) ? $contact['email'] : ''; ?>
                 <input name="contact[email]" type="email" class="form-control <?= $class; ?>" id="email"
@@ -321,7 +321,7 @@
                   <?php endif; ?>
               </div>
               <div class="form-group">
-                <label for="message">Message <sup>*</sup></label>
+                <label for="message"><?= $label_message; ?> <sup>*</sup></label>
                   <?php $class = isset($errors['message']) ? 'is-invalid' : '';
                   $value = isset($contact['message']) ? $contact['message'] : ''; ?>
                 <textarea name="contact[message]" class="form-control <?= $class; ?>" id="message"
@@ -332,7 +332,7 @@
                     </div>
                   <?php endif; ?>
               </div>
-              <button type="submit" class="disabled btn-custom btn-custom-outline-blue btn-block">Send
+              <button type="submit" class="disabled btn-custom btn-custom-outline-blue btn-block"><?= $btn_send; ?>
               </button>
             </form>
               <?php if (isset($_SESSION['errors'])): ?>
@@ -352,11 +352,11 @@
 
           <div class="col-12 col-md-3 text-center text-md-left ml-auto">
             <address>
-              <strong>Fund of Innovation Support</strong>
-              <br>Odesa, Ukraine
+              <strong><?= $fund_name; ?></strong>
+              <br><?= $address; ?>
             </address>
             <address>
-              <p>Phone:
+              <p><?= $label_phone; ?>:
                 <br><a href="tel:+380995250511">+380 99 525 05 11</a>
               </p>
               <p>E-mail:

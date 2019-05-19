@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en-EN">
 <head>
   <meta charset="UTF-8">
@@ -109,8 +109,8 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="mb-3 text-right text-md-left">
-          <a class="btn-custom btn-custom-outline-blue" href="#support" data-toggle="modal" data-target="#support">support</a>
-          <a class="btn-custom btn-custom-outline-blue" href="/index.php#contact">contact</a>
+          <a class="btn-custom btn-custom-outline-blue" href="#support" data-toggle="modal" data-target="#support"><?= $btn_support ;?></a>
+          <a class="btn-custom btn-custom-outline-blue" href="/index.php#contact"><?= $btn_contact ;?></a>
         </div>
 
         <div class="modal fade" id="support" tabindex="-1" role="dialog"
@@ -118,7 +118,7 @@
           <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h3>Support</h3>
+                <h3><?= $btn_support ;?></h3>
               </div>
               <div class="modal-body">
                 <div class="container">
@@ -127,7 +127,7 @@
                     These finances will be invested in social projects and operating expenses.</p>
                   <p>All information of our spending will be presented according to our principle of transparency.</p>
                   <a href="https://send.monobank.com.ua/39XXQvurt" target="_blank"
-                     class="btn-custom btn-custom-outline-yellow btn-block">support</a>
+                     class="btn-custom btn-custom-outline-yellow btn-block"><?= $btn_support ;?></a>
                 </div>
               </div>
               <div class="modal-footer">
@@ -140,12 +140,7 @@
         </div>
 
         <div class="text-muted">
-          <p>Украина, Одесса<br>
-            © 2019 ГРОМАДСЬКА ОРГАНІЗАЦІЯ «ФОНД ПІДТРИМКИ ІННОВАЦІЙ»<br>
-            Код: 42397930<br>
-            Діяльність: 94.12 Діяльність професійних громадських організацій<br>
-            Стан: зареєстровано<br>
-            Дата реєстрації: 16.08.2018</p>
+          <p><?= $copyright ;?></p>
         </div>
       </div>
 

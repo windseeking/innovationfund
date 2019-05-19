@@ -5,9 +5,9 @@
         <h2 class="display-4 text-white font-weight-bold mt-3 mt-md-0"><?= $innovation['name']; ?></h2>
         <hr class="yellow long-left">
         <p class="lead text-dark font-weight-bold"><?= $innovation['short_description']; ?></p>
-        <p class="text-white"><b>Рынки:</b> <?= $innovation['market_types']; ?>.</p>
-        <p class="text-white"><b>Стадия:</b> <?= $innovation['current_stage']; ?>.</p>
-        <p class="text-white"><b>Инвестиции:</b> <?= $innovation['money_needed']; ?>.</p>
+        <p class="text-white"><b><?= $market ;?>:</b> <?= $innovation['market_types']; ?>.</p>
+        <p class="text-white"><b><?= $stage ;?>:</b> <?= $innovation['current_stage']; ?>.</p>
+        <p class="text-white"><b><?= $money ;?>:</b> <?= $innovation['money_needed']; ?>.</p>
       </div>
 
       <div class="col-12 col-md-5 order-1 order-md-2">
@@ -18,24 +18,24 @@
 
     <div class="row justify-content-center">
       <ul class="nav nav-hover-red justify-content-center order-3">
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#description">Обзор</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#roadmap">План развития</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#market">Рынок</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#analogues">Аналоги и преимущества</a>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#description"><?= $description ;?></a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#roadmap"><?= $roadmap ;?></a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#analogues"><?= $competitive_ability ;?></a>
         </li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#appliance">Применение</a>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#appliance"><?= $appliance ;?></a>
         </li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#actuality">Актуальность</a>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#actuality"><?= $poll_title ;?></a>
         </li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Связаться</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"><?= $contact_menu ;?></a></li>
       </ul>
     </div>
   </div>
 </section>
 
+<?php if (!empty($innovation['description'])): ;?>
 <section style="min-height: 100vh" class="shadowed bg-white py-5" id="description">
   <div class="container py-3 p-md-5">
-    <h2 class="display-5 text-center">Обзор</h2>
+    <h2 class="display-5 text-center"><?= $description ;?></h2>
     <hr class="yellow short-center mb-5">
     <div class="row">
       <div class="col-12 col-md-8 mx-auto">
@@ -44,10 +44,12 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
 
+<?php if (!empty($innovation['road_map'])): ;?>
 <section style="min-height: 100vh" class="shadowed bg-light py-5" id="roadmap">
   <div class="container py-3 p-md-5">
-    <h2 class="display-5 text-center">План развития</h2>
+    <h2 class="display-5 text-center"><?= $roadmap ;?></h2>
     <hr class="yellow short-center mb-5">
     <div class="row">
       <div class="col-12 col-md-6 mx-auto">
@@ -56,22 +58,12 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
 
-<section style="min-height: 100vh" class="shadowed bg-blue py-5" id="market">
-  <div class="container py-3 p-md-5">
-    <h2 class="display-5 text-center text-white">Рынок</h2>
-    <hr class="yellow short-center mb-5">
-    <div class="row">
-      <div class="col-12 col-md-8 mx-auto">
-        <p class="lead text-white"><?= $innovation['market']; ?></p>
-      </div>
-    </div>
-  </div>
-</section>
-
+<?php if (!empty($innovation['analogues'])): ;?>
 <section style="min-height: 100vh" class="shadowed bg-light py-5" id="analogues">
   <div class="container py-3 p-md-5">
-    <h2 class="display-5 text-center">Аналоги и преимущества</h2>
+    <h2 class="display-5 text-center"><?= $competitive_ability ;?></h2>
     <hr class="yellow short-center mb-5">
     <div class="row">
       <div class="col-12 col-md-8 mx-auto">
@@ -80,18 +72,23 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
 
+<?php if (!empty($innovation['appliance'])): ;?>
 <section style="min-height: 100vh" class="shadowed bg-blue py-5" id="appliance">
   <div class="container py-3 p-md-5">
-    <h2 class="display-5 text-center text-white">Применение</h2>
+    <h2 class="display-5 text-center text-white"><?= $appliance ;?></h2>
     <hr class="yellow short-center mb-5">
     <?= $innovation['appliance'] ;?>
   </div>
 </section>
+<?php endif; ?>
 
+
+<?php if (!empty($innovation['link_url'])): ;?>
 <section style="min-height: 100vh" class="shadowed bg-light py-5" id="actuality">
   <div class="container py-3 p-md-5">
-    <h2 class="display-5 text-center">Актуальность</h2>
+    <h2 class="display-5 text-center"><?= $poll_title ;?></h2>
     <hr class="yellow short-center mb-5">
     <div class="row">
       <div class="col-12 col-md-8 mx-auto">
@@ -100,25 +97,24 @@
           ответив на несколько вопросов.</p>
         <div class="text-center">
           <a class="btn-custom btn-custom-outline-blue"
-             href="https://docs.google.com/forms/d/e/1FAIpQLSeaqPXAgZPbQQYxKGJiAUzRRwhXyN4FVoR6Os_4Z4zxibgY9w/viewform"
-             target="_blank">перейти к опросу</a>
+             href="<?= $innovation['link_url'] ;?>"
+             target="_blank"><?= $btn_poll ;?> »</a>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
 
 <section style="min-height: 100vh" class="shadowed bg-white py-5" id="contact">
   <div class="container py-3 p-md-5">
-    <h2 class="display-5">Для получения дополнительной
-      информации обратитесь
-      к нам</h2>
+    <h2 class="display-5"><?= $contact_title ;?></h2>
     <hr class="red long-left mb-5">
     <div class="row">
       <div class="col-12 col-md-8 mx-auto">
         <form class="custom-form" method="post" action="#contact">
           <div class="form-group">
-            <label for="name">Имя <sup>*</sup></label>
+            <label for="name"><?= $label_name; ?> <sup>*</sup></label>
               <?php $class = isset($errors['name']) ? 'is-invalid' : '';
               $value = isset($contact['name']) ? $contact['name'] : ''; ?>
             <input name="contact[name]" type="text" class="form-control <?= $class; ?>" id="name"
@@ -130,7 +126,7 @@
               <?php endif; ?>
           </div>
           <div class="form-group">
-            <label for="email">Email <sup>*</sup></label>
+            <label for="email"><?= $label_email; ?> <sup>*</sup></label>
               <?php $class = isset($errors['email']) ? 'is-invalid' : '';
               $value = isset($contact['email']) ? $contact['email'] : ''; ?>
             <input name="contact[email]" type="email" class="form-control <?= $class; ?>" id="email"
@@ -142,7 +138,7 @@
               <?php endif; ?>
           </div>
           <div class="form-group">
-            <label for="message">Сообщение <sup>*</sup></label>
+            <label for="message"><?= $label_message; ?> <sup>*</sup></label>
               <?php $class = isset($errors['message']) ? 'is-invalid' : '';
               $value = isset($contact['message']) ? $contact['message'] : ''; ?>
             <textarea name="contact[message]" class="form-control <?= $class; ?>" id="message"
@@ -153,7 +149,7 @@
                 </div>
               <?php endif; ?>
           </div>
-          <button type="submit" class="disabled btn-custom btn-custom-outline-blue btn-block">Связаться
+          <button type="submit" class="disabled btn-custom btn-custom-outline-blue btn-block"><?= $btn_send; ?>
           </button>
         </form>
           <?php if (isset($_SESSION['errors'])): ?>
@@ -173,7 +169,7 @@
     </div>
     <div class="row justify-content-center mt-5">
       <ul class="nav nav-hover-red">
-        <li class="nav-item font-weight-bold"><a class="nav-link js-scroll-trigger" href="#review">В начало</a>
+        <li class="nav-item font-weight-bold"><a class="nav-link js-scroll-trigger" href="#review"><?= $return_top ;?></a>
         </li>
       </ul>
     </div>

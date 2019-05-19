@@ -59,7 +59,7 @@ function get_connection(array $database_config)
     return $con;
 }
 
-function get_innovations(mysqli $con): array
+function get_innovations(mysqli $con ): array
 {
     $sql =
         'SELECT * FROM innovations';
@@ -80,16 +80,16 @@ function get_innovation_by_id(mysqli $con, int $id): array
 
 function get_language()
 {
-    preg_match_all('/([a-z]{1,8}(?:-[a-z]{1,8})?)(?:;q=([0-9.]+))?/', strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']));
-    $langs = array_combine($matches[1], $matches[2]);
+    preg_match_all('/([a-z]{1,8}(?:-[a-z]{1,8})?)(?:;q=([0-9.]+))?/', strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"]), $matches); // Получаем массив $matches с соответствиями
+    $langs = array_combine($matches[1], $matches[2]); // Создаём массив с ключами $matches[1] и значениями $matches[2]
     foreach ($langs as $n => $v)
-    $langs[$n] = $v ? $v : 1;
-    arsort($langs);
-    $default_lang = key($langs);
-    if (strpos($language, "ru" !== false)) return "ru";
-    elseif (strpos($language, "en" !== false)) return "en";
-    elseif (strpos($language, "uk" !== false)) return "uk";
-    return $default_lang;
+        $langs[$n] = $v ? $v : 1; // Если нет q, то ставим значение 1
+    arsort($langs); // Сортируем по убыванию q
+    $default_lang = key($langs); // Берём 1-й ключ первого (текущего) элемента (он же максимальный по q)
+    if (strpos($default_lang, "ru" !== false)) return "ru";
+    elseif (strpos($default_lang, "uk") !== false) return "uk";
+    elseif (strpos($default_lang, "en") !== false) return "en";
+    else return $default_lang;
 }
 
 function get_news($con): array
@@ -103,15 +103,15 @@ function get_news($con): array
 function get_partners($con, $language): array
 {
     $sql =
-        'SELECT * FROM partners_$language';
+        'SELECT * FROM partners_' . $language;
     $res = mysqli_query($con, $sql);
     return $partners = mysqli_fetch_all($res, MYSQLI_ASSOC);
 }
 
-function get_projects($con): array
+function get_projects($con, $language): array
 {
     $sql =
-        'SELECT * FROM projects';
+        'SELECT * FROM projects_' . $language;
     $res = mysqli_query($con, $sql);
     return $projects = mysqli_fetch_all($res, MYSQLI_ASSOC);
 }

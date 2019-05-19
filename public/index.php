@@ -54,14 +54,56 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['errors'] = 'Please, correct errors in the form.';
     }
 }
-$page_content = include_template('index.php', ['errors' => $errors, 'contact' => $contact]);
+$page_content = include_template('index.php', [
+    'errors' => $errors,
+    'contact' => $contact,
+    'slider_header_1' => $lang->get("SLIDER_HEADER_1"),
+    'slider_header_2' => $lang->get("SLIDER_HEADER_2"),
+    'slider_header_3' => $lang->get("SLIDER_HEADER_3"),
+    'slider_header_4' => $lang->get("SLIDER_HEADER_4"),
+    'slider_paragraph_1' => $lang->get("SLIDER_PARAGRAPH_1"),
+    'slider_paragraph_2' => $lang->get("SLIDER_PARAGRAPH_2"),
+    'slider_paragraph_3' => $lang->get("SLIDER_PARAGRAPH_3"),
+    'slider_paragraph_4' => $lang->get("SLIDER_PARAGRAPH_4"),
+    'mission_header' => $lang->get("MISSION_HEADER"),
+    'mission_paragraph' => $lang->get("MISSION_PARAGRAPH"),
+    'principles_header' => $lang->get("PRINCIPLES_HEADER"),
+    'transparency' => $lang->get("TRANSPARENCY"),
+    'openness' => $lang->get("OPENNESS"),
+    'officiality' => $lang->get("OFFICIALITY"),
+    'goals' => $lang->get("GOALS"),
+    'team_header' => $lang->get("TEAM_HEADER"),
+    'alex' => $lang->get("ALEX"),
+    'lawyer' => $lang->get("LAWYER"),
+    'pavel' => $lang->get("PAVEL"),
+    'founder' => $lang->get("FOUNDER"),
+    'maksym' => $lang->get("MAKSYM"),
+    'advisor' => $lang->get("ADVISOR"),
+    'students_staff' => $lang->get("STUDENTS_STAFF"),
+    'docs_header' => $lang->get("DOCS_HEADER"),
+    'university_profile' => $lang->get("UNIVERSITY_PROFILE"),
+    'our_presentation' => $lang->get("OUR_PRESENTATION"),
+    'onu_statute' => $lang->get("ONU_STATUTE"),
+    'fis_statute' => $lang->get("FIS_STATUTE"),
+    'contact_us' => $lang->get("CONTACT_US"),
+    'label_name' => $lang->get("LABEL_NAME"),
+    'label_email' => $lang->get("LABEL_EMAIL"),
+    'label_message' => $lang->get("LABEL_MESSAGE"),
+    'btn_send' => $lang->get("BTN_SEND"),
+    'fund_name' => $lang->get("FUND_NAME"),
+    'address' => $lang->get("ADDRESS"),
+    'label_phone' => $lang->get("LABEL_PHONE"),
+]);
 
 $layout_content = include_template('layout.php', [
     'title' => 'Main',
     'description' => '',
     'content' => $page_content,
     'menu' => $menu,
-    'user' => $user
+    'user' => $user,
+    'btn_contact' => $lang->get("FOOTER_BTN_CONTACT"),
+    'btn_support' => $lang->get("FOOTER_BTN_SUPPORT"),
+    'copyright' => $lang->get("FOOTER_COPYRIGHT")
 ]);
 
 print($layout_content);

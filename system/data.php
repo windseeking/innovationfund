@@ -1,4 +1,5 @@
 <?php
+
 $menu = [
     [
         'title' => 'Innovations',
@@ -22,6 +23,60 @@ $menu = [
     ],
     [
         'title' => 'News',
+        'link' => '../news'
+    ]
+];
+
+$menu_ru = [
+    [
+        'title' => 'ИННОВАЦИИ',
+        'link' => '../innovations'
+    ],
+    [
+        'title' => 'ПРОЕКТЫ',
+        'link' => '../projects'
+    ],
+    [
+        'title' => 'УНИВЕРСИТЕТ',
+        'link' => '../university-for-business'
+    ],
+    [
+        'title' => 'ПАРТНЕРЫ',
+        'link' => '../partners'
+    ],
+    [
+        'title' => 'HR',
+        'link' => '../hr'
+    ],
+    [
+        'title' => 'НОВОСТИ',
+        'link' => '../news'
+    ]
+];
+
+$menu_uk = [
+    [
+        'title' => 'ІННОВАЦІЇ',
+        'link' => '../innovations'
+    ],
+    [
+        'title' => 'ПРОЕКТИ',
+        'link' => '../projects'
+    ],
+    [
+        'title' => 'УНІВЕРСИТЕТ',
+        'link' => '../university-for-business'
+    ],
+    [
+        'title' => 'ПАРТНЕРИ',
+        'link' => '../partners'
+    ],
+    [
+        'title' => 'HR',
+        'link' => '../hr'
+    ],
+    [
+        'title' => 'НОВИНИ',
         'link' => '../news'
     ]
 ];

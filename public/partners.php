@@ -7,9 +7,16 @@ $partners = get_partners($con, $language);
 $layout_content = include_template('layout.php', [
     'title' => $lang->get("PARTNERS_TITLE"),
     'description' => $lang->get("PARTNERS_DESC"),
-    'content' => include_template('partners.php', ['partners' => $partners]),
+    'content' => include_template('partners.php', [
+        'partners' => $partners,
+        'button' => $lang->get("PARTNERS_BUTTON"),
+        'nothing_found' => $lang->get("NOTHING_FOUND")
+    ]),
     'header' => $lang->get("PARTNERS_HEADER"),
-    'menu' => $menu
+    'menu' => $menu,
+    'btn_contact' => $lang->get("FOOTER_BTN_CONTACT"),
+    'btn_support' => $lang->get("FOOTER_BTN_SUPPORT"),
+    'copyright' => $lang->get("FOOTER_COPYRIGHT")
 ]);
 
 print($layout_content);
