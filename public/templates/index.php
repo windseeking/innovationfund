@@ -87,7 +87,7 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-md-10 mx-auto">
+      <div class="col-12 col-md-11 mx-auto">
         <h1 class="text-center text-dark"><?= $principles_header; ?></h1>
         <hr class="red short-center">
         <div class="row justify-content-center">
