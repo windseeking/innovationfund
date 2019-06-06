@@ -9,9 +9,6 @@ DirectoryIndex public/index.php
 RewriteCond  %{DOCUMENT_ROOT}/public/$1 -f
 RewriteRule ^(.*)$ public/$1 [L,QSA]
 
-RewriteCond %{REQUEST_URI} ^/university-for-business
-RewriteRule ^.*$ http://innovationfund.in/university-for-business/products [R=301,L]
-
 RewriteCond %{REQUEST_URI} ^/admin
 RewriteRule ^.*$ http://innovationfund.in/admin/news [R=301,L]
 

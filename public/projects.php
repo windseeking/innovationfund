@@ -5,6 +5,7 @@ require_once('../init.php');
 $projects = get_projects($con, $language);
 
 $layout_content = include_template('layout.php', [
+    'fund_name' => $lang->get("FUND_NAME"),
     'title' => $lang->get("PROJECTS_TITLE"),
     'description' => 'Projects of the Fund and its partners',
     'content' => include_template('projects.php', [

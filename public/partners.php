@@ -5,6 +5,7 @@ require_once ('../init.php');
 $partners = get_partners($con, $language);
 
 $layout_content = include_template('layout.php', [
+    'fund_name' => $lang->get("FUND_NAME"),
     'title' => $lang->get("PARTNERS_TITLE"),
     'description' => $lang->get("PARTNERS_DESC"),
     'content' => include_template('partners.php', [

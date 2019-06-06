@@ -59,18 +59,18 @@ function get_connection(array $database_config)
     return $con;
 }
 
-function get_innovations(mysqli $con ): array
+function get_innovations(mysqli $con, $language): array
 {
     $sql =
-        'SELECT * FROM innovations';
+        'SELECT * FROM innovations_' . $language;
     $res = mysqli_query($con, $sql);
     return $innovations = mysqli_fetch_all($res, MYSQLI_ASSOC);
 }
 
-function get_innovation_by_id(mysqli $con, int $id): array
+function get_innovation_by_id(mysqli $con, int $id, string $language): array
 {
-    $sql = 'SELECT * FROM innovations i
-            WHERE i.id = ' . $id;
+    $sql = 'SELECT * FROM innovations_' . $language .
+        ' WHERE id = ' . $id;
     $res = mysqli_query($con, $sql);
     if ($res) {
         return mysqli_fetch_assoc($res);
@@ -80,16 +80,44 @@ function get_innovation_by_id(mysqli $con, int $id): array
 
 function get_language()
 {
-    preg_match_all('/([a-z]{1,8}(?:-[a-z]{1,8})?)(?:;q=([0-9.]+))?/', strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"]), $matches); // Получаем массив $matches с соответствиями
-    $langs = array_combine($matches[1], $matches[2]); // Создаём массив с ключами $matches[1] и значениями $matches[2]
-    foreach ($langs as $n => $v)
-        $langs[$n] = $v ? $v : 1; // Если нет q, то ставим значение 1
-    arsort($langs); // Сортируем по убыванию q
-    $default_lang = key($langs); // Берём 1-й ключ первого (текущего) элемента (он же максимальный по q)
-    if (strpos($default_lang, "ru" !== false)) return "ru";
-    elseif (strpos($default_lang, "uk") !== false) return "uk";
-    elseif (strpos($default_lang, "en") !== false) return "en";
-    else return $default_lang;
+    if (isset($_GET['lang'])) { // если пользователь выбрал язык вручную
+        $default_lang = $_GET['lang'];
+        setcookie("language", $default_lang, time() + 3600 * 24 * 365); // expires in 1 year
+        return $default_lang;
+    } elseif (isset($_COOKIE['language'])) { // если язык был выбран/определен ранее
+        $default_lang = $_COOKIE['language'];
+        return $default_lang;
+    }
+
+    // если язык ранее не определен и пользователь также не выбирал его
+    if (!isset($_GET['lang']) && !isset($_COOKIE['language'])) {
+        preg_match_all('/([a-z]{1,8}(?:-[a-z]{1,8})?)(?:;q=([0-9.]+))?/', strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"]),
+            $matches); // Получаем массив $matches с соответствиями
+        $langs = array_combine($matches[1],
+            $matches[2]); // Создаём массив с ключами $matches[1] и значениями $matches[2]
+        foreach ($langs as $n => $v) {
+            $langs[$n] = $v ? $v : 1;
+        } // Если нет q, то ставим значение 1
+        arsort($langs); // Сортируем по убыванию q
+        $default_lang = key($langs); // Берём 1-й ключ первого (текущего) элемента (он же максимальный по q)
+        if (strpos($default_lang, "ru" !== false)) {
+            return "ru";
+        } elseif (strpos($default_lang, "ru-ru") !== false) {
+            return "ru";
+        } elseif (strpos($default_lang, "uk") !== false) {
+            return "uk";
+        } elseif (strpos($default_lang, "uk-uk") !== false) {
+            return "uk";
+        } elseif (strpos($default_lang, "en") !== false) {
+            return "en";
+        } elseif (strpos($default_lang, "en-en") !== false) {
+            return "en";
+        } elseif (strpos($default_lang, "en-us") !== false) {
+            return "en";
+        } else {
+            return $default_lang;
+        }
+    }
 }
 
 function get_news($con): array

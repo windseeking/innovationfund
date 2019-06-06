@@ -18,11 +18,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 }
 
 $layout_content = include_template('layout.php', [
-    'title' => 'News',
-    'description' => 'News of the Fund and its partners',
-    'content' => include_template('news.php', ['news' => $news ]),
-    'header' => 'News',
-    'menu' => $menu
+    'title' => $lang->get('MENU_NEWS'),
+    'description' => '',
+    'content' => include_template('news.php', [
+        'news' => $news,
+        'btn_more' => $lang->get('BTN_MORE'),
+    ]),
+    'header' => $lang->get('MENU_NEWS'),
+    'menu' => $menu,
+    'btn_contact' => $lang->get("FOOTER_BTN_CONTACT"),
+    'btn_support' => $lang->get("FOOTER_BTN_SUPPORT"),
+    'copyright' => $lang->get("FOOTER_COPYRIGHT")
 ]);
 
 print($layout_content);

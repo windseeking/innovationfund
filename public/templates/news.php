@@ -17,7 +17,7 @@
   <div class="row">
     <div class="card-columns p-3">
         <?php foreach ($news as $item): ?>
-          <div class="card border-secondary mb-3">
+          <div class="card shadowed border-light my-3">
               <?php if (!empty($item['image_path'])): ?>
                 <img src="<?= $item['image_path'] ?>" class="card-img-top" alt="<?= $item['title'] ?>">
               <?php endif; ?>
@@ -32,7 +32,7 @@
               <p class="card-text"><?= $item['description'] ?></p>
               <a href="news#item-<?= $item['id']; ?>" class="btn-custom btn-custom-outline-blue btn-sm"
                  data-toggle="modal" data-target="#item-<?= $item['id']; ?>">
-                read more »
+                <?= $btn_more ;?> »
               </a>
               <a href="http://asp/news?cat=<?= $item['cat']; ?>"
                  class="badge badge-pill badge-primary"><?= isset($item['cat']) ? $item['cat'] : ''; ?></a>

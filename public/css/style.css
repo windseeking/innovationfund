@@ -427,6 +427,7 @@ hr.short-center {
   color: #ce0000 !important;
   font-weight: bold;
   opacity: 1;
+  /*box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.05);*/
 }
 
 .nav-pills .nav-item a {
@@ -500,10 +501,10 @@ hr.short-center {
 
   padding-left: 10px;
   margin-left: 20px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 
-  background-size: 40px 40px;
+  background-size: 30px 30px;
   background-repeat: no-repeat;
   content: "";
 }
@@ -539,6 +540,45 @@ hr.short-center {
 
 .icon-instagram:hover {
   background-image: url(../img/instagram-logo-hover.svg);
+}
+
+.icon-en {
+  background-image: url(../img/bigben.svg);
+}
+
+.icon-uk {
+  background-image: url(../img/kiev.svg);
+}
+
+.icon-ru {
+  background-image: url(../img/saint-basils.svg);
+}
+
+.icon-en:hover
+{
+  background-image: url(../img/bigben-hover.svg);
+}
+
+.icon-uk:hover
+{
+  background-image: url(../img/kiev-hover.svg);
+}
+
+.icon-ru:hover
+{
+  background-image: url(../img/saint-basils-hover.svg);
+}
+
+.icon-en-active {
+  background-image: url(../img/bigben-hover.svg);
+}
+
+.icon-uk-active {
+  background-image: url(../img/kiev-hover.svg);
+}
+
+.icon-ru-active {
+  background-image: url(../img/saint-basils-hover.svg);
 }
 
 /*Изображения*/
@@ -625,10 +665,10 @@ hr.short-center {
 }
 
 #windseeking a {
-  color: #980000;
+  color: #980000 !important;
 }
 
 #windseeking a:hover {
-  color: #505050;
+  color: #505050 !important;
 }
 

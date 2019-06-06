@@ -111,7 +111,7 @@
             </p>
           </div>
           <div class="col-6 text-right">
-            <a href="/logout" class="btn btn-outline-danger btn-sm">Log out</a>
+            <a href="/logout" class="btn btn-outline-danger btn-sm text-danger">Log out</a>
           </div>
         </div>
 

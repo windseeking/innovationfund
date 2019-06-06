@@ -2,84 +2,31 @@
 
 $menu = [
     [
-        'title' => 'Innovations',
+        'title' => $lang->get('MENU_INNOVATIONS'),
         'link' => '../innovations'
     ],
     [
-        'title' => 'Projects',
+        'title' => $lang->get('MENU_PROJECTS'),
         'link' => '../projects'
     ],
     [
-        'title' => 'University',
-        'link' => '../university-for-business'
+        'title' => $lang->get('MENU_UNIVERSITY'),
+        'link' => '../university-products'
     ],
     [
-        'title' => 'Partners',
+        'title' => $lang->get('MENU_PARTNERS'),
         'link' => '../partners'
     ],
     [
-        'title' => 'HR',
+        'title' => $lang->get('MENU_HR'),
         'link' => '../hr'
     ],
     [
-        'title' => 'News',
+        'title' => $lang->get('MENU_NEWS'),
         'link' => '../news'
     ]
 ];
 
-$menu_ru = [
-    [
-        'title' => 'ИННОВАЦИИ',
-        'link' => '../innovations'
-    ],
-    [
-        'title' => 'ПРОЕКТЫ',
-        'link' => '../projects'
-    ],
-    [
-        'title' => 'УНИВЕРСИТЕТ',
-        'link' => '../university-for-business'
-    ],
-    [
-        'title' => 'ПАРТНЕРЫ',
-        'link' => '../partners'
-    ],
-    [
-        'title' => 'HR',
-        'link' => '../hr'
-    ],
-    [
-        'title' => 'НОВОСТИ',
-        'link' => '../news'
-    ]
-];
-
-$menu_uk = [
-    [
-        'title' => 'ІННОВАЦІЇ',
-        'link' => '../innovations'
-    ],
-    [
-        'title' => 'ПРОЕКТИ',
-        'link' => '../projects'
-    ],
-    [
-        'title' => 'УНІВЕРСИТЕТ',
-        'link' => '../university-for-business'
-    ],
-    [
-        'title' => 'ПАРТНЕРИ',
-        'link' => '../partners'
-    ],
-    [
-        'title' => 'HR',
-        'link' => '../hr'
-    ],
-    [
-        'title' => 'НОВИНИ',
-        'link' => '../news'
-    ]
-];
 
 $admin_tabs = [
     [
@@ -106,15 +53,15 @@ $admin_tabs = [
 
 $activities_tabs = [
     [
-        'title' => 'Products by scientific fields',
-        'link' => 'products'
+        'title' => $lang->get('UNIVERSITY_PRODUCTS_TAB'),
+        'link' => 'university-products'
     ],
     [
-        'title' => 'Research activity',
+        'title' => $lang->get('RESEARCH_ACTIVITY_TAB'),
         'link' => 'research-activity'
     ],
     [
-        'title' => 'International cooperation',
+        'title' => $lang->get('INTERNATIONAL_COOPERATION_TAB'),
         'link' => 'international-cooperation'
     ]
 ];

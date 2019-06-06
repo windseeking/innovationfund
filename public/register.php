@@ -58,7 +58,10 @@ $page_content = include_template('register.php', [ 'user' => $user, 'errors' => 
 $layout_content = include_template('layout.php', [
     'content' => $page_content,
     'title' => $page_title,
-    'menu' => $menu
+    'menu' => $menu,
+    'btn_contact' => $lang->get("FOOTER_BTN_CONTACT"),
+    'btn_support' => $lang->get("FOOTER_BTN_SUPPORT"),
+    'copyright' => $lang->get("FOOTER_COPYRIGHT")
 ]);
 
 print($layout_content);

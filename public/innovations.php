@@ -4,11 +4,11 @@ require_once ('../init.php');
 
 $header = 'Innovations';
 
-if (isset($_GET['item'])) {
+if (isset($_GET['innovation_id'])) {
     $header = '';
-    $innovation_id = (int)$_GET['item'];
-    $innovation = get_innovation_by_id($con, $innovation_id);
-    $page_content = include_template('item.php', ['innovation' => $innovation]);
+    $innovation_id = (int)$_GET['innovation_id'];
+    $innovation = get_innovation_by_id($con, $innovation_id, $language);
+    $page_content = include_template('innovation_id.php', ['innovation' => $innovation]);
     $page_title = $innovation['name'];
 
     $errors = [];
@@ -58,7 +58,7 @@ if (isset($_GET['item'])) {
             $_SESSION['errors'] = 'Please, correct errors in the form.';
         }
     }
-    $page_content = include_template('item.php', [
+    $page_content = include_template('innovation_id.php', [
         'innovation' => $innovation,
         'errors' => $errors,
         'contact' => $contact,
@@ -71,6 +71,7 @@ if (isset($_GET['item'])) {
         'competitive_ability' => $lang->get("INNOVATION_COMPETITIVE_ABILITY"),
         'appliance' => $lang->get("INNOVATION_APPLIANCE"),
         'poll_title' => $lang->get("INNOVATION_POLL_TITLE"),
+        'poll_text' => $lang->get("INNOVATION_POLL_TEXT"),
         'btn_poll' => $lang->get("BTN_POLL"),
         'contact_title' => $lang->get("INNOVATION_CONTACT_TITLE"),
         'contact_menu' => $lang->get("INNOVATION_CONTACT_MENU"),
@@ -81,7 +82,7 @@ if (isset($_GET['item'])) {
         'btn_send' => $lang->get("BTN_SEND")
     ]);
 } else {
-    $innovations = get_innovations($con);
+    $innovations = get_innovations($con, $language);
     $page_content = include_template('innovations.php', [
         'innovations' => $innovations,
         'creation_development' => $lang->get("CREATION_DEVELOPMENT"),
@@ -99,7 +100,9 @@ if (isset($_GET['item'])) {
 }
 
 $layout_content = include_template('layout.php', [
+    'fund_name' => $lang->get("FUND_NAME"),
     'title' => $lang->get("INNOVATIONS_HEADER"),
+    'subtitle' => $innovation['name'],
     'description' => 'List of innovations',
     'content' => $page_content,
     'header' => $lang->get("INNOVATIONS_HEADER"),
