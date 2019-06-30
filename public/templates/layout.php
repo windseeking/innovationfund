@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142992307-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142992307-2', { 'optimize_id': 'GTM-T3PMB68'});
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="<?php $description; ?>">
@@ -103,7 +113,7 @@
         <nav class="navbar navbar-light bg-white">
             <a class="navbar-brand" href="//innovationfund.in">
                 <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            </a><?= $fund_name; ?>
+            </a><span class="font-size-s"><?= $fund_name; ?></span>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarToggleExternalContent"
                     aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">

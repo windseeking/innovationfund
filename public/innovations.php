@@ -1,6 +1,6 @@
 <?php
 
-require_once ('../init.php');
+require_once('../init.php');
 
 $header = 'Innovations';
 
@@ -82,7 +82,23 @@ if (isset($_GET['innovation_id'])) {
         'btn_send' => $lang->get("BTN_SEND")
     ]);
 } else {
-    $innovations = get_innovations($con, $language);
+    if (isset($_GET['search'])) {
+        $search = mysqli_real_escape_string($con, $_GET['search']) ?? '';
+        if ($search) {
+            $sql =
+                'SELECT * FROM innovations_' . $language . ' WHERE MATCH(name, short_description, description) AGAINST(?)';
+            $stmt = db_get_prepare_stmt($con, $sql, [$search]);
+            mysqli_stmt_execute($stmt);
+            if ($res = mysqli_stmt_get_result($stmt)) {
+                $innovations = mysqli_fetch_all($res, MYSQLI_ASSOC);
+            } else {
+                echo 'error' . mysqli_error($con);
+            }
+        }
+    } else {
+        $innovations = get_innovations($con, $language);
+    }
+
     $page_content = include_template('innovations.php', [
         'innovations' => $innovations,
         'creation_development' => $lang->get("CREATION_DEVELOPMENT"),
@@ -95,7 +111,9 @@ if (isset($_GET['innovation_id'])) {
         'author' => $lang->get("INNOVATION_AUTHOR"),
         'market' => $lang->get("INNOVATION_MARKET"),
         'stage' => $lang->get("INNOVATION_STAGE"),
-        'money' => $lang->get("INNOVATION_MONEY")
+        'money' => $lang->get("INNOVATION_MONEY"),
+        'search_placeholder' => $lang->get("SEARCH"),
+        'nothing_found' => $lang->get("NOTHING_FOUND")
     ]);
 }
 

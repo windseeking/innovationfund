@@ -7,7 +7,7 @@
                         <button class="btn btn-link text-left" type="button" data-toggle="collapse"
                                 data-target="#collapse-one"
                                 aria-expanded="false" aria-controls="collapse-one">
-                            <?= $natural; ?>
+                            <b><?= $natural; ?></b>
                         </button>
                     </h3>
                 </div>
@@ -47,7 +47,7 @@
                         <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse"
                                 data-target="#collapse-two"
                                 aria-expanded="false" aria-controls="collapse-two">
-                            <?= $social; ?>
+                            <b><?= $social; ?></b>
                         </button>
                     </h3>
                 </div>
@@ -106,7 +106,7 @@
                         <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse"
                                 data-target="#collapse-three"
                                 aria-expanded="false" aria-controls="collapse-three">
-                            <?= $humanitarian; ?>
+                            <b><?= $humanitarian; ?></b>
                         </button>
                     </h3>
                 </div>
@@ -138,7 +138,7 @@
                         <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse"
                                 data-target="#collapse-four"
                                 aria-expanded="false" aria-controls="collapse-four">
-                            <?= $math; ?>
+                            <b><?= $math; ?></b>
                         </button>
                     </h3>
                 </div>
@@ -173,7 +173,7 @@
                         <button class="btn btn-link collapsed text-left" type="button" data-toggle="collapse"
                                 data-target="#collapse-five"
                                 aria-expanded="false" aria-controls="collapse-five">
-                            <?= $other; ?>
+                            <b><?= $other; ?></b>
                         </button>
                     </h3>
                 </div>

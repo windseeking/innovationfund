@@ -178,4 +178,7 @@ CREATE TABLE IF NOT EXISTS `innovations`
 
 CREATE FULLTEXT INDEX partners_ft_search ON partners (name, description);
 CREATE FULLTEXT INDEX news_ft_search ON news (title, text);
-CREATE FULLTEXT INDEX innovations_ft_search ON innovations (name, description);
+
+CREATE FULLTEXT INDEX innovations_en_search ON innovations_en(name, short_description);
+CREATE FULLTEXT INDEX innovations_ru_search ON innovations_ru(name, short_description);
+CREATE FULLTEXT INDEX innovations_uk_search ON innovations_uk(name, short_description);
