@@ -55,8 +55,8 @@
 <body>
 <header>
 
-    <!--Показывается на экранах 768px и больше-->
-    <div class="xs-hide sm-hide main-menu">
+    <!--Показывается на экранах 1200px и больше-->
+    <div class="xs-hide sm-hide md-hide lg-hide main-menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container col-2 p-0 m-0">
                 <a class="navbar-brand" href="//innovationfund.in">
@@ -89,8 +89,8 @@
         </nav>
     </div>
 
-    <!--Показывается на экранах от 0 до 767px-->
-    <div class="pos-f-t md-hide lg-hide xl-hide">
+    <!--Показывается на экранах от 0 до 1200px-->
+    <div class="pos-f-t xl-hide">
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-white text-right p-4">
                 <?php foreach ($menu as $value): ?>

@@ -105,7 +105,7 @@ container-slider h1 {
 main h1 {
   margin: 0;
   font-variant: all-small-caps;
-  font-family: Gilroy, Montserrat sans-serif;
+  font-family: Gilroy, Montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 50px;

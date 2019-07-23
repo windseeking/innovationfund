@@ -92,7 +92,7 @@ $page_content = include_template('index.php', [
     'btn_send' => $lang->get("BTN_SEND"),
     'fund_name' => $lang->get("FUND_NAME"),
     'address' => $lang->get("ADDRESS"),
-    'label_phone' => $lang->get("LABEL_PHONE"),
+    'label_phone' => $lang->get("LABEL_PHONE")
 ]);
 
 $layout_content = include_template('layout.php', [
@@ -103,7 +103,8 @@ $layout_content = include_template('layout.php', [
     'user' => $user,
     'btn_contact' => $lang->get("FOOTER_BTN_CONTACT"),
     'btn_support' => $lang->get("FOOTER_BTN_SUPPORT"),
-    'copyright' => $lang->get("FOOTER_COPYRIGHT")
+    'copyright' => $lang->get("FOOTER_COPYRIGHT"),
+    'fund_name' => $lang->get("FUND_NAME")
 ]);
 
 print($layout_content);

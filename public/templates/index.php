@@ -87,23 +87,23 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-md-11 mx-auto">
+      <div class="col-12 col-md-8 mx-auto">
         <h1 class="text-center text-dark"><?= $principles_header; ?></h1>
         <hr class="red short-center">
         <div class="row justify-content-center">
-          <div class="col-6 col-md-2 text-center mb-3 mb-md-0">
+          <div class="col-6 col-md-3 text-center mb-3 mb-md-0">
             <img src="../img/report.svg" height="100" alt="" class="mb-3">
             <p class="lead font-weight-bold text-center"><?= $transparency; ?></p>
           </div>
-          <div class="col-6 col-md-2 text-center mb-3 mb-md-0">
+          <div class="col-6 col-md-3 text-center mb-3 mb-md-0">
             <img src="../img/open.svg" height="100" alt="" class="mb-3">
             <p class="lead font-weight-bold text-center"><?= $openness; ?></p>
           </div>
-          <div class="col-6 col-md-2 text-center mb-3 mb-md-0">
+          <div class="col-6 col-md-3 text-center mb-3 mb-md-0">
             <img src="../img/authorize.svg" height="100" alt="" class="mb-3">
             <p class="lead font-weight-bold text-center"><?= $officiality; ?></p>
           </div>
-          <div class="col-6 col-md-2 text-center">
+          <div class="col-6 col-md-3 text-center">
             <img src="../img/goal.svg" height="100" alt="" class="mb-3">
             <p class="lead font-weight-bold text-center"><?= $goals; ?></p>
           </div>
@@ -240,7 +240,7 @@
         <h1><?= $docs_header; ?></h1>
         <hr class="yellow short-center">
       </div>
-      <div class="col-8 mx-auto mt-5">
+      <div class="col-12 mx-auto mt-5">
         <div class="row mb-md-5 justify-content-center">
           <div class="card shadowed text-center col-12 col-md-3 mr-md-3 mb-3 mb-md-0">
             <div class="card-body px-0">
