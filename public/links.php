@@ -2,12 +2,12 @@
 
 require_once ('../init.php');
 
-$page_content = include_template('err404.php', []);
-$page_title = 'Error';
+$page_content = include_template('links.php', []);
+$page_title = 'Links';
 
 $layout_content = include_template('layout.php', [
     'title' => $page_title,
-    'description' => 'Error',
+    'description' => 'Links',
     'content' => $page_content,
     'header' => '',
     'menu' => $menu,

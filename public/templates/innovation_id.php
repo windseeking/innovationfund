@@ -182,21 +182,7 @@
                             </div>
                         <?php endif; ?>
                     </div>
-                    <? if (defined('reCAPTCHA_sitekey')) { ?>
-                        <script>
-                            var verifyGrecaptcha = undefined;
-                            var verifyCallback = function (response) {
-                                verifyGrecaptcha = response;
-                            };
-                        </script>
-                        <div class="text-center g-recaptcha" data-sitekey="<?= reCAPTCHA_sitekey ?>"
-                             data-callback="verifyCallback" data-expired-callback="verifyCallback"></div>
-                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                    <? }else{ ?>
-                        <script>
-                            var verifyGrecaptcha = 1;
-                        </script>
-                    <? } ?>
+                    <div class="g-recaptcha" data-sitekey="6LdLFq8UAAAAAODmNIvDXVFf36LwBDqKpKqCeqom"></div>
                     <input type="submit" value="<?= $btn_send; ?>" name="contact[captcha]"
                            class="mt-3 btn-custom btn-custom-outline-blue btn-block">
 

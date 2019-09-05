@@ -33,7 +33,7 @@
     <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-
+ 
     <!-- ===== Объявление внешенего вида плитки для Windows 8.0 ===== -->
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
@@ -49,7 +49,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src='https://www.google.com/recaptcha/api.js?render=6LdLFq8UAAAAAODmNIvDXVFf36LwBDqKpKqCeqom'></script>
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -234,7 +235,7 @@
                            target="_blank" title="LinkedIn"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="icon icon-facebook" href="https://www.facebook.com/company/fund-of-innovation"
+                        <a class="icon icon-facebook" href="https://www.facebook.com/innovationfund.in/"
                            target="_blank" title="Facebook"></a>
                     </li>
                     <li class="nav-item">
@@ -263,4 +264,17 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 </body>
+<script>
+    let captcha_action = 'send_message';
+
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LdLFq8UAAAAAODmNIvDXVFf36LwBDqKpKqCeqom', {action: captcha_action})
+            .then(function(token) {
+                if (token) {
+                    document.getElementById('token').value = token;
+                    document.getElementById('action').value = captcha_action;
+                }
+            });
+    });
+</script>
 </html>

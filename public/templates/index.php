@@ -296,6 +296,8 @@
           </div>
           <div class="col-12 col-md-8 mb-5 mb-md-0 justify-content-between">
             <form class="custom-form" method="post" action="index.php#contact">
+                <input type="hidden" name="token" id="token">
+                <input type="hidden" name="action" id="action">
               <div class="form-group">
                 <label for="name"><?= $label_name; ?> <sup>*</sup></label>
                   <?php $class = isset($errors['name']) ? 'is-invalid' : '';
@@ -332,6 +334,7 @@
                     </div>
                   <?php endif; ?>
               </div>
+                <div class="g-recaptcha" data-sitekey="6LdLFq8UAAAAAODmNIvDXVFf36LwBDqKpKqCeqom"></div>
               <button type="submit" class="disabled btn-custom btn-custom-outline-blue btn-block"><?= $btn_send; ?>
               </button>
             </form>
