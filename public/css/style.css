@@ -76,6 +76,10 @@ body {
   font-size: 1.1rem !important;
 }
 
+*::selection {
+  background: #65adae;
+}
+
 .font-size-s {
   font-size: 0.9rem;
 }
@@ -119,6 +123,17 @@ h5 {
 a {
   color: #457677 !important;
   cursor: pointer;
+}
+
+span.soon {
+  padding: 0 5px 0 5px;
+  color: #d39e00;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  border: 1px solid #d39e00;
+  border-radius: 5px;
 }
 
 section.bg-blue {
@@ -400,7 +415,6 @@ hr.short-center {
 .text-yellow {
   color: #d39e00;
 }
-
 
 .big-num {
   font-size: 82px;

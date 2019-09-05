@@ -5,10 +5,14 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142992307-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
-        gtag('config', 'UA-142992307-2', { 'optimize_id': 'GTM-T3PMB68'});
+        gtag('config', 'UA-142992307-2', {'optimize_id': 'GTM-T3PMB68'});
     </script>
 
     <meta charset="UTF-8">
@@ -33,7 +37,7 @@
     <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
- 
+
     <!-- ===== Объявление внешенего вида плитки для Windows 8.0 ===== -->
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
@@ -49,8 +53,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <!-- reCAPTCHA -->
     <script src='https://www.google.com/recaptcha/api.js?render=6LdLFq8UAAAAAODmNIvDXVFf36LwBDqKpKqCeqom'></script>
-    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -59,21 +63,27 @@
     <!--Показывается на экранах 1200px и больше-->
     <div class="xs-hide sm-hide md-hide lg-hide main-menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container col-2 p-0 m-0">
+            <div class="col p-0">
                 <a class="navbar-brand" href="//innovationfund.in">
                     <img src="../img/logo.png" width="50" height="50" class="d-inline-block align-top" alt=""
                          title="Main page">
                 </a>
+                <span class="font-size-s"><? $fund_name; ?></span>
             </div>
-            <div class="container col-8">
+            <div class="container col">
                 <?php if (!empty($menu)): ?>
                     <?php foreach ($menu as $value): ?>
                         <a class="nav-item nav-link text-nowrap <?php echo ($title == $value['title']) ? 'active' : ''; ?>"
                            href="<?= $value['link']; ?>"><?= $value['title']; ?></a>
                     <?php endforeach; ?>
+                    <a class="nav-item nav-link text-nowrap disabled" href="#">
+                        <span class="text-blue">in</span><span class="text-yellow">.</span><span
+                                class="text-blue">space</span>
+                        <span class="soon">soon</span>
+                    </a>
                 <?php endif; ?>
             </div>
-            <div class="container col-2 justify-content-end p-0">
+            <div class="col text-right text-nowrap p-0">
                 <a class="icon icon-en <?php echo ($_COOKIE['language'] == 'en') ? 'icon-en-active' : ''; ?>"
                    href="?lang=en" title="English"></a>
                 <a class="icon icon-uk <?php echo ($_COOKIE['language'] == 'uk') ? 'icon-uk-active' : ''; ?>"
@@ -98,17 +108,27 @@
                     <a class="nav-item nav-link <?php echo ($title == $value['title']) ? 'active' : ''; ?>"
                        href="<?= $value['link']; ?>"><?= $value['title']; ?></a>
                 <?php endforeach; ?>
-                <a class="icon icon-en <?php echo ($_COOKIE['language'] == 'en') ? 'icon-en-active' : ''; ?>"
-                   href="?lang=en"></a>
-                <a class="icon icon-uk <?php echo ($_COOKIE['language'] == 'uk') ? 'icon-uk-active' : ''; ?>"
-                   href="?lang=uk"></a>
-                <a class="icon icon-ru <?php echo ($_COOKIE['language'] == 'ru') ? 'icon-ru-active' : ''; ?>"
-                   href="?lang=ru"></a>
+
+                <a class="nav-item nav-link text-nowrap disabled" href="#">
+                    <span class="text-blue">in</span><span class="text-yellow">.</span><span
+                            class="text-blue">space</span>
+                    <span class="soon">soon</span>
+                </a>
+
                 <?php if (isset($_SESSION['user'])): ?>
                     <a class="nav-item nav-link" href="/admin/news">
                         <span style="font-size: 1em; color: #222224;"><i class="far fa-user-circle"></i></span>
                     </a>
                 <?php endif; ?>
+
+                <div class="mt-3 mt-xl-0 mr-3 mr-xl-0">
+                    <a class="icon icon-en <?php echo ($_COOKIE['language'] == 'en') ? 'icon-en-active' : ''; ?>"
+                       href="?lang=en"></a>
+                    <a class="icon icon-uk <?php echo ($_COOKIE['language'] == 'uk') ? 'icon-uk-active' : ''; ?>"
+                       href="?lang=uk"></a>
+                    <a class="icon icon-ru <?php echo ($_COOKIE['language'] == 'ru') ? 'icon-ru-active' : ''; ?>"
+                       href="?lang=ru"></a>
+                </div>
             </div>
         </div>
         <nav class="navbar navbar-light bg-white">
@@ -215,7 +235,7 @@
                 <div class="text-muted">
                     <p><?= $copyright; ?></p>
                 </div>
-            </div>
+            </div> <!-- END left part -->
 
             <div class="col-12 col-md-6">
                 <ul class="nav footer-menu justify-content-center justify-content-md-end mb-3">
@@ -247,10 +267,18 @@
                            target="_blank" title="Instagram"></a>
                     </li>
                 </ul>
-            </div>
+
+                <div class="text-center text-md-right font-size-xl mt-3 mb-5">
+                    <span class="text-blue">in</span><span class="text-yellow">.</span><span
+                            class="text-blue">space</span>
+                    <span class="soon">soon</span>
+                </div>
+            </div> <!-- END right part -->
         </div>
     </div>
+
     <p id="windseeking">made with ♥ by <a href="https:/instagram.com/windseeking" target="_blank">windseeking</a></p>
+
 </footer>
 
 <!--Bootstrap-->
@@ -264,12 +292,12 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 </body>
+
 <script>
     let captcha_action = 'send_message';
-
-    grecaptcha.ready(function() {
+    grecaptcha.ready(function () {
         grecaptcha.execute('6LdLFq8UAAAAAODmNIvDXVFf36LwBDqKpKqCeqom', {action: captcha_action})
-            .then(function(token) {
+            .then(function (token) {
                 if (token) {
                     document.getElementById('token').value = token;
                     document.getElementById('action').value = captcha_action;
@@ -277,4 +305,5 @@
             });
     });
 </script>
+
 </html>
