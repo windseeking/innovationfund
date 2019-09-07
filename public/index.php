@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
     } else {
-        $_SESSION['errors'] = 'You diidn\'t pass the robot test.';
+        $_SESSION['errors'] = 'You didn\'t pass the robot test.';
     }
 //    echo json_encode($success);
 }
