@@ -76,7 +76,7 @@
     </div>
 </section> <!--END #about-->
 
-<section class="bg-light shadowed py-5 px-3" id="mission" style="min-height: 100vh">
+<section class="bg-light shadowed-inset py-5 px-3" id="mission" style="min-height: 100vh">
     <div class="container-fluid align-items-center">
         <div class="row">
             <div class="col-11 col-sm-10 col-md-8 col-lg-10 col-xl-6 mx-auto mt-3 mb-5">
@@ -95,19 +95,19 @@
                     <div class="col col-sm-8 col-md-12 col-lg-10 col-xl-8 mx-auto">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-md-3 text-center mr-auto mb-5 mb-md-0">
-                                <img src="../img/report.svg" height="100" alt="" class="mb-3">
+                                <div class="icon-principles icon-transparency mx-auto mb-3"></div>
                                 <p class="lead font-weight-bold text-center mb-0"><?= $transparency; ?></p>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3 text-center mr-auto mb-5 mb-md-0">
-                                <img src="../img/open.svg" height="100" alt="" class="mb-3">
+                                <div class="icon-principles icon-openness mx-auto mb-3"></div>
                                 <p class="lead font-weight-bold text-center mb-0"><?= $openness; ?></p>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3 text-center mr-auto mb-5 mb-md-0">
-                                <img src="../img/authorize.svg" height="100" alt="" class="mb-3">
+                                <div class="icon-principles icon-officiality mx-auto mb-3"></div>
                                 <p class="lead font-weight-bold text-center mb-0"><?= $officiality; ?></p>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3 text-center">
-                                <img src="../img/goal.svg" height="100" alt="" class="mb-3">
+                                <div class="icon-principles icon-goals mx-auto mb-3"></div>
                                 <p class="lead font-weight-bold text-center mb-0"><?= $goals; ?></p>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
   </div>
 </section>-->
 
-<section class="bg-white shadowed py-5 px-3" id="team" style="min-height: 100vh">
+<section class="bg-white py-5 px-3" id="team" style="min-height: 100vh">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">
@@ -238,18 +238,17 @@
     </div>
 </section> <!--END #team-->
 
-<section class="bg-light shadowed py-5 px-3" id="documents" style="min-height: 100vh">
+<section class="bg-light shadowed-inset py-5 px-3" id="documents" style="min-height: 100vh">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 mb-3 text-center">
-                <h1><?= $docs_header; ?></h1>
-                <hr class="yellow short-center">
-            </div>
 
-            <!--TODO: поправить адаптиную верстку-->
-            <div class="col-8 mx-auto mt-5">
-                <div class="row mb-md-5 justify-content-center">
-                    <div class="card shadowed text-center col-12 col-md-3 mr-md-3 mb-3 mb-md-0">
+        <h1 class="text-center"><?= $docs_header; ?></h1>
+        <hr class="yellow short-center mb-5">
+
+        <div class="row">
+            <div class="col-10 col-xl-8 mx-auto">
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-5 col-md-4 col-lg-3 mr-0 mr-sm-3 mb-3 card shadowed text-center">
                         <div class="card-body px-0">
                             <img src="../img/pdf.svg" height="30" alt="">
                             <p class="card-text">
@@ -258,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="card shadowed text-center col-12 col-md-3 ml-md-3 mb-3 mb-md-0">
+                    <div class="col-12 col-sm-5 col-md-4 col-lg-3 mb-3 card shadowed text-center">
                         <div class="card-body px-0">
                             <img src="../img/pdf.svg" height="30" alt="">
                             <p class="card-text">
@@ -270,7 +269,7 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="card shadowed text-center col-12 col-md-3 mr-md-3 mb-3 mb-md-0">
+                    <div class="col-12 col-sm-5 col-md-4 col-lg-3 mr-0 mr-sm-3 mb-3 card shadowed text-center ">
                         <div class="card-body px-0">
                             <img src="../img/pdf.svg" height="30" alt="">
                             <p class="card-text">
@@ -279,7 +278,7 @@
                         </div>
                     </div>
 
-                    <div class="card shadowed text-center col-12 col-md-3 ml-md-3">
+                    <div class="col-12 col-sm-5 col-md-4 col-lg-3 card shadowed text-center">
                         <div class="card-body">
                             <img src="../img/doc.svg" height="30" alt="">
                             <p class="card-text">
@@ -288,12 +287,13 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 </section> <!--END #documents-->
 
-<section class="bg-white shadowed py-5 px-3" id="contact" style="min-height: 100vh">
+<section class="bg-white py-5 px-3" id="contact" style="min-height: 100vh">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto">

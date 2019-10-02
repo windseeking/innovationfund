@@ -84,11 +84,11 @@
                 <?php endif; ?>
             </div>
             <div class="col text-right text-nowrap p-0">
-                <a class="icon icon-en <?php echo ($_COOKIE['language'] == 'en') ? 'icon-en-active' : ''; ?>"
+                <a class="icon icon-lang icon-en <?php echo ($_COOKIE['language'] == 'en') ? 'icon-en-active' : ''; ?>"
                    href="?lang=en" title="English"></a>
-                <a class="icon icon-uk <?php echo ($_COOKIE['language'] == 'uk') ? 'icon-uk-active' : ''; ?>"
+                <a class="icon icon-lang icon-uk <?php echo ($_COOKIE['language'] == 'uk') ? 'icon-uk-active' : ''; ?>"
                    href="?lang=uk" title="Ukrainian"></a>
-                <a class="icon icon-ru <?php echo ($_COOKIE['language'] == 'ru') ? 'icon-ru-active' : ''; ?>"
+                <a class="icon icon-lang icon-ru <?php echo ($_COOKIE['language'] == 'ru') ? 'icon-ru-active' : ''; ?>"
                    href="?lang=ru" title="Russian"></a>
 
                 <?php if (isset($_SESSION['user'])): ?>
@@ -122,11 +122,11 @@
                 <?php endif; ?>
 
                 <div class="mt-3 mt-xl-0 mr-3 mr-xl-0">
-                    <a class="icon icon-en <?php echo ($_COOKIE['language'] == 'en') ? 'icon-en-active' : ''; ?>"
+                    <a class="icon icon-lang icon-en  <?php echo ($_COOKIE['language'] == 'en') ? 'icon-en-active' : ''; ?>"
                        href="?lang=en"></a>
-                    <a class="icon icon-uk <?php echo ($_COOKIE['language'] == 'uk') ? 'icon-uk-active' : ''; ?>"
+                    <a class="icon icon-lang icon-uk <?php echo ($_COOKIE['language'] == 'uk') ? 'icon-uk-active' : ''; ?>"
                        href="?lang=uk"></a>
-                    <a class="icon icon-ru <?php echo ($_COOKIE['language'] == 'ru') ? 'icon-ru-active' : ''; ?>"
+                    <a class="icon icon-lang icon-ru <?php echo ($_COOKIE['language'] == 'ru') ? 'icon-ru-active' : ''; ?>"
                        href="?lang=ru"></a>
                 </div>
             </div>
@@ -251,19 +251,19 @@
 
                 <ul class="nav justify-content-around justify-content-md-end mb-5 mb-md-0">
                     <li class="nav-item">
-                        <a class="icon icon-linkedin" href="https://www.linkedin.com/company/fund-of-innovation"
+                        <a class="icon icon-social icon-linkedin" href="https://www.linkedin.com/company/fund-of-innovation"
                            target="_blank" title="LinkedIn"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="icon icon-facebook" href="https://www.facebook.com/innovationfund.in/"
+                        <a class="icon icon-social icon-facebook" href="https://www.facebook.com/innovationfund.in/"
                            target="_blank" title="Facebook"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="icon icon-twitter" href="https://www.twitter.com/company/fund-of-innovation"
+                        <a class="icon icon-social icon-twitter" href="https://www.twitter.com/company/fund-of-innovation"
                            target="_blank" title="Twitter"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="icon icon-instagram mr-3" href="https://www.instagram.com/innovationfund.in/"
+                        <a class="icon icon-social icon-instagram mr-3" href="https://www.instagram.com/innovationfund.in/"
                            target="_blank" title="Instagram"></a>
                     </li>
                 </ul>
