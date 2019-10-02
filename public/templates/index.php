@@ -252,7 +252,7 @@
                         <div class="card-body px-0">
                             <img src="../img/pdf.svg" height="30" alt="">
                             <p class="card-text">
-                                <a class="nav-link" href="/docs/ONU_profile.pdf"><?= $university_profile; ?></a>
+                                <a class="nav-link" href="../docs/ONU_profile.pdf"><?= $university_profile; ?></a>
                             </p>
                         </div>
                     </div>
@@ -262,7 +262,7 @@
                             <img src="../img/pdf.svg" height="30" alt="">
                             <p class="card-text">
                                 <a class="nav-link"
-                                   href="/docs/Partnership_presentation.pdf"><?= $our_presentation; ?></a>
+                                   href="../docs/FIS_presentation.pdf"><?= $our_presentation; ?></a>
                             </p>
                         </div>
                     </div>
@@ -273,7 +273,7 @@
                         <div class="card-body px-0">
                             <img src="../img/pdf.svg" height="30" alt="">
                             <p class="card-text">
-                                <a class="nav-link" href="/docs/Statut_ONU.pdf"><?= $onu_statute; ?></a>
+                                <a class="nav-link" href="../docs/Statut_ONU.pdf"><?= $onu_statute; ?></a>
                             </p>
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                         <div class="card-body">
                             <img src="../img/doc.svg" height="30" alt="">
                             <p class="card-text">
-                                <a class="nav-link" href="/docs/Statut_FIS.docx"><?= $fis_statute; ?></a>
+                                <a class="nav-link" href="../docs/Statut_FIS.docx"><?= $fis_statute; ?></a>
                             </p>
                         </div>
                     </div>

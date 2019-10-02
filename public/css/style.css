@@ -140,6 +140,11 @@ section.bg-blue {
     background-color: #457677;
 }
 
+section.bg-sepia {
+    background-color: #f7f6f4;
+}
+
+
 .bg-blue a {
     color: #d39e00 !important;
 }
@@ -236,6 +241,11 @@ section.bg-blue {
     color: #fff !important;
 }
 
+.bg-sepia .btn-custom:hover {
+    color: #f7f6f4 !important;
+}
+
+
 .btn-link {
     color: #457677 !important;
     text-decoration: none !important;
@@ -295,11 +305,15 @@ section.bg-blue {
 
 .custom-form input:focus, textarea:focus {
     border: 1px solid #d39e00 !important;
-    box-shadow: 0 0 10px rgb(211, 158, 0) !important;
+    box-shadow: none !important;
 }
 
 .shadowed {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+img.shadowed {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .shadowed-inset {
@@ -672,6 +686,14 @@ hr.short-center {
     text-align: center;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     filter: none;
+}
+
+.rounded-10 {
+    border-radius: 10px;
+}
+
+.rounded-15 {
+    border-radius: 15px;
 }
 
 /*Road map*/

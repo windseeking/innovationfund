@@ -147,7 +147,7 @@
 <main>
     <?php if (isset($header)): ?>
         <hr class="yellow short-center">
-        <h1 class="text-center mb-3"><?= $header; ?></h1>
+        <h1 class="text-center mb-5"><?= $header; ?></h1>
     <?php endif; ?>
 
     <?php if (isset($tabs)): ?>

@@ -1,145 +1,139 @@
-<section class="py-5 bg-blue mt-4" id="review">
+<section class="py-5 bg-sepia">
     <div class="container">
-        <div class="row justify-content-between align-items-center mb-4">
-            <div class="col-12 col-md-7 order-2 order-md-1">
-                <h2 class="display-4 text-white font-weight-bold mt-3 mt-md-0 xs-hide sm-hide"><?= $innovation['name']; ?></h2>
-                <h2 class="display-6 text-white font-weight-bold mt-3 mt-md-0 md-hide lg-hide xl-hide"><?= $innovation['name']; ?></h2>
-                <hr class="yellow long-left">
-                <?php if (!empty($innovation['short_description'])): ?><p
-                        class="lead text-dark font-weight-bold"><?= $innovation['short_description']; ?></p><?php endif; ?>
-                <?php if (!empty($innovation['market_types'])): ?><p class="text-white"><b><?= $market; ?>
+        <div class="row justify-content-between align-items-top mb-4">
+            <div class="col-12 col-lg-4 order-2 order-lg-1">
+                <?php if (!empty($innovation['main_image_path'])): ?>
+                    <img src="<?= $innovation['main_image_path']; ?>" class="shadowed rounded-10 img-fluid mb-3"
+                         alt="<?= $innovation['name']; ?>">
+                <?php endif; ?>
+
+                <?php if (!empty($innovation['author'])): ?><p><b><?= $author; ?>
+                        :</b> <?= $innovation['author']; ?>.</p><?php endif; ?>
+                <?php if (!empty($innovation['market_types'])): ?><p><b><?= $market; ?>
                         :</b> <?= $innovation['market_types']; ?>.</p><?php endif; ?>
-                <?php if (!empty($innovation['current_stage'])): ?><p class="text-white"><b><?= $stage; ?>
+                <?php if (!empty($innovation['current_stage'])): ?><p><b><?= $stage; ?>
                         :</b> <?= $innovation['current_stage']; ?>.</p><?php endif; ?>
-                <?php if (!empty($innovation['money_needed'])): ?><p class="text-white"><b><?= $money; ?>
+                <?php if (!empty($innovation['money_needed'])): ?><p><b><?= $money; ?>
                         :</b> <?= $innovation['money_needed']; ?>.</p><?php endif; ?>
+
             </div>
 
-            <?php if (!empty($innovation['main_image_path'])): ?>
-                <div class="col-12 col-md-5 order-1 order-md-2">
-                    <img src="<?= $innovation['main_image_path']; ?>" class="rounded-circle bd-yellow img-fluid"
-                         alt="<?= $innovation['name']; ?>">
-                </div>
-            <?php endif; ?>
-        </div>
+            <div class="col-12 col-lg-7 order-1 order-lg-2">
+                <h2 class="display-4 font-weight-bold mt-3 mt-md-0 xs-hide sm-hide"><?= $innovation['name']; ?></h2>
+                <h2 class="display-6 font-weight-bold mt-3 mt-md-0 md-hide lg-hide xl-hide"><?= $innovation['name']; ?></h2>
 
-        <div class="row justify-content-center">
-            <ul class="nav nav-hover-red justify-content-center order-3">
-                <?php if (!empty($innovation['description'])): ; ?>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
-                                            href="#description"><?= $description; ?></a></li>
+                <?php if (!empty($innovation['short_description'])): ?>
+                    <p><?= $innovation['short_description']; ?></p>
                 <?php endif; ?>
-                <?php if (!empty($innovation['roadmap'])): ; ?>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#roadmap"><?= $roadmap; ?></a></li>
-                <?php endif; ?>
-                <?php if (!empty($innovation['competitive_ability'])): ; ?>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
-                                            href="#analogues"><?= $competitive_ability; ?></a>
-                    </li>
-                <?php endif; ?>
-                <?php if (!empty($innovation['market_and_appliance'])): ; ?>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#appliance"><?= $appliance; ?></a>
-                    </li>
-                <?php endif; ?>
-                <?php if (!empty($innovation['poll_link_url'])): ; ?>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#actuality"><?= $poll_title; ?></a>
-                    </li>
-                <?php endif; ?>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"><?= $contact_menu; ?></a>
-                </li>
-            </ul>
+            </div>
         </div>
     </div>
 </section>
 
-<?php if (!empty($innovation['description'])): ; ?>
-    <section style="min-height: 100vh" class="shadowed bg-white py-5" id="description">
-        <div class="container py-3 p-md-5">
-            <h2 class="display-5 text-center"><?= $description; ?></h2>
-            <hr class="yellow short-center mb-5">
-            <div class="row mb-3">
-                <div class="col-12 col-md-8 mx-auto">
+<section class="bg-white py-5" id="review">
+    <div class="container-fluid">
+
+        <div class="row justify-content-around">
+            <?php if (!empty($innovation['description'])):; ?>
+                <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                    <h3 class="text-center"><?= $description; ?></h3>
+                    <hr class="yellow short-center">
                     <?= $innovation['description']; ?>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <?php if (!empty($innovation['tech_offer_link'])): ?>
-                    <div class="col-12 col-md-3 mx-auto mb-3 mb-md-0">
-                        <a class="btn-custom btn-custom-outline-blue btn-block" href="<?= $innovation['tech_offer_link']; ?>"
-                           target="_blank">Technology offer</a>
+            <?php endif; ?>
+
+                <div class="col-12 col-lg-7">
+                    <?php if (!empty($innovation['roadmap']) or !empty($innovation['competitive_ability']) or !empty($innovation['market_and_appliance']) or !empty($innovation['partnership'])):; ?>
+                    <ul class="nav nav-pills nav-fill mb-3" role="tablist">
+
+                        <?php if (!empty($innovation['roadmap'])):; ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="roadmap-tab" data-toggle="tab" href="#roadmap" role="tab"
+                                   aria-controls="roadmap" aria-selected="true"><?= $roadmap; ?></a>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if (!empty($innovation['competitive_ability'])):; ?>
+                            <li class="nav-item">
+                                <a class="nav-link" id="competitive-tab" data-toggle="tab" href="#competitive"
+                                   role="tab"
+                                   aria-controls="competitive" aria-selected="false"><?= $competitive_ability; ?></a>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if (!empty($innovation['market_and_appliance'])):; ?>
+                            <li class="nav-item">
+                                <a class="nav-link" id="appliance-tab" data-toggle="tab" href="#appliance" role="tab"
+                                   aria-controls="appliance" aria-selected="false"><?= $appliance; ?></a>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if (!empty($innovation['partnership'])):; ?>
+                            <li class="nav-item">
+                                <a class="nav-link" id="partnership-tab" data-toggle="tab" href="#partnership"
+                                   role="tab"
+                                   aria-controls="partnership" aria-selected="false"><?= $partnership; ?></a>
+                            </li>
+                        <?php endif; ?>
+                    </ul>
+
+                    <div class="tab-content shadowed rounded-10 p-5 mb-5">
+
+                        <?php if (!empty($innovation['roadmap'])): ; ?>
+                            <div class="tab-pane fade show active" id="roadmap" role="tabpanel"
+                                 aria-labelledby="roadmap-tab">
+                                <?= $innovation['roadmap']; ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($innovation['competitive_ability'])): ; ?>
+                            <div class="tab-pane fade" id="competitive" role="tabpanel"
+                                 aria-labelledby="competitive-tab">
+                                <?= $innovation['competitive_ability']; ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($innovation['market_and_appliance'])): ; ?>
+                            <div class="tab-pane fade" id="appliance" role="tabpanel" aria-labelledby="appliance-tab">
+                                <?= $innovation['market_and_appliance']; ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($innovation['partnership'])): ; ?>
+                            <div class="tab-pane fade" id="partnership" role="tabpanel"
+                                 aria-labelledby="partnership-tab">
+                                <?= $innovation['partnership']; ?>
+                            </div>
+                        <?php endif; ?>
                     </div>
-                <?php endif; ?>
-                <?php if (!empty($innovation['presentation_link'])): ?>
-                    <div class="col-12 col-md-3 mx-auto mb-3 mb-md-0">
-                        <a class="btn-custom btn-custom-outline-blue btn-block"
-                           href="<?= $innovation['presentation_link']; ?>"
-                           target="_blank">Presentation</a>
-                    </div>
-                <?php endif; ?>
-            </div>
-        </div>
-    </section>
-<?php endif; ?>
+                    <?php endif; ?>
 
-<?php if (!empty($innovation['roadmap'])): ; ?>
-    <section style="min-height: 100vh" class="shadowed bg-light py-5" id="roadmap">
-        <div class="container py-3 p-md-5">
-            <h2 class="display-5 text-center"><?= $roadmap; ?></h2>
-            <hr class="yellow short-center mb-5">
-            <div class="row">
-                <div class="col-12 col-md-6 mx-auto">
-                    <?= $innovation['roadmap']; ?>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php endif; ?>
+                    <div class="сol-12 col-lg-5">
+                        <?php if (!empty($innovation['poll_link_url'])): ?>
+                            <a class="btn-custom btn-custom-outline-blue btn-block"
+                               href="<?= $innovation['poll_link_url']; ?>"
+                               target="_blank"><?= $btn_poll; ?></a>
+                        <?php endif; ?>
 
-<?php if (!empty($innovation['competitive_ability'])): ; ?>
-    <section style="min-height: 100vh" class="shadowed bg-light py-5" id="analogues">
-        <div class="container py-3 p-md-5">
-            <h2 class="display-5 text-center"><?= $competitive_ability; ?></h2>
-            <hr class="yellow short-center mb-5">
-            <div class="row">
-                <div class="col-12 col-md-8 mx-auto">
-                    <p class="lead"><?= $innovation['competitive_ability']; ?></p>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php endif; ?>
+                        <?php if (!empty($innovation['presentation_link'])): ?>
+                            <a class="btn-custom btn-custom-outline-blue btn-block"
+                               href="<?= $innovation['presentation_link']; ?>"
+                               target="_blank"><?= $btn_presentation; ?></a>
 
-<?php if (!empty($innovation['market_and_appliance'])): ; ?>
-    <section style="min-height: 100vh" class="shadowed bg-light py-5" id="appliance">
-        <div class="container py-3 p-md-5">
-            <h2 class="display-5 text-center"><?= $appliance; ?></h2>
-            <hr class="yellow short-center mb-5">
-            <?= $innovation['market_and_appliance']; ?>
-        </div>
-    </section>
-<?php endif; ?>
+                        <?php endif; ?>
+                        <?php if (!empty($innovation['tech_offer_link'])): ?>
 
-
-<?php if (!empty($innovation['poll_link_url'])): ; ?>
-    <section style="min-height: 100vh" class="shadowed bg-light py-5" id="actuality">
-        <div class="container py-3 p-md-5">
-            <h2 class="display-5 text-center"><?= $poll_title; ?></h2>
-            <hr class="yellow short-center mb-5">
-            <div class="row">
-                <div class="col-12 col-md-8 mx-auto">
-                    <p class="lead"><?= $poll_text; ?></p>
-                    <div class="text-center">
-                        <a class="btn-custom btn-custom-outline-blue"
-                           href="<?= $innovation['poll_link_url']; ?>"
-                           target="_blank"><?= $btn_poll; ?> »</a>
+                            <a class="btn-custom btn-custom-outline-blue btn-block"
+                               href="<?= $innovation['tech_offer_link']; ?>"
+                               target="_blank"><?= $btn_tech_offer; ?></a>
+                        <?php endif; ?>
                     </div>
                 </div>
-            </div>
         </div>
-    </section>
-<?php endif; ?>
+    </div>
+</section>
 
-<section style="min-height: 100vh" class="shadowed bg-white py-5" id="contact">
+<section style="min-height: 100vh" class="bg-white py-5" id="contact">
     <div class="container py-3 p-md-5">
         <h2 class="display-5"><?= $contact_title; ?></h2>
         <hr class="red long-left mb-5">
@@ -206,13 +200,6 @@
                     </div>
                 <?php endif; ?>
             </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <ul class="nav nav-hover-red">
-                <li class="nav-item font-weight-bold"><a class="nav-link js-scroll-trigger"
-                                                         href="#review"><?= $return_top; ?></a>
-                </li>
-            </ul>
         </div>
     </div>
 </section>
