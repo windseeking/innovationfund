@@ -19,6 +19,7 @@ $page_content = include_template('university-products.php', [
     'research' => $lang->get("RESEARCH"),
     'products' => $lang->get("SF_PRODUCTS"),
     'specs' => $lang->get("SPECS"),
+    'n_prod_list' => $lang->get("NATURAL_PROD_LIST"),
     'n_f_item_1' => $lang->get("NATURAL_FAC_ITEM_1"),
     'n_f_item_2' => $lang->get("NATURAL_FAC_ITEM_2"),
     'n_f_item_3' => $lang->get("NATURAL_FAC_ITEM_3"),

@@ -22,7 +22,8 @@ $page_content = include_template('international-cooperation.php', [
     'item_also_3' => $lang->get("IC_ALSO_ITEM_3")
 ]);
 
-$layout_content = include_template('layout.php', ['fund_name' => $lang->get("FUND_NAME"),
+$layout_content = include_template('layout.php', [
+    'fund_name' => $lang->get("FUND_NAME"),
     'tabs' => $activities_tabs,
     'description' => '',
     'title' => $lang->get("MENU_UNIVERSITY"),

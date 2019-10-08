@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="<?php $description; ?>">
     <meta name="keywords"
-          content="инновации, фонд, студенты, практика, стажтровка, бизнес, инвестиции, образование, университет, кооперация, партнерство">
+          content="фпи, фпi, fis, фпи Одесса, фпi Одеса, fis Odesa, фонд підтримки інновацій, фонд поддержки инноваций, fund of innovation support, innovationfund, фонд поддержки инноваций Одесса, фонд підтримки інновацій Одеса, fund of innovation support Odesa, стартапы Одесса, стартапи Одеса, Odesa startups, <?php $keywords; ?>">
 
     <title><?= $title; ?> <?= !empty($subtitle) ? '» ' . $subtitle : ''; ?> | FIS</title>
 
@@ -76,10 +76,9 @@
                         <a class="nav-item nav-link text-nowrap <?php echo ($title == $value['title']) ? 'active' : ''; ?>"
                            href="<?= $value['link']; ?>"><?= $value['title']; ?></a>
                     <?php endforeach; ?>
-                    <a class="nav-item nav-link text-nowrap disabled" href="#">
+                    <a class="nav-item nav-link text-nowrap" href="http://space.innovationfund.in/">
                         <span class="text-blue">in</span><span class="text-yellow">.</span><span
                                 class="text-blue">space</span>
-                        <span class="soon">soon</span>
                     </a>
                 <?php endif; ?>
             </div>
@@ -109,10 +108,9 @@
                        href="<?= $value['link']; ?>"><?= $value['title']; ?></a>
                 <?php endforeach; ?>
 
-                <a class="nav-item nav-link text-nowrap disabled" href="#">
+                <a class="nav-item nav-link text-nowrap" href="http://space.innovationfund.in/" target="_blank">
                     <span class="text-blue">in</span><span class="text-yellow">.</span><span
                             class="text-blue">space</span>
-                    <span class="soon">soon</span>
                 </a>
 
                 <?php if (isset($_SESSION['user'])): ?>
@@ -251,7 +249,8 @@
 
                 <ul class="nav justify-content-around justify-content-md-end mb-5 mb-md-0">
                     <li class="nav-item">
-                        <a class="icon icon-social icon-linkedin" href="https://www.linkedin.com/company/fund-of-innovation"
+                        <a class="icon icon-social icon-linkedin"
+                           href="https://www.linkedin.com/company/fund-of-innovation"
                            target="_blank" title="LinkedIn"></a>
                     </li>
                     <li class="nav-item">
@@ -259,19 +258,21 @@
                            target="_blank" title="Facebook"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="icon icon-social icon-twitter" href="https://www.twitter.com/company/fund-of-innovation"
+                        <a class="icon icon-social icon-twitter"
+                           href="https://www.twitter.com/company/fund-of-innovation"
                            target="_blank" title="Twitter"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="icon icon-social icon-instagram mr-3" href="https://www.instagram.com/innovationfund.in/"
+                        <a class="icon icon-social icon-instagram mr-3"
+                           href="https://www.instagram.com/innovationfund.in/"
                            target="_blank" title="Instagram"></a>
                     </li>
                 </ul>
 
                 <div class="text-center text-md-right font-size-xl mt-3 mb-5">
-                    <span class="text-blue">in</span><span class="text-yellow">.</span><span
-                            class="text-blue">space</span>
-                    <span class="soon">soon</span>
+                    <a href="http://space.innovationfund.in/" target="_blank"><span class="text-blue">in</span><span
+                                class="text-yellow">.</span><span
+                                class="text-blue">space</span></a>
                 </div>
             </div> <!-- END right part -->
         </div>

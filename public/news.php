@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 }
 
 $layout_content = include_template('layout.php', [
+    'fund_name' => $lang->get("FUND_NAME"),
     'title' => $lang->get('MENU_NEWS'),
     'description' => '',
     'content' => include_template('news.php', [

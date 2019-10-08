@@ -3,27 +3,27 @@
 $menu = [
     [
         'title' => $lang->get('MENU_INNOVATIONS'),
-        'link' => '../innovations'
+        'link' => '/innovations'
     ],
     [
         'title' => $lang->get('MENU_PROJECTS'),
-        'link' => '../projects'
+        'link' => '/projects'
     ],
     [
         'title' => $lang->get('MENU_UNIVERSITY'),
-        'link' => '../university-products'
+        'link' => '/university-products'
     ],
     [
         'title' => $lang->get('MENU_PARTNERS'),
-        'link' => '../partners'
+        'link' => '/partners'
     ],
     [
         'title' => $lang->get('MENU_HR'),
-        'link' => '../hr'
+        'link' => '/hr'
     ],
     [
         'title' => $lang->get('MENU_NEWS'),
-        'link' => '../news'
+        'link' => '/news'
     ]
 ];
 

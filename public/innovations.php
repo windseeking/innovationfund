@@ -37,60 +37,62 @@ if (isset($_GET['innovation_id'])) {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
         $response = curl_exec($ch);
-        if(!empty($response)) $decoded_response = json_decode($response);
+        if (!empty($response)) {
+            $decoded_response = json_decode($response);
+        }
 
         $success = false;
 
         if ($decoded_response && $decoded_response->success && $decoded_response->action == $captcha_action && $decoded_response->score > 0) {
             $success = $decoded_response->success;
 
-        $contact = $_POST['contact'];
-        $required = ['name', 'email', 'message', 'captcha'];
-        foreach ($required as $item) {
-            if (empty($contact[$item])) {
-                $errors[$item] = 'Please, fill this field.';
-            }
-        }
-
-        if (empty($errors)) {
-            $transport = (new Swift_SmtpTransport('mail.innovationfund.in', 25))
-                ->setUsername('webmaster@innovationfund.in')
-                ->setPassword('pakoWorld6');
-            $mailer = new Swift_Mailer($transport);
-
-            $subject = 'Кто-то заинтересовался инновацией ' . '«' . $innovation['name'] . '»';
-            $message = (new Swift_Message($subject))
-                ->setFrom(['webmaster@innovationfund.in' => 'Fund of Innovation Support'])
-                ->setTo(['innovationfund@onu.edu.ua' => 'Павел Коен']);
-
-            $message_content = include_template('innovation-email.php', [
-                'contact_message' => $contact['message'],
-                'contact_name' => $contact['name'],
-                'contact_email' => $contact['email'],
-                'innovation_name' => $innovation['name']
-            ]);
-
-            $message->setBody($message_content, 'text/html');
-
-            try {
-                $result = $mailer->send($message);
-            } catch (Swift_TransportException $ex) {
-                print($ex->getMessage() . '<br>');
+            $contact = $_POST['contact'];
+            $required = ['name', 'email', 'message', 'captcha'];
+            foreach ($required as $item) {
+                if (empty($contact[$item])) {
+                    $errors[$item] = 'Please, fill this field.';
+                }
             }
 
-            if (!$result) {
-                $_SESSION['errors'] = 'The message was not sent. Please, try again or contact us via <a href="mailto:innovationfund@onu.edu.ua">email</a> or <a href="tel:+380995250511">phone</a>.';
+            if (empty($errors)) {
+                $transport = (new Swift_SmtpTransport('mail.innovationfund.in', 25))
+                    ->setUsername('webmaster@innovationfund.in')
+                    ->setPassword('pakoWorld6');
+                $mailer = new Swift_Mailer($transport);
+
+                $subject = 'Кто-то заинтересовался инновацией ' . '«' . $innovation['name'] . '»';
+                $message = (new Swift_Message($subject))
+                    ->setFrom(['webmaster@innovationfund.in' => 'Fund of Innovation Support'])
+                    ->setTo(['innovationfund@onu.edu.ua' => 'Павел Коен']);
+
+                $message_content = include_template('innovation-email.php', [
+                    'contact_message' => $contact['message'],
+                    'contact_name' => $contact['name'],
+                    'contact_email' => $contact['email'],
+                    'innovation_name' => $innovation['name']
+                ]);
+
+                $message->setBody($message_content, 'text/html');
+
+                try {
+                    $result = $mailer->send($message);
+                } catch (Swift_TransportException $ex) {
+                    print($ex->getMessage() . '<br>');
+                }
+
+                if (!$result) {
+                    $_SESSION['errors'] = 'The message was not sent. Please, try again or contact us via <a href="mailto:innovationfund@onu.edu.ua">email</a> or <a href="tel:+380995250511">phone</a>.';
+                } else {
+                    $_SESSION['success'] = 'The message was sent successfully!';
+                }
             } else {
-                $_SESSION['success'] = 'The message was sent successfully!';
+                $_SESSION['errors'] = 'Please, correct errors in the form.';
             }
         } else {
-            $_SESSION['errors'] = 'Please, correct errors in the form.';
+            $_SESSION['errors'] = 'You diidn\'t pass the robot test.';
         }
-    } else {
-        $_SESSION['errors'] = 'You diidn\'t pass the robot test.';
-    }
 //    echo json_encode($success);
-}
+    }
     $page_content = include_template('innovation_id.php', [
         'innovation' => $innovation,
         'errors' => $errors,
@@ -148,16 +150,18 @@ if (isset($_GET['innovation_id'])) {
         'market' => $lang->get("INNOVATION_MARKET"),
         'stage' => $lang->get("INNOVATION_STAGE"),
         'money' => $lang->get("INNOVATION_MONEY"),
-        'search_placeholder' => $lang->get("SEARCH"),
-        'nothing_found' => $lang->get("NOTHING_FOUND")
+        'search_placeholder' => $lang->get("SEARCH")
     ]);
 }
+
+$description = $innovation['short_description'] ?? $lang->get("DESCRIPTION_INNOVATIONS");
 
 $layout_content = include_template('layout.php', [
     'fund_name' => $lang->get("FUND_NAME"),
     'title' => $lang->get("INNOVATIONS_HEADER"),
     'subtitle' => $innovation['name'],
-    'description' => 'List of innovations',
+    'description' => $description,
+    'keywords' => $innovation['keywords'],
     'content' => $page_content,
     'header' => $lang->get("INNOVATIONS_HEADER"),
     'menu' => $menu,

@@ -22,7 +22,8 @@ $page_content = include_template('hr.php', [
 
 $layout_content = include_template('layout.php', [
     'title' => 'HR',
-    'description' => '',
+    'description' => $lang->get("HR_DESC"),
+    'keywords' => 'стажировка Одесса, практика Одесса, стажування Одеса, практика Одеса',
     'content' => $page_content,
     'header' => 'Human resources',
     'menu' => $menu,

@@ -122,10 +122,15 @@
 
                         <?php endif; ?>
                         <?php if (!empty($innovation['tech_offer_link'])): ?>
-
                             <a class="btn-custom btn-custom-outline-blue btn-block"
                                href="<?= $innovation['tech_offer_link']; ?>"
                                target="_blank"><?= $btn_tech_offer; ?></a>
+                        <?php endif; ?>
+
+                        <?php if (!empty($innovation['link_1_url'])): ?>
+                            <a class="btn-custom btn-custom-outline-blue btn-block"
+                               href="<?= $innovation['link_1_url']; ?>"
+                               target="_blank"><?= $innovation['link_1_name']; ?></a>
                         <?php endif; ?>
                     </div>
                 </div>

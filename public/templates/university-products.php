@@ -17,6 +17,7 @@
                             <div class="col-12 col-md-6">
                                 <h4><?= $products; ?></h4>
                                 <ul class="bullet-list">
+                                    <?= $n_prod_list; ?>
                                     <?= $common_prod_list; ?>
                                 </ul>
                             </div>
@@ -57,8 +58,8 @@
                             <div class="col-12 col-md-6">
                                 <h4><?= $products; ?></h4>
                                 <ul class="bullet-list">
-                                    <?= $common_prod_list; ?>
                                     <?= $s_prod_list; ?>
+                                    <?= $common_prod_list; ?>
                                 </ul>
                             </div>
 

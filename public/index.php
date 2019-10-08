@@ -1,6 +1,6 @@
 <?php
 
-require_once ('../init.php');
+require_once('../init.php');
 
 $errors = [];
 $contact = [];
@@ -29,7 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
     $response = curl_exec($ch);
-    if(!empty($response)) $decoded_response = json_decode($response);
+    if (!empty($response)) {
+        $decoded_response = json_decode($response);
+    }
 
     $success = false;
 
@@ -130,8 +132,8 @@ $page_content = include_template('index.php', [
 ]);
 
 $layout_content = include_template('layout.php', [
-    'title' => 'Main',
-    'description' => '',
+    'title' => $lang->get("MAIN_TITLE"),
+    'description' => $lang->get("MAIN_DESC"),
     'content' => $page_content,
     'menu' => $menu,
     'user' => $user,
